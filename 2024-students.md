@@ -6,8 +6,8 @@ List of students and forked repositories.
 |:----------|:-----------|:-----------|:----|
 |finnt2192| Finn Thompson |	Q102558610   |  https://github.com/finnt2192/COM304_FOUNDATION_1  | 
 | manav64 | Manav Bohara | Q102593976   | https://github.com/manav64/COM304_FOUNDATION_1 |
-|Anuska27-ui| Anuska Ghimire |Q102637993    |   |https://github.com/Anuska27-ui/COM304_FOUNDATION_1
-|fadighattas76| adi ghattas |	Q012547289    | https://github.com/fadighattas76/COM304_FOUNDATION_1  |
+|Anuska27-ui| Anuska Ghimire |Q102637993   |https://github.com/Anuska27-ui/COM304_FOUNDATION_1
+|fadighattas76| adi ghattas |	Q012547289   | https://github.com/fadighattas76/COM304_FOUNDATION_1  |
 |sheikhdiallo   | Sheikh-Omar Diallo |	Q10254872   |  https://github.com/sheikhdiallo/COM304_FOUNDATION_1 |
 | Tonusk1  | Chong Ree| Q102632806   | https://github.com/Tonusk1/COM304_FOUNDATION_1  |
 | tomdorr  | Tom Dorr | 	Q102635139    | https://github.com/tomdorr/COM304_FOUNDATION_1 |
