@@ -15,7 +15,7 @@ These markdown pages contain my notes and reflections on the material presented 
 
 | page    | description |
 |:--------|:------------|
-|[Prior Experience](../personal_learning_record/priorExperience.md) | A summary of my knowledge entering this module|
+|[Prior Experience](../personal_learning_record/priorExperience.md) | A summary of my knowledge entering this module| I have never used any programming tools and have a very basic undestand of computing, the reason i am on this course is because i want to learn and improve my knowledge to hopefully et into the tech industry|
 |[Segment 1 - Computer Architectures](../personal_learning_record/segment1.md) | Experiments and learning about computer architectures |
 |[Segment 2 - Languages and Operating Systems](../personal_learning_record/segment2.md) | Experiments and learning about computer languages and operating systems |
 |[Segment 3 - Networking and Cloud Computing](../personal_learning_record/segment3.md) |  Experiments and learning about networking |
