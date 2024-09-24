@@ -3,9 +3,9 @@
 |      |      |
 |:---- |:---- |
 | Course and Year | COM304 Foundation Computing 2024 | 
-| Student Name | |
-| Student Number | |
-| Github Account | |
+| Student Name | Sheikh-Omar Diallo |
+| Student Number | Q10254872 |
+| Github Account |sheikhdiallo|
 
 ## Introduction
 
