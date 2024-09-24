@@ -12,6 +12,6 @@ List of students and forked repositories.
 | Tonusk1  | Chong Ree| Q102632806   | https://github.com/Tonusk1/COM304_FOUNDATION_1  |
 | tomdorr  | Tom Dorr | 	Q102635139    | https://github.com/tomdorr/COM304_FOUNDATION_1 |
 | EchoNebula  | Exa Fernandes |	Q102567863    | https://github.com/EchoNebula/COM304_FOUNDATION_1  |
-| Wandal77  |  Marek Frackowiak | 	Q102637731   |   |https://github.com/Wandal77/COM304_FOUNDATION_1 |
+| Wandal77  |  Marek Frackowiak | 	Q102637731    |https://github.com/Wandal77/COM304_FOUNDATION_1 |
 |   |    |    |   |
 |   |    |    |   |
