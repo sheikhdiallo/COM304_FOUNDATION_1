@@ -11,7 +11,7 @@ use  screen shots and / or code samples as appropriate.
 
 ---
 
-## session 1
+## session 1 : Began using Raspberry PI
 
 ## session 2
 
