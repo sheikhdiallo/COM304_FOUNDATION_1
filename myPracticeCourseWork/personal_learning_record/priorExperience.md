@@ -5,8 +5,8 @@
 ---
 **NOTE**
 
-* Describe your past experience of computing. 
-* What do you know and what would you like to learn from this module?
+* Describe your past experience of computing. I have only used Excel and the microsoft 365 so have very limiited knowledge of computing right now.
+* What do you know and what would you like to learn from this module? I would like to become confident at coding.
 
 ---
 
