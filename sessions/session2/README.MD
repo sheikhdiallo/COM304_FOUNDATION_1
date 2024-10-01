@@ -43,6 +43,7 @@ You should already have created your github account.
 You now need to clone your forked repository on to your pc and merge it with my latest branch.
 
 To do this, you will need to install git on your own machine. 
+
 See [download git for windows https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
 
 Once GIT is installed, you will need to generate your own public and private keys and clone your repository.
