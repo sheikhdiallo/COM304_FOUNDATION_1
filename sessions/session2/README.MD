@@ -107,23 +107,6 @@ Look at the following very complex example of a CPU (Note this is not complete b
 
 [somewhat better documentation can be found here:](https://docs.google.com/spreadsheets/d/1MG44B5RzTul4EMDJowlx4hgNE3XYFRoyR7EFi6A0o3M/edit?usp=sharing)
 
-### Exercise 4 ARM Simulator
-
-
-
-Look at arm simulation
-
-Can you change the 7 segment LED's
-
-Can you run the picture 
-
-Can you change the picture
-
-On PI
-Look at TOP
-What memory is used
-What swap is used
-How much time are processors in use 
 
 ## Github clone and merge
 
