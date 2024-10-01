@@ -11,7 +11,7 @@ use  screen shots and / or code samples as appropriate.
 
 ---
 
-## session 1 : We learned how to fork and edit docs. In the 2nd hour we began using Raspberry Pi and had it all set up, however we could not access the internet on it.
+## session 1 : We learned how to fork and edit docs. In the 2nd hour we began using Raspberry Pi and had it all set up, however we could not access the internet on it therefore i did not complete my task to my best abillity
 
 ## session 2
 
