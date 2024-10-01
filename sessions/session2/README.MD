@@ -20,6 +20,7 @@ Because computers work with binary numbers it is important to be familiar with b
 
 Bottom 4 bits of an 8 bit byte
 
+8 + 4 + 2 + 1 = 15
 
 | decimal | binary | hexadecimal |
 |:------- |:-------|:------------|
@@ -41,6 +42,8 @@ Bottom 4 bits of an 8 bit byte
 | 15      | 1111   | F           |
 
 Top 4 bits of an 8 bit byte
+
+128 + 64 + 32 + 16 = 240
 
 11111111 = FF = 255 
 
