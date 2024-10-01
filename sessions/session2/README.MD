@@ -14,6 +14,27 @@ Presentation: [short History of computing](../session2/docs/com304-foundation-hi
 
 Presentation: [Computer Architecrure](../session2/docs/com304-foundation-computer-Architecture-1.0.pdf)
 
+
+## Github clone and merge
+
+You should already have created your github account.
+
+You should have already created some notes in your personal learning record
+
+You now need to clone your forked repository on to your pc and merge it with my latest branch.
+
+To do this, you will need to install git on your own machine. 
+
+See [download git for windows https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
+
+Once GIT is installed, you will need to generate your own public and private keys and clone your repository.
+
+You now need to follow the instructions in [Introduction to Github](../../../main/introductionToGitHub.md) 
+
+Check out the repo on your local PC.
+
+Later you will also check out your repo on your Raspberry Pi
+
 ### Exercise 1 - Binary and Hex
 
 Because computers work with binary numbers it is important to be familiar with binary and hexadecimal notation.
@@ -111,20 +132,3 @@ Look at the following very complex example of a CPU (Note this is not complete b
 [somewhat better documentation can be found here:](https://docs.google.com/spreadsheets/d/1MG44B5RzTul4EMDJowlx4hgNE3XYFRoyR7EFi6A0o3M/edit?usp=sharing)
 
 
-## Github clone and merge
-
-You should already have created your github account.
-
-You now need to clone your forked repository on to your pc and merge it with my latest branch.
-
-To do this, you will need to install git on your own machine. 
-
-See [download git for windows https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
-
-Once GIT is installed, you will need to generate your own public and private keys and clone your repository.
-
-You now need to follow the instructions in [Introduction to Github](../../../main/introductionToGitHub.md) 
-
-Check out the repo on your local PC.
-
-Later you will also check out your repo on your Raspberry Pi
