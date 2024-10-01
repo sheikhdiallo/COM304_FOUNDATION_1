@@ -49,10 +49,6 @@ Once GIT is installed, you will need to generate your own public and private key
 
 You now need to follow the instructions in [Introduction to Github](../../../main/introductionToGitHub.md) 
 
-. 
-
 Check out the repo on your local PC.
 
 Later you will also check out your repo on your Raspberry Pi
-
-See the instructions in [Installing Raspberry PI](../session2/docs/remoteAccessSSHVNCPiConnect.md)
