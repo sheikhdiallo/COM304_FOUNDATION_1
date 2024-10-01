@@ -39,7 +39,7 @@ https://www.calculator.net/ip-subnet-calculator.html?cclass=any&csubnet=30&cip=1
 
 https://www.reddit.com/r/computerscience/comments/uhappo/best_logic_gate_simulation_digital_logic_circuit/
 
-https://github.com/hneemann/Digital   igital is an easy-to-use digital logic designer and circuit simulator designed for educational purposes. in java 
+https://github.com/hneemann/Digital   Digital is an easy-to-use digital logic designer and circuit simulator designed for educational purposes. in java 
 
 logigator https://logigator.com/en/community/project/8a738598-3e90-4be8-bd02-50e892f4c488  16-Bit General Purpose CPU.A somewhat better documentation can be found here: https://docs.google.com/spreadsheets/d/1MG44B5RzTul4EMDJowlx4hgNE3XYFRoyR7EFi6A0o3M/edit?usp=sharing
 
