@@ -77,7 +77,7 @@ If you want a little practice with binary numbers try the cisco binary game
 
 If you want a little practice with hexadecimal numbers try the HEX game
 
-[HEX GAME](hex game https://studio.code.org/projects/applab/q5Mw0Zhs58a_Chr-zn75thpwnjMTw6n2hh_2aN1hwSE)  Enter the hexadecimal value in the green box. If you see a hexadecimal number on the right, click the bits to make the binary number match.
+[HEX GAME](https://studio.code.org/projects/applab/q5Mw0Zhs58a_Chr-zn75thpwnjMTw6n2hh_2aN1hwSE)  Enter the hexadecimal value in the green box. If you see a hexadecimal number on the right, click the bits to make the binary number match.
 
 Also try the [hex calculator](https://www.calculator.net/hex-calculator.html)
 
