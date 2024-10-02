@@ -156,3 +156,13 @@ lots of examples https://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/  -di
 
 
 https://hackaday.io/project/186626-let-us-assemble-some-arm-together/details  ARM and pi
+
+
+2s compliment https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html   Thomas Finley, April 2000  explanation of 2s compliment
+
+
+nuts and bolts - small logic gates the bulding blocks of digital circuits part 1  https://www.nutsvolts.com/magazine/article/small-logic-gates-spawn-big-dreams-part-1
+nuts and bolts - small logic gates the bulding blocks of digital circuits part 2  https://www.nutsvolts.com/magazine/article/small-logic-gates-spawn-big-dreams-part-2
+
+
+
