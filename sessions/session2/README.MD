@@ -14,15 +14,37 @@ Presentation: [short History of computing](../session2/docs/com304-foundation-hi
 
 Presentation: [Computer Architecrure](../session2/docs/com304-foundation-computer-Architecture-1.0.pdf)
 
+
+## Github clone and merge
+
+You should already have created your github account.
+
+You should have already created some notes in your personal learning record
+
+You now need to clone your forked repository on to your pc and merge it with my latest branch.
+
+To do this, you will need to install git on your own machine. 
+
+See [download git for windows https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
+
+Once GIT is installed, you will need to generate your own public and private keys and clone your repository.
+
+You now need to follow the instructions in [Introduction to Github](../../../main/introductionToGitHub.md) 
+
+Check out the repo on your local PC.
+
+Later you will also check out your repo on your Raspberry Pi
+
 ### Exercise 1 - Binary and Hex
 
 Because computers work with binary numbers it is important to be familiar with binary and hexadecimal notation.
 
 Bottom 4 bits of an 8 bit byte
 
+8 + 4 + 2 + 1 = 15
 
 | decimal | binary | hexadecimal |
-|=------- |=-------|=------------|
+|:------- |:-------|:------------|
 | 0       | 0000   | 0           |
 | 1       | 0001   | 1           |
 | 2       | 0010   | 2           |
@@ -42,13 +64,15 @@ Bottom 4 bits of an 8 bit byte
 
 Top 4 bits of an 8 bit byte
 
+128 + 64 + 32 + 16 = 240
+
 11111111 = FF = 255 
 
 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255 = FF
 
 
 | decimal | binary | hexadecimal |
-|=------- |=-------|=------------|
+|:------- |:-------|:------------|
 | 0       | 00000000   | 00      |
 | 16      | 00010000   | 10      |
 | 32      | 00100000   | 20      |
@@ -74,7 +98,7 @@ If you want a little practice with binary numbers try the cisco binary game
 
 If you want a little practice with hexadecimal numbers try the HEX game
 
-[HEX GAME](hex game https://studio.code.org/projects/applab/q5Mw0Zhs58a_Chr-zn75thpwnjMTw6n2hh_2aN1hwSE)  Enter the hexadecimal value in the green box. If you see a hexadecimal number on the right, click the bits to make the binary number match.
+[HEX GAME](https://studio.code.org/projects/applab/q5Mw0Zhs58a_Chr-zn75thpwnjMTw6n2hh_2aN1hwSE)  Enter the hexadecimal value in the green box. If you see a hexadecimal number on the right, click the bits to make the binary number match.
 
 Also try the [hex calculator](https://www.calculator.net/hex-calculator.html)
 
@@ -108,20 +132,3 @@ Look at the following very complex example of a CPU (Note this is not complete b
 [somewhat better documentation can be found here:](https://docs.google.com/spreadsheets/d/1MG44B5RzTul4EMDJowlx4hgNE3XYFRoyR7EFi6A0o3M/edit?usp=sharing)
 
 
-## Github clone and merge
-
-You should already have created your github account.
-
-You now need to clone your forked repository on to your pc and merge it with my latest branch.
-
-To do this, you will need to install git on your own machine. 
-
-See [download git for windows https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
-
-Once GIT is installed, you will need to generate your own public and private keys and clone your repository.
-
-You now need to follow the instructions in [Introduction to Github](../../../main/introductionToGitHub.md) 
-
-Check out the repo on your local PC.
-
-Later you will also check out your repo on your Raspberry Pi

@@ -9,6 +9,9 @@ Oddly enough, the VNC Viewer app for Android works fine
 From there I opened the VNC server window. From there I went to the Options menu, 
 set Authentication to "VNC password" and Encryption to "Prefer off". I then clicked OK and that was that. I can now log into the Pi using RealVNC and TightVNC from my PC's again.
 
+•	https://monster6502.com/
+•	https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/
+•	https://www.macs.hw.ac.uk/~hwloidl/Courses/F28HS/slides_RPi_arch.pdf
 
 
 REFERENCES
