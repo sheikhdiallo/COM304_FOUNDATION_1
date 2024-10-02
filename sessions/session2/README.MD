@@ -12,7 +12,7 @@ Presentation: [short History of computing](../session2/docs/com304-foundation-hi
 
 ## Computer Architecture
 
-Presentation: [Computer Architecrure](../session2/docs/com304-foundation-computer-Architecture-1.0.pdf)
+Presentation: [Computer Architecture](../session2/docs/com304-foundation-computer-Architecture-1.0.pdf)
 
 
 ## Github clone and merge
