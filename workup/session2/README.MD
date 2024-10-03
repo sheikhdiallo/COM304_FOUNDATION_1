@@ -41,7 +41,7 @@ We have seen that with the exception of analogue and quantum computing, computer
 
 It is important to get familiar with Binary Arithmetic. 
 
-Please go through the [Binary Arithmetic examples](../session2/binaryArithmetic.md)
+Please go through the [Binary Arithmetic examples](../session2/docs/binaryArithmetic.md)
 
 Boolean Algebra is the basis of computing. 
 You need to be familiar with the basics of AND, OR, NOT etc.
@@ -50,5 +50,5 @@ Computer architectures rely on the use of `logic gates` which manipulate binary 
 
 This is not an electronics course, but it is useful to understand the basics of digital logic gates in order to appreciate how computers use boolean algebra to do arithmetic and run programs.
 
-Please go through the [Boolean Algebra examples](../session2/booleanAlgebraAndLogicGates.md)
+Please go through the [Boolean Algebra examples](../session2/docs/booleanAlgebraAndLogicGates.md)
  
