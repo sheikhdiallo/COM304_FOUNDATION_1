@@ -175,7 +175,7 @@ For very large or very small numbers, we usually want to use scientific notation
 In this case we can use 32 bits to represent a positive or negative number in the range ±1.18×10^−38 to ±3.4×10^38
 
 | Sign | Exponent |  Mantissa |
-|:==== |:---------|:----------|
+|:---- |:---------|:----------|
 |1 bit |8 bits    |23 bits    |  
 |X     |XXXXXXXX  |XXXXXXXXXXXXXXXXXXXXXXX|
 
