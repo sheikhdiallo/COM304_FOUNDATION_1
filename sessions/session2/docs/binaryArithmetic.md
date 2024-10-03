@@ -135,7 +135,7 @@ Note that the result can require 2 times as many bits as the original operands.
 See [wikipedia Binary Multiplication](https://en.wikipedia.org/wiki/Binary_multiplier)
 
 This also works for negative numbers but you must sign-extend the intermediate products.
-For some examples and explanation see [Two's Complement Multiplication](https://pages.cs.wisc.edu/%7Emarkhill/cs354/Fall2008/beyond354/int.mult.html)
+For some examples and explanation see [Mark Hill Two's Complement Multiplication](https://pages.cs.wisc.edu/%7Emarkhill/cs354/Fall2008/beyond354/int.mult.html)
 
 ## Binary Division
 A naively simple way to multiply binary numbers would be to use a loop to count how many times you can subtract the divisor from the total until it is no longer possible to subtract the divisor. 
