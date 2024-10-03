@@ -93,7 +93,7 @@ This could be used for instance to construct a Program Counter which sequentiall
 Flip-Flops can also be used to construct registers which store a sequence of bits (such as a byte).
 Thus Flip-Flops can be used to create static RAM memory.
 
-[4 bit register](https://simulator.io/board/ueB4QsoQGV/1)
+See this [4 bit register](https://simulator.io/board/ueB4QsoQGV/1)
 
 ## Putting it all together : Creating a simple CPU From counters, adders and registers.
 
