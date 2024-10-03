@@ -167,5 +167,52 @@ https://hackaday.io/project/186626-let-us-assemble-some-arm-together/details  AR
 nuts and bolts - small logic gates the bulding blocks of digital circuits part 1  https://www.nutsvolts.com/magazine/article/small-logic-gates-spawn-big-dreams-part-1
 nuts and bolts - small logic gates the bulding blocks of digital circuits part 2  https://www.nutsvolts.com/magazine/article/small-logic-gates-spawn-big-dreams-part-2
 
+tried logism - didnt work 
+https://github.com/logisim-evolution/logisim-evolution
+
+http://www.cburch.com/logisim/docs/2.6.0/en/guide/prop/shortcome.html
+
+https://electronics.stackexchange.com/questions/648983/jk-flip-flop-in-logisim 
+Logisim does not model gate delays. Logisim is not appropriate for this kind of simulation which requires gate delays to provide the expected results. For some circuits you may get what you expected, out of luck, due to the order the software evaluate the logic level changes.
+
+demo jk flipflop https://www.falstad.com/circuit/e-jkff.html
+4 bit counter https://www.falstad.com/circuit/e-counter.html 
+
+binary full adder https://www.falstad.com/circuit/e-fulladd.html
+
+
+[Basic AND OR XOR and NOT gates simulation](https://simulator.io/board/jBA0DN5HQz/3)
+
+[Full Adder](https://simulator.io/board/CZ0EsxYPgm/1)
+
+[Half Adder](https://simulator.io/board/A0MeGe4pvm/1)
+
+
+[4 bit counter using half adders](https://simulator.io/board/JIxRlrtGhm/1)
+
+[4 bit register](https://simulator.io/board/ueB4QsoQGV/1)
+
+[simple 4 bit cpu](https://simulator.io/board/AWZpw7Fy3I/2)
+
+
+
+### Exercise 3 Logigator
+
+To help you understand how simple logic gates are put together to make complex machines
+
+https://logigator.com/
+
+[Logigator tutorial - The Editor ](https://www.youtube.com/watch?v=tX7HT_0MZRo) 
+
+Look at the following examples
+
+[Logigator Examples](https://logigator.com/en/examples)
+
+Look at the following very complex example of a CPU (Note this is not complete but it does illustrate how a CPU is put together)
+
+[logigator 16-Bit General Purpose CPU](https://logigator.com/en/community/project/8a738598-3e90-4be8-bd02-50e892f4c488)
+
+[somewhat better documentation can be found here:](https://docs.google.com/spreadsheets/d/1MG44B5RzTul4EMDJowlx4hgNE3XYFRoyR7EFi6A0o3M/edit?usp=sharing)
+
 
 
