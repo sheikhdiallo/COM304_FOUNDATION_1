@@ -98,13 +98,20 @@ See this [4 bit register](https://simulator.io/board/ueB4QsoQGV/1)
 ## Putting it all together : Creating a simple CPU From counters, adders and registers.
 
 Having looked at the basic components, lets look at how these can be put together to create a simple 4 bit CPU simulation.
+You may remember that the first Intel CPU was a 4004 4 bit microprocessor. [4 bit computing](https://en.wikipedia.org/wiki/4-bit_computing) is now mostly obsolete but still useful for understanding how CPU's actually work.
 
-Sample 4-Bit-CPU, Bastian Born (build 2015)
+This is a simulator of a [Sample 4-Bit-CPU, (Bastian Born build 2015)](https://simulator.io/board/AWZpw7Fy3I/2)
+
+This is a screenshot of the simulator where the key components are highlighted.
+  
+ ![alt text](../docs/images/CPU-4bit-SEGMENTS-THUMB.png "Figure CPU-4bit-SEGMENTS-THUMB.png")
+   
+  [large full-Diagram CPU-4bit](../docs/images/CPU-4bit-SEGMENTS.png)
+  
+If you look at the model you can identify how flip-flops, gates, half-adders and registers are used to create the CPU.
 
 This machine has two Registers (A and B) and 12 instructions.
-You can write your program using the diode tool on the ROM (upper left corner).
-On expected user input (instruction IN) the red light next to the input switches lights up,
-to confirm your input press the confirm button once.
+
 
 ```
 Instructions:
@@ -122,16 +129,22 @@ Instructions:
 0x0A  JMP xx    jumps to address
 0x0B  JZ  xx    jumps to address, if zero flag is set
 ```
-   ![alt text](../docs/images/CPU-4bit-SEGMENTS-THUMB.png "Figure CPU-4bit-SEGMENTS-THUMB.png")
-   
-   [full-Diagram CPU-4bit](../docs/images/CPU-4bit-SEGMENTS.png)
-
-If you look at the model you can identify how flip flops, gates, half adders and registers are used to create the CPU
-   
-You can see the full simulation here:  [simple 4 bit CPU simulation](https://simulator.io/board/AWZpw7Fy3I/2)
-
 If you run the simulation, you will see the output count 7 segment display incrementing as the processor adds.
 
+You can write your own program using the diode tool on the ROM (upper left corner).
+On expected user input (instruction IN) the red light next to the input switches lights up,
+to confirm your input press the confirm button once.
+
+See if you can modify the programming in the ROM, perhaps to count down instead of up.
+
+This is a similar example for a 16 bit processor. 
+
+[logigator 16-Bit General Purpose CPU](https://logigator.com/en/community/project/8a738598-3e90-4be8-bd02-50e892f4c488)
+
+I include this for interest but I am not sure if it is complete or working. 
+[somewhat better documentation can be found here:](https://docs.google.com/spreadsheets/d/1MG44B5RzTul4EMDJowlx4hgNE3XYFRoyR7EFi6A0o3M/edit?usp=sharing)
+
+See also [Nibbler](https://www.bigmessowires.com/nibbler/) which is a 4 bit CPU built from standard 7400 series logic chips – individual counters, registers, buffers, and gates. It’s an educational example of a simple CPU that’s easy to understand and build, but still capable of running games and other interesting programs.
 
 ## Further reading on boolean logic
 
