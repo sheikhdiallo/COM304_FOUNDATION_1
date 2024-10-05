@@ -69,6 +69,9 @@ binary full adder https://www.falstad.com/circuit/e-fulladd.html
 
 [simple 4 bit cpu](https://simulator.io/board/AWZpw7Fy3I/2)
 
+https://datasheets.chipdb.org/Intel/MCS-4/4004_schematic.pdf
+
+history https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html
 
 ### Logigator
 
@@ -135,6 +138,54 @@ https://github.com/nicholas3d2/ARM-tower-defense%20%20ARM-tower-defense
 https://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/dev_7segs.html  7 segment display
 
 lots of examples https://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/  -differnt io
+
+### jtag urart
+
+https://stackoverflow.com/questions/62073642/how-can-i-get-an-input-from-a-user-with-using-cpulator-in-arm-assembly-language
+
+Well, you're on the right track. The pushbuttons of CPUlator correspond to the bits in the word in memory at the fixed address of 0xFF200050. So the following will read the word into the r0 register:
+```
+ldr r0, =0xFF200050  //Load the address into a register
+ldr r0, [r0] //Load the contents of that address
+//Now let's do something with that number...
+```
+
+If you check, for example, pushbuttons 0 and 2, that'll give you 5 in r0. Will that do?
+
+The memory address that the button state can be read from is helpfully written in the panel header of CPUlator on the right. The switches panel corresponds to the word at 0xFF200040. I'm not sure what's at 0xFF200100. On a physical device, pushbuttons and switches are probably distinct, but in the CPUlator, I can't see any difference. Use the input source that you like better.
+
+There's also a keyboard panel in the devices, but the processing of that would be more involved.
+
+reading keyboard buffer - not so useful
+https://stackoverflow.com/questions/5322340/c-read-directly-from-the-keyboard-buffer
+
+https://nmu.edu/Webb/ArchivedHTML/MathComputerScience/c_programming/c_016.htm  C KEYBOARD INPUTThere is a function in C which allows the programmer to accept input from a keyboard. The following program illustrates the use of this function, 
+
+https://stackoverflow.com/questions/58245724/how-to-print-text-in-cpulator-armv7-de1-soc-jtag-uart
+```
+.global _start
+_start:
+        ldr r0,=0xff201000
+        mov r1, #'0'
+        str r1, [r0]
+        b .
+```
+
+http://www-ug.eecg.toronto.edu/msl/nios_devices/dev_jtaguart.html  really good discussion toronto
+The Data Register is used for both sending and receiving data — the type of instruction executed (stw or ldw) determines whether you send or receive. Every time you read from this register an 8-bit data byte is ejected from the receive FIFO, and every time you write to it you insert a byte to the send FIFO. Note that reading the data register word will obtain the "Number of Bytes available" in bits [31:16], data valid [15], and will also read the data in bits [7:0] and eject another byte (if any) from the queue. The "Number of Bytes available" returns the utilization of the queue before the current read operation.
+
+https://tomverbeure.github.io/2021/05/08/Write-Your-Own-C-and-Python-Clients-for-Intel-JTAG-UART-with-libjtag_atlantic.html  Write Your Own C and Python Clients for the Intel JTAG UART
+
+## this works writing to jtag uart and reading from uart
+https://bohr.wlu.ca/cp216/labs/lab08InputOutput.php?d=2024-03-30T23:59:00Z#Topics  Assembly I/OOn a 'real' DE1-SoC computer, we can connect to external devices such as keyboards and monitors, and communicate with this devices through its JTAG (named after the Joint Test Action Group which codified it) UART (Universal Asynchronous Receiver/Transmitter). The simulator cannot communicate with actual external devices or files, but it can simulate writing to and reading from a UART in its JTAG UART box. The box gives the base address of the UART at 0xff201000, and we use this address to communicate with the simulated UART. 
+code https://bohr.wlu.ca/cp216/labs/08_io/write_demo.s
+
+SEE ALSO READ DEMO
+
+NOTE - RALLLY GOOD TUTORIALS https://bohr.wlu.ca/cp216/labs/
+
+READ FRO CPULATOR UART  -- this does not work !!!
+https://www.studocu.com/en-ca/messages/question/7863926/write-in-armv7-for-cpulator-given-a-text-string-in-uart-print-it-out-such-that-all-lower-case
 
 # Raspberry PI
 
