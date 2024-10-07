@@ -1,3 +1,5 @@
+[session1](../../session2/) | [Installing a Raspberry Pi](../binaryArithmetic.md)
+
 # Binary Arithmetic
 
 Computers work with binary number and in this section we will review some basic binary arithmetic.
@@ -78,14 +80,14 @@ Also try using the [hex calculator](https://www.calculator.net/hex-calculator.ht
 The above examples all used unsigned (i.e. positive) integer numbers (0-254). 
 In a real system, we also need to represent negative numbers.
 
-Although other representations aqre possible, modern computers use 2's compliment arithmetic to represent negative numbers. 
+Although other representations are possible, modern computers use 2's compliment arithmetic to represent negative numbers. 
 
 An 8 bit byte can represent 0-254 if it is unsigned or -128 to +127 if it is signed.
 
 With a signed binary number, the first bit tells about the sign. 
 The convention is that a number with a leading 1 is negative, while a leading 0 denotes a positive value.
 
-To convert a positive binary number to a negative number a simple trick is to invert all of the bits in the number and add 1
+To convert a positive binary number to a negative number a simple trick is to a) invert all of the bits in the number and b) add 1
 
 | decimal | binary of decimal | invert    | 2s compliment (add 1)| negative decimal |
 |:--------|:------------------|:----------|:---------------------|:-----------------|
@@ -112,9 +114,9 @@ To understand this better, have a look at [Tom Finley 2000 Tutorial on 2s Compli
 ## Binary Multiplication
 
 A naively simple way to multiply binary numbers would be to use a loop to add the multiplicand to the total repeatedly for the number of times in the multiplier. 
-This would work but could takes a very long time. 
+This would work but could take a very long time. 
 
-The faster method is to shift and add the multiplicand which for an 8 bit multiplier would require a maximum of 8 iterations.
+The faster method is to shift and add the multiplicand (which for an 8 bit multiplier would require a maximum of 8 iterations).
 
 Binary multiplication involves shifting and adding the multiplicand for each 1 encountered in the multiplier.
 Note that the result can require 2 times as many bits as the original operands.
@@ -146,7 +148,7 @@ Like multiplication, binary division can be speeded up using shifting .
 ```
 Divisor = 1011(11 decimal) and Dividend = 10010011 (147 decimal)
       00001101    Quotient
-     ---------
+    |---------
 1011| 10010011
     - 01011000
       --------  
