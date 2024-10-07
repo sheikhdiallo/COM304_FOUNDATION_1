@@ -203,6 +203,20 @@ https://www.studocu.com/en-ca/messages/question/7863926/write-in-armv7-for-cpula
 
 # Raspberry PI
 
+## general
+which version of pi
+```
+hostnamectl
+ Static hostname: raspberrypi01
+       Icon name: computer
+      Machine ID: e863c6b54d2744a2a9c19751f6f1ac8d
+         Boot ID: 06fa2affc15947f4aa4c96584b861c7b
+Operating System: Raspbian GNU/Linux 12 (bookworm)
+          Kernel: Linux 6.6.31+rpt-rpi-v7
+    Architecture: arm
+
+```
+
 ## remote access
 
 doesn't work https://timesofindia.indiatimes.com/gadgets-news/how-to-use-your-android-phone-as-a-webcam-on-windows-11/articleshow/108155734.cms
