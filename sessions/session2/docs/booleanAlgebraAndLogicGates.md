@@ -1,4 +1,3 @@
-# Boolean Algebra and Logic Gates
 [session2](../../session2/) | [Boolean Algebra And Logic Gates](../docs/booleanAlgebraAndLogicGates.md)
 
 # Boolean Algebra And Logic Gates
@@ -118,11 +117,13 @@ This is a screenshot of the simulator where the key components are highlighted.
   
  ![alt text](../docs/images/CPU-4bit-SEGMENTS-THUMB.png "Figure CPU-4bit-SEGMENTS-THUMB.png")
    
-  [large full-Diagram CPU-4bit](../docs/images/CPU-4bit-SEGMENTS.png)
+  [Large full-Diagram CPU-4bit](../docs/images/CPU-4bit-SEGMENTS.png)
   
 If you look at the model you can identify how flip-flops, gates, half-adders and registers are used to create the CPU.
 
-This machine has two Registers (A and B) and 12 instructions.
+### programming the 4 bit CPU
+
+This machine has two Registers (A and B) and 12 instructions (OP Codes)
 
 
 ```
@@ -141,13 +142,25 @@ Instructions:
 0x0A  JMP xx    jumps to address
 0x0B  JZ  xx    jumps to address, if zero flag is set
 ```
-If you run the simulation, you will see the output count 7 segment display incrementing as the processor adds.
+
+A simple program is stored in the ROM.
+
+ ![alt text](../docs/images/4BitCPU_ROM.png "Figure 4BitCPU_ROM.png")
+
+If you run the simulation, you will see the OUTPUT COUNT 7 segment display incrementing as the processor adds.
+
+Exercise - Try and decode the ROM to understand the instructions being run by the CPU
 
 You can write your own program using the diode tool on the ROM (upper left corner).
 On expected user input (instruction IN) the red light next to the input switches lights up,
 to confirm your input press the confirm button once.
 
-See if you can modify the programming in the ROM, perhaps to count down instead of up.
+Exercise - See if you can modify the programming in the ROM, perhaps to count down instead of up.
+
+You can see the [4 bit cpu programming answer](../docs/4bitCPUProgramAnswer.md) (DONT Look until you tried yourself)
+
+
+### 16 Bit CPU
 
 This is a similar example for a 16 bit processor. 
 

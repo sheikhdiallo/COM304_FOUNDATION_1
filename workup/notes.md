@@ -69,6 +69,8 @@ binary full adder https://www.falstad.com/circuit/e-fulladd.html
 
 [simple 4 bit cpu](https://simulator.io/board/AWZpw7Fy3I/2)
 
+### Program in cpu
+
 |Address      | Value (binary) | Value (hex)  | op code    | description |
 |:------------|:-------------- |:------------ |:-----------|:------------|
 |0000 (0x00)  | 0010           | 0x02         | MOV 0x01   | loads 1 to A |
