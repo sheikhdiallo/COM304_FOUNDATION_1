@@ -1,5 +1,6 @@
+# Random notes
 
-# general
+# General
 
 Dr quantum visits flatland
 
@@ -284,6 +285,8 @@ OK01 lesson contains an explanation about how to get started and teaches how to 
 pi GPIO from arm assembly 
 https://www.linux-magazine.com/Issues/2021/247/ARM64-Assembly-and-GPIO  Access Raspberry Pi GPIO with ARM64 assembly  
 
+Code for this article: ftp://ftp.linux-magazine.com/pub/listings/linux-magazine.com/247/
+
 
 https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/ok02.html  turn on off repeatedly
 
@@ -307,6 +310,55 @@ https://raspberry-valley.azurewebsites.net raspbetty valley  lots of useful stuf
 useful  pi 3b LEDs  (see also Cambridge  material)
 https://raspberrypi.stackexchange.com/questions/70013/raspberry-pi-3-model-b-system-leds
 
+### Working examples on class pi
+
+#### cli gpio tool
+
+https://embeddedcomputing.com/technology/processing/interface-io/quick-start-raspberry-pi-gpio-terminal-interface
+
+raspi-gpio help
+
+pinctrl help
+
+
+
+
+# controlling leds
+
+
+https://www.jeffgeerling.com/blogs/jeff-geerling/controlling-pwr-act-leds-raspberry-pi   Controlling PWR and ACT LEDs on the Raspberry Pi
+
+```
+echo heartbeat | sudo tee /sys/class/leds/ACT/trigger
+```
+
+The values written to those paths control how the LEDs are triggered, as follows:
+```
+    gpio - controlled through GPIO (off by default)
+    heartbeat - heartbeat-like pulse
+    timer - pulse every second
+    input - under-voltage detection
+    mmc0 - memory I/O
+    cpu0 - CPU activity
+```
+
+LEDs 
+
+```
+sudo sh -c 'echo input > /sys/class/leds/ACT/trigger'
+sudo sh -c 'echo input > /sys/class/leds/PWR/trigger'
+sudo sh -c 'echo 1 > /sys/class/leds/ACT/brightness'
+sudo sh -c 'echo 1 > /sys/class/leds/PWR/brightness'
+
+Reverting to none and 0 turns them off, as expected. Progress.
+
+sudo sh -c 'echo none > /sys/class/leds/ACT/trigger'
+sudo sh -c 'echo none > /sys/class/leds/PWR/trigger'
+sudo sh -c 'echo 0 > /sys/class/leds/ACT/brightness'
+sudo sh -c 'echo 0 > /sys/class/leds/PWR/brightness'
+
+
+```
 
 
 ## C on pi
