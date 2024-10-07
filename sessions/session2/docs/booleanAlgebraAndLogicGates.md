@@ -74,7 +74,7 @@ In practice, there are many ways to implement logic circuits and all of these ci
 
 ## Adders
 
-Previously we saw how boolean addition is performed. 
+Previously we saw how boolean addition is performed in [Binary Arithmetic](../docs/binaryArithmetic.md). 
 
 A Half Adder can perform one stage of addition, adding 2 bits and producing a carry bit if needed.
 
