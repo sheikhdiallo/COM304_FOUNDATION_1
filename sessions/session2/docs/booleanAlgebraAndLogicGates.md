@@ -159,6 +159,14 @@ Exercise - See if you can modify the programming in the ROM, perhaps to count do
 
 You can see the [4 bit cpu programming answer](../docs/4bitCPUProgramAnswer.md) (DONT Look until you tried yourself)
 
+### Further reading on 4 bit computing
+
+[History of First microprocessor Intel 4004](https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html)
+
+[Original INTEL 4004 schematics and design](https://datasheets.chipdb.org/Intel/MCS-4/4004_schematic.pdf)
+
+See also [Nibbler](https://www.bigmessowires.com/nibbler/) which is a 4 bit CPU built from standard 7400 series logic chips – individual counters, registers, buffers, and gates. It’s an educational example of a simple CPU that’s easy to understand and build, but still capable of running games and other interesting programs.
+
 
 ### 16 Bit CPU
 
@@ -169,7 +177,6 @@ This is a similar example for a 16 bit processor.
 I include this for interest but I am not sure if it is complete or working. 
 [somewhat better documentation can be found here:](https://docs.google.com/spreadsheets/d/1MG44B5RzTul4EMDJowlx4hgNE3XYFRoyR7EFi6A0o3M/edit?usp=sharing)
 
-See also [Nibbler](https://www.bigmessowires.com/nibbler/) which is a 4 bit CPU built from standard 7400 series logic chips – individual counters, registers, buffers, and gates. It’s an educational example of a simple CPU that’s easy to understand and build, but still capable of running games and other interesting programs.
 
 ## Further reading on boolean logic
 
