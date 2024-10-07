@@ -174,9 +174,9 @@ This is a similar example for a 16 bit processor.
 
 [logigator 16-Bit General Purpose CPU](https://logigator.com/en/community/project/8a738598-3e90-4be8-bd02-50e892f4c488)
 
-I include this for interest but I am not sure if it is complete or working. 
-[somewhat better documentation can be found here:](https://docs.google.com/spreadsheets/d/1MG44B5RzTul4EMDJowlx4hgNE3XYFRoyR7EFi6A0o3M/edit?usp=sharing)
+[Some documentation can be found here:](https://docs.google.com/spreadsheets/d/1MG44B5RzTul4EMDJowlx4hgNE3XYFRoyR7EFi6A0o3M/edit?usp=sharing)
 
+(Included for interest but I am not sure if it is complete or working). 
 
 ## Further reading on boolean logic
 
