@@ -12,14 +12,15 @@ Simple logic gates are the building blocks of computers.
 
 Although we do not need to go into the details of circuit design, you can see simulations here of a
 
-[CMOS implemented NAND Gate](https://www.falstad.com/circuit/e-cmosnand.html) 
+[CMOS (Complementary Netal Oxide Silicon) implemented NAND Gate](https://www.falstad.com/circuit/e-cmosnand.html) 
 
-and a [TTL implemented  NAND Gate](https://www.falstad.com/circuit/e-ttlnand.html)
+and a [TTL (Transistor Transistor Logic] implemented NAND Gate](https://www.falstad.com/circuit/e-ttlnand.html)
 
-Simple logic gates can be put together to form complex circuits as illustrated in the 
+The operation of a number of basic gates are illustrated in the 
 [Basic AND OR XOR and NOT gates simulation](https://simulator.io/board/jBA0DN5HQz/3)
 
-AND gate - if all inputs are 1 the output is 1, otherwise the output is 0
+### AND gate
+AND Gate - if all inputs are 1 the output is 1, otherwise the output is 0
 
 | input A | Input B | Output |
 |---------|---------|--------|
@@ -28,6 +29,7 @@ AND gate - if all inputs are 1 the output is 1, otherwise the output is 0
 | 1       | 0       | 0      |
 | 1       | 1       | 1      |
 
+### OR gate 
 OR gate. The output of an OR gate is logical "1" if any of the inputs are "1". The output is "low" (0) only if all inputs are "low" 
 
 | input A | Input B | Output |
@@ -37,6 +39,7 @@ OR gate. The output of an OR gate is logical "1" if any of the inputs are "1". T
 | 1       | 0       | 1      |
 | 1       | 1       | 1      |
 
+### NOT (inverter) gate
 NOT (inverter) gate - the output is opposite of the input.
 
 | input A | Output |
@@ -44,6 +47,7 @@ NOT (inverter) gate - the output is opposite of the input.
 | 0       | 1      |
 | 1       | 0      |
 
+### XOR GATE
 XOR Stands for "Exclusive-OR" and outputs a high logical "1" when the two input values differ.
 
 | input A | Input B | Output |
@@ -54,6 +58,7 @@ XOR Stands for "Exclusive-OR" and outputs a high logical "1" when the two input 
 | 1       | 1       | 0      |
 
 
+### NAND Gate
 NAND Stands for NOT AND - an AND gate followed by a NOT gate.
 Outputs a low logical "0" when both inputs are logical "1"
 
@@ -64,7 +69,8 @@ Outputs a low logical "0" when both inputs are logical "1"
 | 1       | 0       | 0      |
 | 1       | 1       | 0      |
 
-Although many gates can be described, in practice, all circuits can be constructed using just AND and NOT gates as a starting point. 
+Simple logic gates can be put together to form complex circuits as illustrated in the following sections.
+In practice, there are many ways to implement logic circuits and all of these circuit examples could also be constructed using just AND and NOT gates as a starting point. 
 
 ## Adders
 
