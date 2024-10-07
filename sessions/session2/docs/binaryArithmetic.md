@@ -1,4 +1,4 @@
-[session1](../../session2/) | [Installing a Raspberry Pi](../binaryArithmetic.md)
+[session1](../../session2/) | [Binary Arithmetic](../docs/binaryArithmetic.md)
 
 # Binary Arithmetic
 
