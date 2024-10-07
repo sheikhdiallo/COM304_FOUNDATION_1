@@ -1,4 +1,4 @@
-[session1](../../session1/) | [Installing a Raspberry Pi](../InstallingRaspberryPI.md)
+[session1](../../session1/) | [Installing a Raspberry Pi](../docs/InstallingRaspberryPI.md)
 
 # Installing a Raspberry Pi
 
