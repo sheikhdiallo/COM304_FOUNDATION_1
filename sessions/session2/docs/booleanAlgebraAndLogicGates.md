@@ -10,7 +10,11 @@ Change the input or modify these simulations to see if you can better understand
 
 Simple logic gates are the building blocks of computers.
 
-Although we do not need to go into the details of circuit design, you can see simulations here of a [CMOS implemented NAND Gate](https://www.falstad.com/circuit/e-cmosnand.html) and a [TTL implemented  NAND Gate](https://www.falstad.com/circuit/e-ttlnand.html)
+Although we do not need to go into the details of circuit design, you can see simulations here of a
+
+[CMOS implemented NAND Gate](https://www.falstad.com/circuit/e-cmosnand.html) 
+
+and a [TTL implemented  NAND Gate](https://www.falstad.com/circuit/e-ttlnand.html)
 
 Simple logic gates can be put together to form complex circuits as illustrated in the 
 [Basic AND OR XOR and NOT gates simulation](https://simulator.io/board/jBA0DN5HQz/3)
