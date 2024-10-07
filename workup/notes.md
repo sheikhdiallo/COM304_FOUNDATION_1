@@ -69,6 +69,17 @@ binary full adder https://www.falstad.com/circuit/e-fulladd.html
 
 [simple 4 bit cpu](https://simulator.io/board/AWZpw7Fy3I/2)
 
+|Address | Value (binary) | hex  | op code | description |
+|:------|:------ |:------ |:-----|:--------|:------------|
+|0000 (0)  |0010 | 0x02  | MOV 0x01   | loads 1 to A |
+|0001 (1)  |0001 | 0x01  | | | operand (value of MOV)
+|0010 (2)  |0011 | 0x03  | SWP |  swaps register A and B |
+|0011 (3)  |0100  |0x04  | ADD |  adds B to A, saves in A|
+|0100 (4)  |0001 | 0x01  | OUT |  writes A to display |
+|0101 (5)  |1010 | 0x0A  |JMP 0x03 |  jumps to address 0x03 0011|
+|0110 (6) |0011 | 0x03  | |  operand (value of JMP) |
+|0011 (7) |0000 | 0x00   | |No Operation |
+
 https://datasheets.chipdb.org/Intel/MCS-4/4004_schematic.pdf
 
 history https://www.intel.com/content/www/us/en/history/museum-story-of-intel-4004.html
