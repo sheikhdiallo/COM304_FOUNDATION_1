@@ -1,5 +1,5 @@
 # Boolean Algebra and Logic Gates
-[session1](../../session2/) | [Boolean Algebra And Logic Gates](../booleanAlgebraAndLogicGates.md)
+[session1](../../session2/) | [Boolean Algebra And Logic Gates](../docs/booleanAlgebraAndLogicGates.md)
 
 # Boolean Algebra And Logic Gates
 This section provides a simple summary of logic gates showing how they can be put together to form complex circuits.
