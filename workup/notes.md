@@ -432,5 +432,6 @@ https://itnext.io/raspberry-pi-cluster-emulation-with-docker-compose-2d5583cd645
 balina based images qemu https://github.com/search?q=repo%3Abalena-io-library%2Fbase-images%20qemu&type=code
 
 
-
+# Misc
+google docs to markdown tool  https://boost-tool.com/en/tools/md_table  Table to Markdown 
 
