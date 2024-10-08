@@ -1,6 +1,6 @@
 # Assessment Guidance
 
-This is not exactly aligned with the corse structure but should give you some idea of want we expect you to write
+This is not exactly aligned with the current module structure but should give you some idea of want we expect you to write after each session
 
 |Week|Tasks|Required Elements/Artefacts|Supporting Written Commentary|Evidenced By|
 |:----|:----|:----|:----|:----|
