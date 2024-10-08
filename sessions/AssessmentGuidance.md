@@ -4,7 +4,8 @@ This is not exactly aligned with the current module structure but should give yo
 
 |Week|Tasks|Required Elements/Artefacts|Supporting Written Commentary|Evidenced By|
 |:----|:----|:----|:----|:----|
-|1|PC Components|Investigatory report on PC components such as CPUs, GPUs, and motherboards.|Report should demonstrate an understanding of computer architecture with evidence of selecting appropriate hardware.|Detailed report and specifications list.2|System Unit Components|Report on system unit components including cooling systems and power supplies.|Evidence of understanding component compatibility and energy efficiency in enterprise environments.|Component list and setup documentation.|
+|1|PC Components|Investigatory report on PC components such as CPUs, GPUs, and motherboards.|Report should demonstrate an understanding of computer architecture with evidence of selecting appropriate hardware.|Detailed report and specifications list.|
+|2|System Unit Components|Report on system unit components including cooling systems and power supplies.|Evidence of understanding component compatibility and energy efficiency in enterprise environments.|Component list and setup documentation.|
 |3|Storage Devices and Power Supplies|Comparative analysis of SSDs, HDDs, and power supply units.|Discussion should highlight considerations for data security and power management strategies.|Comparison chart and recommendations.|
 |4|Peripherals and External Devices|Selection and setup procedures for monitors, printers, and other devices.|Commentary on the operational requirements and maintenance of peripherals in a business setting.|Setup guides and maintenance schedules.|
 |5|Networking Concepts|Design document for SME network including hardware and layout choices.|Explanation of network design choices and their alignment with business operations.|Network diagrams and hardware invoices.|
