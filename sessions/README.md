@@ -1,6 +1,10 @@
 
 # Foundation Computing Course (COM403) 2024
 
+Please see [Assessment Guidance](../sessions/AssessmentGuidance.md). 
+
+(This guidance is not completely aligned with this years module contents but it gives a clear idea of what we expect you to complete in your personal learning record)
+
 ## Course Sessions
 
 (Contents may be subject to changes)
