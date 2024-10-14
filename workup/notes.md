@@ -496,7 +496,7 @@ balina based images qemu https://github.com/search?q=repo%3Abalena-io-library%2F
 google docs to markdown tool  https://boost-tool.com/en/tools/md_table  Table to Markdown 
 
 
-windows gcc on eclipse
+### windows gcc on eclipse
 https://www3.ntu.edu.sg/home/ehchua/programming/howto/eclipsecpp_howto.html    How to Install Eclipse C/C++ Development Tool (CDT) 8.1.2 for Eclipse 4.2.2 (Juno)
 
 (https://medium.com/@rcoe67/tips-for-seamlessly-using-cygwin-and-wsl-in-windows-10-9ed1a72ace6c  Tips for seamlessly using Cygwin and WSL in Windows 10)
