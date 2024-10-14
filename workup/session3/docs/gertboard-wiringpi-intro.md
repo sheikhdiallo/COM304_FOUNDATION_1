@@ -70,6 +70,12 @@ The circuit wired on the Gertboard is shown below.
    
 The LED's are driven by the buffer circuits which allow more power to light each LED than the Pi itself could provide. 
 
+GPIO pins can be set for input or output.
+(Other modes are possible but we wont cover them here)
+
+If a pin is set for input, we can also set a `pull up` or `pull down` setting. 
+Setting the pin to `pull up` allows us to connect a button which connects the pin to Ground (also known as earth or 0V) to give us a `0` input when the button is pressed.
+
 For each of the three buttons, the GPIO chip must be configured to provide an internal `pull up` which makes the input `1` unless the button is pressed.
 
 
@@ -123,4 +129,87 @@ Wire links between GP pins and J2
 |GP0         |       |     |
 
 
+# check input output
+
+WiringPI has two numbering schemes for the GPIO pins. 
+
+You can see the numbering scheme in use and the current state of the pins using the `gpio readall` command.
+
+```
+gpio readall
+ +-----+-----+---------+------+---+---Pi 2---+---+------+---------+-----+-----+
+ | BCM | wPi |   Name  | Mode | V | Physical | V | Mode | Name    | wPi | BCM |
+ +-----+-----+---------+------+---+----++----+---+------+---------+-----+-----+
+ |     |     |    3.3v |      |   |  1 || 2  |   |      | 5v      |     |     |
+ |   2 |   8 |   SDA.1 |   IN | 1 |  3 || 4  |   |      | 5v      |     |     |
+ |   3 |   9 |   SCL.1 |   IN | 1 |  5 || 6  |   |      | 0v      |     |     |
+ |   4 |   7 | GPIO. 7 |   IN | 1 |  7 || 8  | 1 | ALT0 | TxD     | 15  | 14  |
+ |     |     |      0v |      |   |  9 || 10 | 1 | ALT0 | RxD     | 16  | 15  |
+ |  17 |   0 | GPIO. 0 |   IN | 0 | 11 || 12 | 0 | IN   | GPIO. 1 | 1   | 18  |
+ |  27 |   2 | GPIO. 2 |   IN | 0 | 13 || 14 |   |      | 0v      |     |     |
+ |  22 |   3 | GPIO. 3 |  OUT | 0 | 15 || 16 | 0 | IN   | GPIO. 4 | 4   | 23  |
+ |     |     |    3.3v |      |   | 17 || 18 | 0 | IN   | GPIO. 5 | 5   | 24  |
+ |  10 |  12 |    MOSI |   IN | 0 | 19 || 20 |   |      | 0v      |     |     |
+ |   9 |  13 |    MISO |   IN | 0 | 21 || 22 | 0 | IN   | GPIO. 6 | 6   | 25  |
+ |  11 |  14 |    SCLK |   IN | 0 | 23 || 24 | 1 | IN   | CE0     | 10  | 8   |
+ |     |     |      0v |      |   | 25 || 26 | 1 | IN   | CE1     | 11  | 7   |
+ |   0 |  30 |   SDA.0 |   IN | 1 | 27 || 28 | 1 | IN   | SCL.0   | 31  | 1   |
+ |   5 |  21 | GPIO.21 |   IN | 1 | 29 || 30 |   |      | 0v      |     |     |
+ |   6 |  22 | GPIO.22 |   IN | 1 | 31 || 32 | 0 | IN   | GPIO.26 | 26  | 12  |
+ |  13 |  23 | GPIO.23 |   IN | 0 | 33 || 34 |   |      | 0v      |     |     |
+ |  19 |  24 | GPIO.24 |   IN | 0 | 35 || 36 | 0 | IN   | GPIO.27 | 27  | 16  |
+ |  26 |  25 | GPIO.25 |   IN | 0 | 37 || 38 | 0 | IN   | GPIO.28 | 28  | 20  |
+ |     |     |      0v |      |   | 39 || 40 | 0 | OUT  | GPIO.29 | 29  | 21  |
+ +-----+-----+---------+------+---+----++----+---+------+---------+-----+-----+
+ | BCM | wPi |   Name  | Mode | V | Physical | V | Mode | Name    | wPi | BCM |
+ +-----+-----+---------+------+---+---Pi 2---+---+------+---------+-----+-----+
+
+```
+BCM or 'Broadcom' is the pin output from the GPIO on the broadcom chip.
+NOTE This number corresponds to the GP0 to GP25 pin numbers on the Gertboard. 
+
+wPI is the alternative WiringPi number for the pin.
+WiringPi attempts to standardise wiring using its own pin numbering scheme which we won't use.  
+
+We will use the same pin BCM numbering as is used on the Gertboard by selecting the `-g` option.
+
+You can blink the led on a pin using the following command
+
+```
+gpio -g blink 22 
+
+(Control-c to exit)
+```
+This automatically puts the pin in output mode before blinking LED 5 1 to 0.
+
+After using `blink` you can toggle the vlaue of a pin using
+
+```
+gpio -g toggle 22 
+
+(Control-c to exit)
+```
+
+Normally, however, you need to explicitly set a pin to its output mode before setting output values.
+You MUST put pins into input mode before setting output mode.
+
+```
+## to set the gpio pin to output - fires set to input mode
+gpio -g mode 22 in
+gpio -g mode 22 out
+gpio -g write 22 1   # to set the output on
+gpio -g write 22 0   # to set the output off
+```
+
+[testShellScript1.sh](../../code/testShellScript1.sh) is a shell script which sets up a number of pins and scans up and down changing the led values.
+
+To run use
+
+```
+cd code
+sh ./testShellScript1.sh
+
+(Control-c to exit)
+```
+If you want to play with more shell programming have a look at the [bourne shell tutorial](https://www.shellscript.sh/loops.html)
 
