@@ -1,21 +1,9 @@
 [Main Menu](../../sessions/README.md) | [session3](../session3/) 
 
-# Session 3
+# Session 3 - more architecture
 
-### Exercise 4 ARM Simulator
+Experiments with IO on your raspberry PI
 
+See the tutorial here on getting your [Gertboard to work with the PI and the Wiring Pi library](../docs/gertboard-wiringpi-intro.md)
 
-
-Look at arm simulation
-
-Can you change the 7 segment LED's
-
-Can you run the picture 
-
-Can you change the picture
-
-On PI
-Look at TOP
-What memory is used
-What swap is used
-How much time are processors in use 
+See the tutorials here on getting [Node RED to work with your PI](../docs/Node-Red-Intro.md)
