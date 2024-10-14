@@ -2,14 +2,30 @@
 
 # Intro to Gertboard and Wiring Pi
 
-   ![alt text](../docs/images/gertboard-Links1.png "Figure gertboard-Links1.png")
-   
+## gertboard
+
+
+| local file              |reference link              | notes                   |
+|:------------------------|:------------------------|:------------------------|
+| GertBoard c software github |  https://github.com/ChrisCummins/gertboard_sw/tree/master   |  |
+| [assembled_gertboard_schematics.pdf](../docs/assembledassembled_gertboard_schematics.pdf)  | [assembled_gertboard_schematics - reference](https://www.openhacks.com/uploadsproductos/assembled_gertboard_schematics.pdf) |    |
+|  [gertboardusermanual.pdf](../docs/gertboardusermanual.pdf)  |  [gertboardusermanual.pdf](https://www.farnell.com/datasheets/1683444.pdf)                        |           |
+|  [GertBoardOverview-1600404.pdf](../docs/GertBoardOverview-1600404.pdf)  | [gertboard overview](https://www.farnell.com/datasheets/1600404.pdf)    |           |
+|                        |                          |           |
+
+
+
+## Setting up wiring links for board
+
 Jumper Power Link 3.3v (beside J4)
 
    ![alt text](../docs/images/gertboard-powerLink.png "Figure gertboard-powerLink.png")
+   
+Jumper Links and Wire Links
 
-Jumper Links
+   ![alt text](../docs/images/gertboard-Links1.png "Figure gertboard-Links1.png")
 
+|Jumper Links |
 |:-------------------|
 |OUT B1 ,B2, B3, B4 |
 |OUT B5 ,B6, B7, B8 |
