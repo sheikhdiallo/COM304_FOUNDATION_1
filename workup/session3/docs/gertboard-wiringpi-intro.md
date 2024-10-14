@@ -3,4 +3,45 @@
 # Intro to Gertboard and Wiring Pi
 
    ![alt text](../docs/images/gertboard-Links1.png "Figure gertboard-Links1.png")
+   
+Jumper Power Link 3.3v (beside J4)
 
+   ![alt text](../docs/images/gertboard-powerLink.png "Figure gertboard-powerLink.png")
+
+Jumper Links
+
+|:-------------------|
+|OUT B1 ,B2, B3, B4 |
+|OUT B5 ,B6, B7, B8 |
+|OUT B9 ,B10, B11, B12 |
+
+   
+Wire links between GP pins and J2
+   
+| pi GPIO    | J2    |     |
+|:---------- |:----- |:--- |
+|GP25        |B1     |     |
+|GP24        |B1     |     |
+|GP23        |B1     |     |
+|GP22        |B1     |     |
+|GP21        |B1     |     |
+|            |       | no Pi pin GP20    |
+|GP18        |B1     |     |
+|GP17        |B1     |     |
+|            |       | no Pi pin GP16    |
+|GP15        |B1     |     |
+|GP14        |B1     |     |
+|            |       | no Pi pin GP13    |
+|            |       | no Pi pin GP12    |
+|GP11        |B1     |     |
+|GP10        |B1     |     |
+|GP9         |B1     |     |
+|GP8         |B1     |     |
+|GP7         |B1     |     |
+|            |       | no Pi pin GP6    |
+|            |       | no Pi pin GP5    |
+|GP4         |B1     |     |
+|            |       | no Pi pin GP3    |
+|            |       | no Pi pin GP2    |
+|GP1         |B1     |     |
+|GP0         |B1     |     |
