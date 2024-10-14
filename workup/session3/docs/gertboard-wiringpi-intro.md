@@ -201,7 +201,7 @@ gpio -g write 22 1   # to set the output on
 gpio -g write 22 0   # to set the output off
 ```
 
-[testShellScript1.sh](../../code/testShellScript1.sh) is a shell script which sets up a number of pins and scans up and down changing the led values.
+[testShellScript1.sh](../../session3/code/testShellScript1.sh) is a shell script which sets up a number of pins and scans up and down changing the led values.
 
 To run use
 
