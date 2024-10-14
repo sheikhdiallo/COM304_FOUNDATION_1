@@ -3,7 +3,16 @@
 # Intro to Gertboard and WiringPi
 
 The Gertboard is a pre-assembled digital input output (IO) board designed for experiments with the Raspberry Pi. 
+
 WiringPi is a software library which we can use to manipulate circuits implemented using the Gertboard.
+
+The image below shows the main components on a Gertboard.
+
+The Gertboard provides a lot of different IO options including analogue and digital inputs and outputs and drivers for high power relays.
+However for this Module, we will only look at simple digital inputs and outputs.
+
+   ![alt text](../docs/images/gertBoard.png "Figure gertBoard.png")
+
 
 ## WiringPi
 
@@ -28,7 +37,7 @@ gpio readall  # lists the state of all of the pins
 
 Once we have set up the Gertboard, we can use wiringpi to modify the inputs
 
-## pin out details pi
+## pin out details for a Raspberry Pi
 
 The Broadcom chip on the PI contains a GPIO - General Purpose Input/Output module.
 
@@ -38,9 +47,6 @@ The pin-out and pin numbering can be seen on [https://pinout.xyz/](https://pinou
 
 
 ## Gertboard
-
-The Gertboard provides a lot of different IO options including analogue and digital inputs and outputs and drivers for high power relays.
-However for this Module, we will only look at simple digital inputs and outputs.
 
 A full toolkit of software and examples are provided by the designers of the board, which are linked below.
 These are provided for reference and further investigation if you wish, but in this module, we will use a more simplified approach using WiringPi.
@@ -56,9 +62,11 @@ These are provided for reference and further investigation if you wish, but in t
 
 ### Simplified Gertboard setup
 
-We will use the same Gertboard setup for all of our experiments which wires up three push buttons as inputs to the Pi and 9 Red LEDs as outputs.
+We will use the same Gertboard setup for all of our experiments. 
+THis set up wires three push buttons as inputs to the Pi and 9 Red LEDs as outputs.
 
 To connect the Gertboard to the Pi use the ribbon connector as shown below.
+
 NOTE. Turn the PI OFF before connecting the Gertboard and make sure you connect the ribbon the correct way round (note the red lead on the ribbon)
 
    ![alt text](../docs/images/gertBoardWiringToPi.png "Figure gertBoardWiringToPi.png")
