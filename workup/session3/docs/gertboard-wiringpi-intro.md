@@ -5,6 +5,38 @@
 The Gertboard is a pre-assembled digital input output (IO) board designed for experiments with the Raspberry Pi. 
 WiringPi is a software library which we can use to manipulate circuits implemented using the Gertboard.
 
+## WiringPi
+
+[WiringPi](https://github.com/WiringPi/WiringPi) is a library which can easily control the output pins of a Raspberry PI GPIO. 
+
+To install wiring pi, you need do download the latest 32 bit package from the github [WiringPi releases](https://github.com/WiringPi/WiringPi/releases) site and install it on your local pi.
+
+You can download the package into your Pi using `wget` which is a command line based browser.
+
+```
+wget https://github.com/WiringPi/WiringPi/releases/download/3.10/wiringpi_3.10_armhf.deb
+sudo apt-get install ./wiringpi_3.10_armhf.deb 
+
+```
+WiringPi provides a command `gpio` which can control the pins from the command line.
+
+```
+gpio -h       # provides a simple list of commands
+man gpio      # provides a full set of instructions
+gpio readall  # lists the state of all of the pins
+```
+
+Once we have set up the Gertboard, we can use wiringpi to modify the inputs
+
+## pin out details pi
+
+The Broadcom chip on the PI contains a GPIO - General Purpose Input/Output module.
+
+This is connected to the IO connector on the PI and a ribbon cable is used to connect this to the Gertboard.
+
+The pin-out and pin numbering can be seen on [https://pinout.xyz/](https://pinout.xyz/)
+
+
 ## Gertboard
 
 The Gertboard provides a lot of different IO options including analogue and digital inputs and outputs and drivers for high power relays.
@@ -22,9 +54,15 @@ These are provided for reference and further investigation if you wish, but in t
 |  [GertBoardOverview-1600404.pdf](../docs/GertBoardOverview-1600404.pdf)  | [Gertboard overview](https://www.farnell.com/datasheets/1600404.pdf)    | overview of Gertboard          |
 |                        |  [raspberry pi pinout reference](https://pinout.xyz/)   |           |
 
-### simplified Gertboard setup
+### Simplified Gertboard setup
 
 We will use the same Gertboard setup for all of our experiments which wires up three push buttons as inputs to the Pi and 9 Red LEDs as outputs.
+
+To connect the Gertboard to the Pi use the ribbon connector as shown below.
+NOTE. Turn the PI OFF before connecting the Gertboard and make sure you connect the ribbon the correct way round (note the red lead on the ribbon)
+
+   ![alt text](../docs/images/gertBoardWiringToPi.png "Figure gertBoardWiringToPi.png")
+
 
 The circuit wired on the Gertboard is shown below. 
 
@@ -33,6 +71,7 @@ The circuit wired on the Gertboard is shown below.
 The LED's are driven by the buffer circuits which allow more power to light each LED than the Pi itself could provide. 
 
 For each of the three buttons, the GPIO chip must be configured to provide an internal `pull up` which makes the input `1` unless the button is pressed.
+
 
 ### Setting up wiring links for board
 
@@ -82,5 +121,6 @@ Wire links between GP pins and J2
 |            |       | no Pi pin GP2    |
 |GP1         |       |     |
 |GP0         |       |     |
+
 
 
