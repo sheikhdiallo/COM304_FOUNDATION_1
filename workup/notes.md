@@ -495,3 +495,30 @@ balina based images qemu https://github.com/search?q=repo%3Abalena-io-library%2F
 # Misc
 google docs to markdown tool  https://boost-tool.com/en/tools/md_table  Table to Markdown 
 
+
+windows gcc on eclipse
+https://www3.ntu.edu.sg/home/ehchua/programming/howto/eclipsecpp_howto.html    How to Install Eclipse C/C++ Development Tool (CDT) 8.1.2 for Eclipse 4.2.2 (Juno)
+
+(https://medium.com/@rcoe67/tips-for-seamlessly-using-cygwin-and-wsl-in-windows-10-9ed1a72ace6c  Tips for seamlessly using Cygwin and WSL in Windows 10)
+
+
+https://www3.ntu.edu.sg/home/ehchua/programming/howto/Cygwin_HowTo.html#mingw   How to install MinGW-w64 GCC Compiler
+
+https://www.mingw-w64.org/  Mingw-w64 is an advancement of the original mingw.org project, created to support the GCC compiler on Windows systems. It has forked it in 2007 in order to provide support for 64 bits and new APIs. It has since then gained widespread use and distribution.
+
+You can install MinGW-w64 via MSYS2 (https://www.msys2.org/), which provides up-to-date native builds of GCC, Mingw-s64 and other helpful C++ tool and libraries..
+
+I installed in C:\devel\msys64
+
+after installation install gcc
+pacman -S mingw-w64-ucrt-x86_64-gcc
+
+https://www.devdungeon.com/content/how-setup-gcc-msys2-eclipse-windows-c-development
+but you want to at a minimum make sure your PATH variable includes the directories with make and g++.
+
+change path in 'Advanced System Settings'
+C:\devel\msys64\mingw64\bin
+C:\devel\msys64\usr\bin
+
+
+
