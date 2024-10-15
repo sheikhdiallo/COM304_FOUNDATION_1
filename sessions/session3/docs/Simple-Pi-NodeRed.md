@@ -33,6 +33,8 @@ The circuit is constructed using a breadboard as illustaed in the following imag
 
 THe automated LEDs are shown in this video 
 
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)](../docs/images/led_experiment.mp4)
+
 <video width="540" height="310" controls>
   <source src="../docs/images/led_experiment.mp4" type="video/mp4">
 </video>
