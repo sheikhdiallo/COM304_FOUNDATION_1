@@ -4,6 +4,8 @@
 
 Experiments with IO on your raspberry PI
 
+[Simple examples Bob Potter](../session3/docs/Simple-Pi-NodeRed.md)
+
 See the tutorial here on getting your [Gertboard to work with the PI and the Wiring Pi library](../session3/docs/gertboard-wiringpi-intro.md)
 
 See the tutorials here on getting [Node RED to work with your PI](../session3/docs/Node-Red-Intro.md)
