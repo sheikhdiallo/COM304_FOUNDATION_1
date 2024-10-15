@@ -31,19 +31,16 @@ The circuit is constructed using a breadboard as illustaed in the following imag
    
 ## Operation
 
-THe automated LEDs are shown in this video 
+The automated traffic light LEDs are shown in this video: 
 
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](../docs/images/led_experiment.mp4)
+   ![alt text](../docs/images/led_experiment.gif)
 
-<video width="540" height="310" controls>
-  <source src="../docs/images/led_experiment.mp4" type="video/mp4">
-</video>
 
 ## Flows
 
 Flows have been demonstrated in class. 
 
-EXample flow TBC...
+Example flow TBC...
 
 
 
