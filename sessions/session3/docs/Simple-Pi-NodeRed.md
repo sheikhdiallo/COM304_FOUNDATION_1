@@ -18,7 +18,7 @@ The LED's must turn on and off in the following sequence:
 
 ## wiring
 
-The circuit is constructed using a breadboard as illustaed in the following images
+The circuit is constructed using a breadboard as illustrated in the following images.
 
 
    ![alt text](../docs/images/pi-node-red-gpio.drawio.png "Figure gpi-node-red-gpio.drawio.png")
