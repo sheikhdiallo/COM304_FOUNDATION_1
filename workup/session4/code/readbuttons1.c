@@ -48,7 +48,7 @@ int main(void)
      } else {
        printf("button3  low ");
      }
-     // \r moves to beginning of line instead of nwe line \n
+     // \r moves cursor to the beginning of the line instead moving to a new line  \n
      printf("\r");
   }
 }

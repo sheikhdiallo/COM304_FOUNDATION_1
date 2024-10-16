@@ -47,10 +47,28 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 192.168.10.0    0.0.0.0         255.255.255.0   U     100    0        0 eth0
 
 ```
-This will restore connectivity to the internet through the wifi.
+This will restore connectivity to the Internet through the wifi.
 
-Now that we have connetivity to the Pi we can use VNC or putty to view the screen from our PC. 
-THis makes capturing images much easier.
+Now that we have IP connectivity to the Pi we can use various tools to connect to the Pi from our PC. 
+
+Putty is an SSH client which runs on a PC. 
+You can install it from [Putty Download](https://www.putty.org/) 
+
+Superputty is an additional tool which allows you to have multiple Putty SSH sessions open at the same time.
+You can install it from here [Super Putty](https://superputty.org/)
+
+Filezilla is an FTP client which you can use to transfer files between your PC and your Pi.
+You can install Filezilla from here [Filezilla](https://filezilla-project.org/)
+
+Filezilla normally uses File Transfer Protocol (FTP) to transfer files.
+This requires that the FTP service is running on the server (PI). 
+However if the SSH service is running on your PI you can connect to it from Filezilla using SFTP which is more secure.
+
+To use VNC, go to PI settings and select the VNC service.
+You can also change the `headless resolution' so they your Pi will use a higher resolution than the default when VNC is connected remotely
+To use VNC, your will need the install the [RealVNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) on your PC.
+
+VNC makes capturing images much easier from your PC.
 (note in VNC settings you need to turn off 'pass special keys to vnc server' to be able to do a screen capture)
 
    ![alt text](../docs/images/pcVNC1.png "Figure pcVNC1.png")
