@@ -2,9 +2,9 @@
 
 # Intro to Gertboard and WiringPi
 
-The Gertboard is a pre-assembled digital input output (IO) board designed for experiments with the Raspberry Pi. 
+The [Gertboard](https://cpc.farnell.com/gertboard/gertboard/board-gertboard-assembled/dp/SC12828) is a pre-assembled digital input output (IO) board designed for experiments with the Raspberry Pi. 
 
-WiringPi is a software library which we can use to manipulate circuits implemented using the Gertboard.
+[WiringPi](https://github.com/WiringPi/WiringPi) is a software library which we can use to manipulate circuits implemented using the Gertboard.
 
 The image below shows the main components on a Gertboard.
 
