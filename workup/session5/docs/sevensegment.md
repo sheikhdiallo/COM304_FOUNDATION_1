@@ -19,12 +19,13 @@ The following bit patterns set the values of the 7 segment display
              
 ``` 
          
-Numbers
-
-|   |   |
-|---|---|
-|
-
+ <table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>
 ```
 
 0b1111111
@@ -32,6 +33,13 @@ Numbers
   |_|
   |_|
 ```
+
+</td>
+    <td>$100</td>
+  </tr>
+</table> 
+
+
 
 | |
 
