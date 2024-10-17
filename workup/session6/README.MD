@@ -1,6 +1,6 @@
-[Main Menu](../../sessions/README.md) | [session5](../session5/) 
+[Main Menu](../../sessions/README.md) | [session6](../session6/) 
 
-# Session 5
+# Session 6
 
 ### Exercise 1 ARM Simulator
 
