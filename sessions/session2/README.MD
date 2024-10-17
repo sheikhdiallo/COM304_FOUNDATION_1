@@ -1,16 +1,18 @@
 [Main Menu](../../sessions/README.md) | [session2](../session2/) 
 
-# Session 2
+# Session 2 Introducing Computer Architecture
 
 ## Introduction
+
 In this session, we will consolidate looking at Github and begin looking at computer architecture.
 
-## Short history of computing
+Computer architecture is a description of the structure of a computer system made from it's component parts.
 
-Presentation: [short History of computing](../session2/docs/com304-foundation-history-1.0.pdf)
+We will start with an overview of computer architectures and then dive into how boolean logic implemented in logic gates can be used to do binary arithmetic. 
 
+We will then look at how increasingly complex combinational logic based on simple logic gates and can be used create a central processing unit (CPU). 
 
-## Computer Architecture
+## Introducing Computer Architecture
 
 Presentation: [Computer Architecture](../session2/docs/com304-foundation-computer-Architecture-1.0.pdf)
 
