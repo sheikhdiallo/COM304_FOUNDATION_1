@@ -29,7 +29,7 @@ or using the icon under `Menu / Programming / Node-RED`
 
 Then point your browser to [http://localhost:1880](http://localhost:1880) or [http://{your_pi_ip-address}:1880](http://{your_pi_ip-address}:1880)
 
-Once the node red application starts in your browser, you an use the `pallet' to install the following modules
+Once the node red application starts in your browser, you an use the `pallet` to install the following modules:
 
 [node-red-contrib-ui-led](https://flows.nodered.org/node/node-red-contrib-ui-led)
 
