@@ -4,6 +4,9 @@
 
 Dr quantum visits flatland
 
+log2ram https://pimylifeup.com/raspberry-pi-log2ram/
+
+
 submission 10th JAN AE1
 
 ### binary hex subnets

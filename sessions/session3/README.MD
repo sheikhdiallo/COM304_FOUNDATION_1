@@ -12,3 +12,10 @@ Then do these [Simple examples from Bob Potter](../session3/docs/Simple-Pi-NodeR
 
 After that, try the tutorial here on getting your [Gertboard to work with the PI and the Wiring Pi library](../session3/docs/gertboard-wiringpi-intro.md)
 
+install node-red-contrib-ui-led
+
+install node-red-dashboard
+
+http://192.168.1.100:1880/#flow/cf1dd5a430ba2e04
+
+http://192.168.1.100:1880/ui
