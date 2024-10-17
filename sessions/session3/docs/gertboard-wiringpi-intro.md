@@ -185,7 +185,7 @@ WiringPi attempts to standardise wiring using its own pin numbering scheme which
 
 We will use the same pin BCM numbering as is used on the Gertboard by selecting the `-g` option.
 
-You can blink the led on a pin using the following command
+You can blink the LED on a pin using the following command
 
 ```
 gpio -g blink 22 
