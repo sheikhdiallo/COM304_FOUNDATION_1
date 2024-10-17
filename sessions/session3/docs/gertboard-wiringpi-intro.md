@@ -54,7 +54,7 @@ These are provided for reference and further investigation if you wish, but in t
 
 | local file              |reference link              | notes                   |
 |:------------------------|:------------------------|:------------------------|
-| GertBoard c software github |  https://github.com/ChrisCummins/gertboard_sw/tree/master   | Software supplied to use with Gertboard (Does not use WiringPi) |
+| GertBoard C software github |  https://github.com/ChrisCummins/gertboard_sw/tree/master   | Software supplied to use with Gertboard (Does not use WiringPi) |
 | [assembled_gertboard_schematics.pdf](../docs/assembled_gertboard_schematics.pdf)  | [assembled_gertboard_schematics - reference](https://www.openhacks.com/uploadsproductos/assembled_gertboard_schematics.pdf) | detailed design schematics of Gertboard   |
 |  [gertboardusermanual.pdf](../docs/gertboardusermanual.pdf)  |  [gertboardusermanual.pdf](https://www.farnell.com/datasheets/1683444.pdf)  | full user manual to use with software  |
 |  [GertBoardOverview-1600404.pdf](../docs/GertBoardOverview-1600404.pdf)  | [Gertboard overview](https://www.farnell.com/datasheets/1600404.pdf)    | overview of Gertboard          |
@@ -63,7 +63,7 @@ These are provided for reference and further investigation if you wish, but in t
 ### Simplified Gertboard setup
 
 We will use the same Gertboard setup for all of our experiments. 
-THis set up wires three push buttons as inputs to the Pi and 9 Red LEDs as outputs.
+This set up wires three push buttons as inputs to the Pi and 9 Red LEDs as outputs.
 
 To connect the Gertboard to the Pi use the ribbon connector as shown below.
 
@@ -174,7 +174,11 @@ gpio readall
 
 ```
 BCM or 'Broadcom' is the pin output from the GPIO on the broadcom chip.
+
 NOTE This number corresponds to the GP0 to GP25 pin numbers on the Gertboard. 
+
+>[!IMPORTANT]  - with the Pi3, the Gertboard wrongly allocates pin GP21 to GPIO 21. 
+>GP21 is actually connected to GPIO 27
 
 wPI is the alternative WiringPi number for the pin.
 WiringPi attempts to standardise wiring using its own pin numbering scheme which we won't use.  
@@ -188,9 +192,9 @@ gpio -g blink 22
 
 (Control-c to exit)
 ```
-This automatically puts the pin in output mode before blinking LED 5 1 to 0.
+This automatically puts the pin in OUTPUT mode before blinking LED 5 between 1 to 0.
 
-After using `blink` you can toggle the vlaue of a pin using
+After using `blink` you can toggle the value of a pin using `toggle`
 
 ```
 gpio -g toggle 22 
@@ -199,14 +203,15 @@ gpio -g toggle 22
 ```
 
 Normally, however, you need to explicitly set a pin to its output mode before setting output values.
-You MUST put pins into input mode before setting output mode.
+
+>[!IMPORTANT] You MUST put pins into INPUT mode before setting OUTPUT mode.
 
 ```
-## to set the gpio pin to output - fires set to input mode
+## to set the gpio pin to output (first set to input mode)
 gpio -g mode 22 in
 gpio -g mode 22 out
-gpio -g write 22 1   # to set the output on
-gpio -g write 22 0   # to set the output off
+gpio -g write 22 1   # to set the output on +3.3v
+gpio -g write 22 0   # to set the output off 0v
 ```
 
 [testShellScript1.sh](../../session3/code/testShellScript1.sh) is a shell script which sets up a number of pins and scans up and down changing the led values.
@@ -219,5 +224,5 @@ sh ./testShellScript1.sh
 
 (Control-c to exit)
 ```
-If you want to play with more shell programming have a look at the [bourne shell tutorial](https://www.shellscript.sh/loops.html)
+If you want to play with more shell programming like this script have a look at the [bourne shell tutorial](https://www.shellscript.sh/loops.html)
 
