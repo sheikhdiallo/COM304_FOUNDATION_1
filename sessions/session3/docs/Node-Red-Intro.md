@@ -35,9 +35,11 @@ Once the node red application starts in your browser, you an use the `pallet' to
 
 [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard)
 
-   ![alt text](../docs/images/InstallNodeRedDashboard.png"Figure InstallNodeRedDashboard.png")
+   ![alt text](../docs/images/InstallNodeRedDashboard.png "Figure InstallNodeRedDashboard.png")
 
-Now continue to the Traffic lights example and the Gertboard examples.
+Now continue to the [Simple Traffic Light examples from Bob Potter](../docs/Simple-Pi-NodeRed.md) 
+
+and [getting your Gertboard to work with the PI and the Wiring Pi library](../docs/gertboard-wiringpi-intro.md)
 
 You can also learn more by playing with the tutorials listed below 
 

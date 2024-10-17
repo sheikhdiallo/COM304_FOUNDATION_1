@@ -27,7 +27,7 @@ The simplest use case defines the pins as INPUTs or OUTPUTs but some of the pins
 
 Programming the GPIO can be extremely complex but fortunately, many tools and libraries are available to make it easy for a user to use the GPIO pins without needing to understand the underlying complexity. 
 
-In this session we will use an application called Node RED and a Raspberry Pi library called WiringPi to manipulate the GPIO and control external LED lights. 
+In this session we will use an application called [Node RED](https://nodered.org/) and a Raspberry Pi library called [WiringPi](https://github.com/WiringPi/WiringPi) to manipulate the GPIO and control external LED lights. 
 
 In later sessions we will look at programming the GPIO directly using Assembler Language and C.
 
@@ -35,12 +35,13 @@ In later sessions we will look at programming the GPIO directly using Assembler 
 
 We have seen that the Pi has a 40 pin connector to the GPIO. 
 Many test kits and experimental modules are available which can use the Pi GPIO.
-The Gertboard is one such kit which makes it easier to try GPIO programming experiments. 
+The [Gertboard](https://cpc.farnell.com/gertboard/gertboard/board-gertboard-assembled/dp/SC12828) is one such kit which makes it easier to try GPIO programming experiments. 
 
 However it is also possible to work directly with the PI connector using some components and a simple `bread board`.
 An external lecturer, Bob Potter has provided a guest lecture and simple traffic light example using discrete components and Node RED.
 
-Node RED can also be used with the Gertboard, Bob's example Traffic light flow will work with the LEDs on the Gertboard as well as with  the discrete components.
+Node RED can also be used with the Gertboard.
+(Bob's example Traffic light flow will work with the LEDs on the Gertboard as well as with  the discrete components).
 
 To finish the session, we will configure the Gertboard and get it to work with the WiringPi library.
 
