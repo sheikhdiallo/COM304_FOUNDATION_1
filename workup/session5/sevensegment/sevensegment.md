@@ -1,4 +1,7 @@
 
+https://azeria-labs.com/assembly-basics-cheatsheet/
+
+
 A [seven segment display](https://en.wikipedia.org/wiki/Seven-segment_display) uses 7 lines to display numbers and letters
  
 The following bit patterns set the values of the 7 segment display in CPUlator
@@ -22,6 +25,8 @@ The following bit patterns set the values of the 7 segment display in CPUlator
 ```
 
 # 7 segment numbers
+
+list (0-f) 0x3f, 0x06, 0x5b, 0x4f, 0x66, 0x6d,0x7d,0x07,0x7f,0x6f,0x77,0x7c,0x39,0x5e,0x79,0x71
 
 ### Zero 0
 ```
