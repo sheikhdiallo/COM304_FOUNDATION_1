@@ -1,5 +1,20 @@
 
-https://azeria-labs.com/assembly-basics-cheatsheet/
+see https://azeria-labs.com/assembly-basics-cheatsheet/
+
+https://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/dev_7segs.html
+
+c example
+```
+#define ADDR_7SEG1 ((volatile long *) 0xFF200020)
+#define ADDR_7SEG2 ((volatile long *) 0xFF200030)
+
+int main()
+{
+   // bits 0000110 will activate segments 1 and 2 
+   *ADDR_7SEG1 = 0x00000006; 
+   *ADDR_7SEG2 = 0;
+}
+```
 
 
 A [seven segment display](https://en.wikipedia.org/wiki/Seven-segment_display) uses 7 lines to display numbers and letters
