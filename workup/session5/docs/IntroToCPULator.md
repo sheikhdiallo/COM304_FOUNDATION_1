@@ -20,31 +20,32 @@ You will see a screen similar to the image below.
 
 ## ARM Registers
 
-THE full [ARM 7 documentation](https://developer.arm.com/documentation/ddi0406/latest/) is very complex, but we shall simplify it here.
+The full [ARM 7 documentation](https://developer.arm.com/documentation/ddi0406/latest/) is very complex, but we shall simplify it here.
 
-On the left pane, you will see the ARM7 registers. 
+On the left panel of GPUlator, you will see the ARM7 registers. 
 
 The ARM architecture provides sixteen 32-bit general purpose registers (R0-R15) for software use. 
 
-In addition the CSPR and SPSR store the results of previous operations in individual bits.
+In addition the CSPR and SPSR registers store the results of previous operations in individual bits.
 
 | name               | function                        |
 |:-------------------|:--------------------------------|
 |R13 (SP)            | Stack Pointer                   |
 |R14 (LR)            | Link Register<BR>LR is link register used to hold the return address for a function call.                   |
 |R15 (PC)            | Program Counter whose value is altered as the core executes instructions. An explicit write to R15 by software will alter program flow. |
-|CPSR                | Current Program Status Register<BR>N, bit [31] Negative condition flag. Set to 1 if the result of the last flag-setting instruction was negative.<BR>Z, bit [30] Zero condition flag. Set to 1 if the result of the last flag-setting instruction was zero, and to 0 otherwise. A result of zero often indicates an equal result from a comparison.<BR>C, bit [29] Carry condition flag. Set to 1 if the last flag-setting instruction resulted in a carry condition, for example an unsigned overflow on an addition.<BR>V, bit [28] Overflow condition flag. Set to 1 if the last flag-setting instruction resulted in an overflow condition, for example a signed overflow on an addition. |
+|CPSR                | Current Program Status Register. (The following flags are the most important).<BR>N, bit [31] Negative condition flag. Set to 1 if the result of the last flag-setting instruction was negative.<BR>Z, bit [30] Zero condition flag. Set to 1 if the result of the last flag-setting instruction was zero, and to 0 otherwise. A result of zero often indicates an equal result from a comparison.<BR>C, bit [29] Carry condition flag. Set to 1 if the last flag-setting instruction resulted in a carry condition, for example an unsigned overflow on an addition.<BR>V, bit [28] Overflow condition flag. Set to 1 if the last flag-setting instruction resulted in an overflow condition, for example a signed overflow on an addition. |
 |SPSR                | Saved Program Status Register  a saved copy of the CPSR from the previously executed mode   |
 |                    |                                 |
 
 
 ## Memory Mapped peripherals
 
-On the right hand pane you will see a representation of each of the peripherals. 
+On the right hand panel you will see a representation of each of the peripherals. 
 
-As in most computers, the control registers for each peripheral are mapped into memory which can be accessed by the CPU.
+As in most computers, the control registers provided by each peripheral are mapped into memory which can be accessed by the CPU.
 
-In this simulator, each peripheral has a different address range and the peripheral is controlled by saving date into an address for the device.
+In this simulator, each peripheral has a different address range and the peripheral is controlled by saving date into a register within the address range of the device.
+Each device has a differnt set of registers with different functions described in the devices documentation. 
 
 ```
 Address range       Size    IRQ Name
@@ -78,9 +79,14 @@ fffec620–fffec637   24      30  Cortex-A9 Watchdog Timer
 ffff0000–ffffffff   64  K       On-chip SRAM    
 ```
 
-We are only going to play with the JTAG UART, the VGA display and the seven segment numbers.
+We are only going to play with the JTAG UART, the VGA display, and the Seven-Segment numbers.
 
 ## Exercise Running our first C program
+
+### a simple C program 
+
+Note - if you want to learn more about C see the [C Tutorial](https://www.w3schools.com/c/index.php).
+Many of these examples will also work in CPULator or on your Pi.
 
 Open the [CPULator ARM 7 simulator](https://cpulator.01xz.net/?sys=arm-de1soc) and paste the following C program in the Editor window.
 
@@ -92,15 +98,29 @@ int main() {
    return 0;
 }
 ```
+This very simple program prints "Hello, World!" to the UART which acts as a simple terminal.
+
+The `#include <stdio.h>` directive describes the libraries which may be called by the program. 
+In this case we are using the [Standard IO library for C](https://www.w3schools.com/c/c_ref_stdio.php)
+
+main() is always the entry point for a program
+
+printf() is the function from stdio.h which we are using to print our output.
+
+The program should return `0` if it completes correctly.
+(Other numbers may indicate an error condition).
+
+### Compiling and running the C program
 
 Set the language button to `C` and press `Compile and Load`
 
-After a few seconds, you will see `Compile Succeeded¬ in the Messages window
+After a few seconds, you will see `Compile Succeeded` in the Messages window
 
 You will also see a `Disassembly` of the compiled C code in the Disassembly widow. 
 This represents the compiled object code as it is located in the simulator's memory.
 
-You will note that the simple program has created a lot of Assembler code
+You will note that this simple program has created a lot of Assembler code.
+Most of this is library code added by the linker to allow the `printf` command to run.
 
 At the top of the CPUlator, you will see commands to run the program.
 
@@ -109,8 +129,8 @@ You can look at the changes in registers and memory at each step.
 
 `Continue` - runs the entire program until its end or until a `breakpoint` is encountered.
 
-You can set breakpoints in the assembly code by clicking on the panel beside the Address of the instruction where you want to pause.
-Try using these to pause your program and see what is in the registers and memory at each point.
+You can set `breakpoints` in the assembly code by clicking on the panel beside the Address of the instruction where you want to pause.
+Try using breakpoints to pause your program and see what is in the registers and memory at each point.
 
 Click `continue` and look at the output in the JTAG Uart window - which is actually simulating a terminal.
 
@@ -118,7 +138,8 @@ You should see "Hello, World!"
 
 The GPULator disassembly window shows us all of the corresponding machine code which has been put in memory by the linker which also includes all of the assembly code to drive the printf function.
 
-We can see the relevant translation of our program if we search for the `_main` lable
+We can see the specific translation of our program if we search in the disassembly window  for the `main:` lable.
+This corresponds to the `main()` function call in the C code.
 
 ![alt text](../docs/images/HelloWorldDissassembly1.png "Figure HelloWorldDissassembly1.png")
 
