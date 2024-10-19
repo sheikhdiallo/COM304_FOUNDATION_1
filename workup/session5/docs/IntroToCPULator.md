@@ -172,6 +172,6 @@ You also obviously need to understand assembler if you are writing compilers or 
 
 I have provided some complete assembler examples including one which writes to the UART directly without using the printf function.
 
-Try the exercises in [Assembler Examples](..../session5/assemblerExamples/AssemblerExamples.md) before moving on.
+Try the exercises in [Assembler Examples](../../session5/assemblerExamples/AssemblerExamples.md) before moving on.
 
 
