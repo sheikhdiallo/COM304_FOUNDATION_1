@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session5](../session5/) | [Assembler Examples](../session5/AssemblerExamples/AssemblerExamples.md)
+[Main Menu](../../sessions/README.md) | [session5](../../session5/) | [Assembler Examples](../AssemblerExamples/AssemblerExamples.md)
 
 # Assembler examples
 
