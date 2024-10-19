@@ -65,7 +65,7 @@ Second:
 Third:
 .asciz  "Third string\n"
 Last:
-.asciz  "Last string"
+.asciz  "Last string\n"
 _Last:    // End of list address
 
 .end

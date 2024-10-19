@@ -8,7 +8,7 @@ In this session we will look at computer programming languages.
 
 ### Machine code and Assembly Code
 
-In [session2](../session2/) we saw how combinational logic can be used to create a microprocessor and we modified a small program for a [4 bit processor simulated in simulator.io]https://simulator.io/board/AWZpw7Fy3I/2)
+In [session2](../session2/) we saw how combinational logic can be used to create a microprocessor and we modified a small program for a [4 bit processor simulated in simulator.io](https://simulator.io/board/AWZpw7Fy3I/2)
 
 We saw that the processor supported 12 instructions which could be stored in the ROM as a how a very low level program in the simulator.
 ```
@@ -70,11 +70,13 @@ Further more the process of turning the human readable code into machine code ne
 The compilation process sometimes makes it slower to write and test programs than interpreted languages because of the intermediate compilation steps which occur before the program can be run.
 However because the whole program is examined by the compiler before it is run, a compiled language can have additional checks and optimisations performed by the compiler which can ultimately make it much faster and less prone to programming errors.
 
-Other component which work at a low level in preparing a machine code program to run are;
+Other components which work at a low level in preparing a machine code program to run are;
 
 A `Linker` which links a program with any other programs or libraries it needs to run
 
 A `Loader` which loads the program and its libraries into memory ready to be run by the processor.
+
+Link/Loaders are often core components within an operating system and are not necessarily explicitly visible to a user.
 
 ## Exercises
 

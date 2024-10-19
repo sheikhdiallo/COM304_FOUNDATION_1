@@ -1,5 +1,5 @@
 
-see https://azeria-labs.com/assembly-basics-cheatsheet/
+
 
 https://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/dev_7segs.html
 

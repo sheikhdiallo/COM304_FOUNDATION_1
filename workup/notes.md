@@ -156,6 +156,9 @@ https://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/dev_7segs.html  7 segm
 
 lots of examples https://www-ug.eecg.utoronto.ca/desl/nios_devices_SoC/ARM/  -differnt io
 
+
+https://schweigi.github.io/assembler-simulator/ simple 8 bit assembler simulator
+
 ### jtag urart
 
 https://stackoverflow.com/questions/62073642/how-can-i-get-an-input-from-a-user-with-using-cpulator-in-arm-assembly-language
