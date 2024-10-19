@@ -18,7 +18,7 @@ Please see [Assessment Guidance](../sessions/AssessmentGuidance.md).
 | [Session 5](../sessions/session5)|Languages|Introduction to computer languages<br>Assembler<br>C language|
 | [Session 6](../sessions/session6)|Operating systems|Introduction to operating systems<br>Playing with Linux|
 | [Session 7](../sessions/session7)|More linux|More on Linux<br>Virtualisation|
-| [Session 8](../sessions/session8)|Consolidate|Catch up|
+| [Session 8](../sessions/session8)|Consolidate|Catch up (Craig Gallen Away 12 November)|
 | [Session 9](../sessions/session9)|Internet|Internet history<br>Installing a web server on Linux|
 | [Session 10](../sessions/session10)|Networking|Introduction to networking<br>Using networking utilities on Linux|
 | [Session 11](../sessions/session11)|Virtualisation / cloud|Introduction to virtualisation / containers and cloud|
