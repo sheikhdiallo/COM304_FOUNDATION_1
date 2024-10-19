@@ -8,9 +8,9 @@ In this session we will look at computer programming languages.
 
 ### Machine code and Assembly Code
 
-In [session2](../session2/) we saw how combinational logic can be used to create a microprocessor and we modified a small program for a [4 bit processor simulated in simulator.io](https://simulator.io/board/AWZpw7Fy3I/2)
+In [Session2](../session2/) we saw how combinational logic can be used to create a microprocessor and we modified a small program for a [4 bit processor simulated in simulator.io](https://simulator.io/board/AWZpw7Fy3I/2)
 
-We saw that the processor supported 12 instructions which could be stored in the ROM as a how a very low level program in the simulator.
+We saw that the processor supported 12 instructions which could be arranged in the simulator's ROM as a very low level program.
 ```
 Instructions:
 
@@ -28,18 +28,31 @@ Instructions:
 0x0B  JZ  xx    jumps to address, if zero flag is set
 ```
 
-This is an example of how binary CPU instructions can be stored in memory.
-These instructions are referred to as `Machine Code`.
+We also saw an example of binary CPU program to count up from 0.
+
+|Address      | Value (binary) | Value (hex)  | op code    | description |
+|:------------|:-------------- |:------------ |:-----------|:------------|
+|0000 (0x00)  | 0010           | 0x02         | MOV 0x01   | loads 1 to A |
+|0001 (0x01)  | 0001           | 0x01         |            | operand (value of MOV) |
+|0010 (0x02)  | 0011           | 0x03         | SWP        | swaps register A and B |
+|0011 (0x03)  | 0100           | 0x04         | ADD        | adds B to A, saves in A|
+|0100 (0x04)  | 0001           | 0x01         | OUT        | writes A to display |
+|0101 (0x05)  | 1010           | 0x0A         | JMP 0x03   | jumps to address 0x03 0011|
+|0110 (0x06)  | 0011           | 0x03         |            | operand (value of JMP) |
+|0011 (0x07)  | 0000           | 0x00         |            | No Operation |
+
+
+Such binary CPU instructions are referred to as `Machine Code`.
 
 You could enter the binary machine code directly but this would be time consuming and error prone. 
 Instead programmers write low level programs in an equivalent human readable version of the program called `Assembly Code`.
 
-An `Assembler` is a program which translates the human readable assembler, turning it into machine code to run on the processor.
+An `Assembler` is a program which translates the human readable assembler source code, turning it into machine code to run on the processor.
 
 `Assembly Code` is very specific to the processor which it targets.
-It is designed to make it easy for a programmer to specify instructions for moving and manipulating data within and  between the processor and external memory.
+It is designed to make it easy for a programmer to specify instructions for moving and manipulating data within processor registers and between the processor and external memory.
 
-Assembler is not designed to make it easy to understand what the purpose of a program is but it does allow for programmer comments which are not part of the program but can help explain what the assembler code is doing.
+Assembler is not designed to make it easy to understand what the purpose of a program is, but it does allow for programmer comments, which are not part of the program, to help explain what the assembler code is doing.
 
 # High Level Languages
 
@@ -47,7 +60,7 @@ A high level language such as C, Java, Python, BASIC or Java Script are designed
 
 A high level language is translated into low level machine code to run on a processor.
 
-High level languages come in two fundamental flavours, `Interpreted Languages` and `Compiled Languages` as illustrated below.
+High level languages come in two fundamental flavours; `Interpreted Languages` and `Compiled Languages` as illustrated below.
 
 ![alt text](../session5/docs/images/ProgramProcessing.png "Figure ProgramProcessing.png")
 
@@ -56,7 +69,7 @@ High level languages come in two fundamental flavours, `Interpreted Languages` a
 Python, Javascript, PHP and the Bourne Shell (sh or bash) are examples of `Interpreted Languages`.
 
 Node RED is referred to as a `no or low code language` which is visually programmed. 
-This is fundamentally also an interpreter but it is interpreting drawings of flows into routines in machine code.
+This is fundamentally also an interpreter but instead of interpreting a program, it is interpreting drawings of flows into routines in machine code.
 Note that Node Red is itself written in Java Script so the processing order is 
 
 `flow drawing -> javascript -> machine code routines`
@@ -72,7 +85,7 @@ However because the whole program is examined by the compiler before it is run, 
 
 Other components which work at a low level in preparing a machine code program to run are;
 
-A `Linker` which links a program with any other programs or libraries it needs to run
+A `Linker` which links a program with any other programs or libraries it needs to run.
 
 A `Loader` which loads the program and its libraries into memory ready to be run by the processor.
 

@@ -10,7 +10,7 @@ CPUlator is a simulator and debugger of a computer system (CPU, memory, and I/O 
 Simulation allows running and debugging programs without needing to use a hardware board.
 
 CPULator can be used to simulate an ARM 7 processor which is similar to the processor used in the Raspberry Pi.
-Although running much slower than a real CPU, the simulation is completely accurate and allows small programs to be writen and run as if they were running on real hardware.
+Although running much slower than a real CPU, the simulation is completely accurate and allows small programs to be written and run as if they were running on real hardware.
 
 Open a browser and browse to [https://cpulator.01xz.net/?sys=arm-de1soc](https://cpulator.01xz.net/?sys=arm-de1soc)
 
@@ -44,8 +44,8 @@ On the right hand panel you will see a representation of each of the peripherals
 
 As in most computers, the control registers provided by each peripheral are mapped into memory which can be accessed by the CPU.
 
-In this simulator, each peripheral has a different address range and the peripheral is controlled by saving date into a register within the address range of the device.
-Each device has a differnt set of registers with different functions described in the devices documentation. 
+In this simulator, each peripheral has a different address range and the peripheral is controlled by saving bytes into a register within the address range of the device.
+Each device has a different set of registers with different functions as described in the devices documentation.
 
 ```
 Address range       Size    IRQ Name
@@ -81,9 +81,9 @@ ffff0000–ffffffff   64  K       On-chip SRAM
 
 We are only going to play with the JTAG UART, the VGA display, and the Seven-Segment numbers.
 
-## Exercise Running our first C program
+## Exercise: Running our first C program
 
-### a simple C program 
+### A simple C program 
 
 Note - if you want to learn more about C see the [C Tutorial](https://www.w3schools.com/c/index.php).
 Many of these examples will also work in CPULator or on your Pi.
@@ -103,11 +103,11 @@ This very simple program prints "Hello, World!" to the UART which acts as a simp
 The `#include <stdio.h>` directive describes the libraries which may be called by the program. 
 In this case we are using the [Standard IO library for C](https://www.w3schools.com/c/c_ref_stdio.php)
 
-main() is always the entry point for a program
+`main()` is always the entry point for a program
 
-printf() is the function from stdio.h which we are using to print our output.
+`printf()` is the function imported from stdio.h which we are using to print our output.
 
-The program should return `0` if it completes correctly.
+The program should `return 0` to the calling process if it completes correctly.
 (Other numbers may indicate an error condition).
 
 ### Compiling and running the C program
@@ -136,7 +136,7 @@ Click `continue` and look at the output in the JTAG Uart window - which is actua
 
 You should see "Hello, World!"
 
-The GPULator disassembly window shows us all of the corresponding machine code which has been put in memory by the linker which also includes all of the assembly code to drive the printf function.
+The GPULator disassembly window shows us all of the corresponding machine code which has been put in memory by the linker which also includes all of the assembly code to implement the `printf` function.
 
 We can see the specific translation of our program if we search in the disassembly window  for the `main:` lable.
 This corresponds to the `main()` function call in the C code.
@@ -146,15 +146,17 @@ This corresponds to the `main()` function call in the C code.
 I have added comments below so help you understand the assembly program.
 
 ```
-push {r4, lr}               // at the start of the function call push r4 and lr Link Register onto the stack
-movw r0, #30316 ; 0x766c    // fill bottom 16 bits of 32 bit register with 0x766c
-movt r0, #1 ; x0x1          // fill top 16 bits of 32 bit register with 0x1  (so r0 points to address 0x1766c )
-bl 0x8ab0 (0x8ab0: printf)  // call printf function
-mov r0 #0 ; 0x0             // clear r0 (this is the return value 0 )
-pop {r4,pc}                 // restore r4 and jump to next instruction which was in link register
+push {r4, lr}               // At the start of the function call push r4 and lr Link Register onto the stack
+                            // This preserves the r4 data and the LR location for when we return from our program.
+movw r0, #30316 ; 0x766c    // Fill bottom 16 bits of 32 bit register r0 with 0x766c
+movt r0, #1 ; x0x1          // Fill top 16 bits of 32 bit register r0 with 0x1 (so r0 points to address 0x1766c )
+bl 0x8ab0 (0x8ab0: printf)  // Call printf function by branching to its address
+mov r0 #0 ; 0x0             // Clear r0 to 0 (this is the return value 0 )
+pop {r4,pc}                 // Restore r4 and jump to next instruction which was in link register
 ```
 
 If we look at memory location 0x1766c we can see it contains the string "Hello, world".
+So the program is passing the address of the "Hello, world" string as an argument to the `printf` function.
 
 ![alt text](../docs/images/HelloWorldDissassembly2.png "Figure HelloWorldDissassembly2.png")
 
@@ -162,14 +164,14 @@ If we look at memory location 0x1766c we can see it contains the string "Hello, 
 
 We can see that the compiler has compiled our program into assembler.
 
-The high level code is very easy to understand while the assembled code is much more difficult to follow.
+The high level C code is very easy to understand while the assembled code is much more difficult to follow.
 
-However, raw assembler is still used because of its speed and small memory footprint (particularly important for small devices).
+However, raw assembler is often still used because of its speed and small memory footprint (particularly important for small devices).
 
 You also obviously need to understand assembler if you are writing compilers or interpreters.
 
 I have provided some complete assembler examples including one which writes to the UART directly without using the printf function.
 
-Try the exercises in [Assembler Examples](../docs/ASsemblerExamples) before moving on.
+Try the exercises in [Assembler Examples](../docs/AssemblerExamples) before moving on.
 
 
