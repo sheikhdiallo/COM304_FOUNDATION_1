@@ -9,7 +9,7 @@ Copy each of these examples into CPULator set to ARM-7
 Write-jtag-uart - illustrates sending strings to the uart [write-jtag-uart.s](../assemblerExamples/code/write-jtag-uart.s)
 
 This example illustrates sending string to the UART (Universal Asynchronous Receiver/Transmitter) which is often used to drive modems.
- 
+
 The original source for this example came from David Brown https://bohr.wlu.ca/cp216/labs/lab08InputOutput.php#Topicss
 
 ## Sending pictures to the VGA
