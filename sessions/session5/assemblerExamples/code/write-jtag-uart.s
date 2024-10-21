@@ -43,6 +43,7 @@ Uses:
 -------------------------------------------------------
 */
 stmfd sp!, {r0, r1, r4}  // preserve temporary registers
+                         // NOTE different instruction to PUSH. See https://stackoverflow.com/questions/8236959/what-are-sp-stack-and-lr-in-arm
 ldr   r1, =UART_BASE     // get address of UART
 
 wsLOOP:
