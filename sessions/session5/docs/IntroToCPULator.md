@@ -22,7 +22,7 @@ You will see a screen similar to the image below.
 
 The full [ARM 7 documentation](https://developer.arm.com/documentation/ddi0406/latest/) is very complex, but we shall simplify it here.
 
-On the left panel of GPUlator, you will see the ARM7 registers. 
+On the left panel of GPUlator, you will see the ARMv7 registers. 
 
 The ARM architecture provides sixteen 32-bit general purpose registers (R0-R15) for software use. 
 
