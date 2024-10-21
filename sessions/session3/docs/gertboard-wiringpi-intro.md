@@ -25,8 +25,9 @@ You can download the package into your Pi using `wget` which is a command line b
 ```
 wget https://github.com/WiringPi/WiringPi/releases/download/3.10/wiringpi_3.10_armhf.deb
 sudo apt-get install ./wiringpi_3.10_armhf.deb 
-
 ```
+Alternatively if the network is slow, download wiringpi_3.10_armhf.deb onto a USB memory stick using your PC and transfer it to your pi.
+
 WiringPi provides a command `gpio` which can control the pins from the command line.
 
 ```
