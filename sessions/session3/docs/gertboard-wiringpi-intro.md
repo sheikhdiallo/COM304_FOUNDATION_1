@@ -72,7 +72,6 @@ NOTE. Turn the PI OFF before connecting the Gertboard and make sure you connect 
 
    ![alt text](../docs/images/gertBoardWiringToPi.png "Figure gertBoardWiringToPi.png")
 
-
 The circuit wired on the Gertboard is shown below. 
 
    ![alt text](../docs/images/girtboardcircuit.drawio.png "Figure girtboardcircuit.drawio.png")
