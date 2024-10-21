@@ -20,12 +20,12 @@ Accept the installer option to install the standard GPIO library.
 (other gpio nodes are available if you want to experiment. 
 See [interacting-with-pi-gpio](https://nodered.org/docs/faq/interacting-with-pi-gpio#node-red-node-pi-gpiod) )
 
-Once installed, you can  start Node-RED with the command
+Once installed, you can control Node-RED with the commands
 
 ```
-node-red-start
+node-red-start # to start
 
-# (node-red-stop to stop )
+node-red-stop # to stop
 ```
 or using the icon under `Menu / Programming / Node-RED`
 
