@@ -151,6 +151,7 @@ This corresponds to the `main()` function call in the C code.
 I have added comments below so help you understand the assembly program.
 
 ```
+main:
 push {r4, lr}               // At the start of the function call push r4 and lr Link Register onto the stack
                             // This preserves the r4 data and the LR location for when we return from our program.
 movw r0, #30316 ; 0x766c    // Fill bottom 16 bits of 32 bit register r0 with 0x766c
