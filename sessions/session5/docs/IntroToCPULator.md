@@ -36,11 +36,10 @@ In addition the results of previous operations are stored in individual bits in 
 |:-------------------|:--------------------------------|
 |R13 (SP)            | Stack Pointer                   |
 |R14 (LR)            | Link Register<BR>LR is link register used to hold the return address for a function call.                   |
-|R15 (PC)            | Program Counter whose value is altered as the core executes instructions. An explicit write to R15 by software will alter program flow. |
+|R15 (PC)            | Program Counter<BR> The PC value is altered as the core executes instructions. An explicit write to R15 by software will alter the program flow. |
 |CPSR                | Current Program Status Register. (The following flags are the most important).<BR>N, bit [31] Negative condition flag. Set to 1 if the result of the last flag-setting instruction was negative.<BR>Z, bit [30] Zero condition flag. Set to 1 if the result of the last flag-setting instruction was zero, and to 0 otherwise. A result of zero often indicates an equal result from a comparison.<BR>C, bit [29] Carry condition flag. Set to 1 if the last flag-setting instruction resulted in a carry condition, for example an unsigned overflow on an addition.<BR>V, bit [28] Overflow condition flag. Set to 1 if the last flag-setting instruction resulted in an overflow condition, for example a signed overflow on an addition. |
-|SPSR                | Saved Program Status Register  a saved copy of the CPSR from the previously executed mode   |
+|SPSR                | Saved Program Status Register. SPSR contains a saved copy of the CPSR from the previously executed mode   |
 |                    |                                 |
-
 
 ## Memory Mapped peripherals
 
@@ -49,7 +48,9 @@ On the right hand panel you will see a representation of each of the peripherals
 As in most computers, the control registers provided by each peripheral are mapped into memory which can be accessed by the CPU.
 
 In this simulator, each peripheral has a different address range and the peripheral is controlled by saving bytes into a register within the address range of the device.
-Each device has a different set of registers with different functions as described in the devices documentation.
+
+At the bottom of the peripheral panel, you will see a range of addresses along side the name of the device and a link (?) to the devices documentation.
+Each device has a different set of registers with different functions which are described in the referenced documentation.
 
 ```
 Address range       Size    IRQ Name
