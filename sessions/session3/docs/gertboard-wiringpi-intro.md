@@ -214,15 +214,27 @@ gpio -g write 22 1   # to set the output on +3.3v
 gpio -g write 22 0   # to set the output off 0v
 ```
 
-[testShellScript1.sh](../../session3/code/testShellScript1.sh) is a shell script which sets up a number of pins and scans up and down changing the led values.
+[testShellScript-inputs.sh](../../session3/code/testShellScript-inputs.sh) is a shell script which sets up the switch pins for input and prints out the state of the switches.
 
 To run use
 
 ```
 cd code
-sh ./testShellScript1.sh
+sh ./testShellScript-inputs.sh
 
 (Control-c to exit)
 ```
+
+[testShellScript-outputs.sh] sets up pins for output and turns leds on and off in sequence.
+
+To run use
+
+```
+cd code
+sh ./testShellScript--outputs.sh
+
+(Control-c to exit)
+```
+
 If you want to play with more shell programming like this script have a look at the [bourne shell tutorial](https://www.shellscript.sh/loops.html)
 
