@@ -26,9 +26,14 @@ Loop:
 	ldreq r0,=list2
 	moveq r8,#0
 	addne r8,r8,#1 
-    bl FillColour		// Fill screen with a colour
+        bl FillColour		// Fill screen with a colour
+	                        // NOTE The b instruction will branch. It jumps to another instruction, and there is no return expected. 
+			        // The Link Register (LR) is not touched.
+	                        // The bl instruction will branch, but also link. 
+			        // LR will be loaded with the address of the instruction after BL in memory, not the instruction executed after BL. 
+	                        // It will then be possible to return from the branch using LR.
        
-    b Loop
+        b Loop
 
 // r0: colour address
 FillColour:
@@ -49,7 +54,11 @@ FillColour:
             bne 2b
 		add r9,r9,#1
         cmp r9,#240
-        bne 1b
+        bne 1b                   // bne branch not equal 
+	                         // Labels "xb" and "xf", where "x" is a number are a smart extension to the GNU assembly.
+			         // It branches to the first found label "x" searching "forward" for "f" or "backward" for "b".
+	                         // That means that in your first listing using "1b" as a target will search for "1" BEFORE the instruction that uses it. 
+			         // If you used "1f" it would  search for "1" AFTER the instruction that uses it, 
 
 	pop {r8, r9, r10, lr}
     bx lr
