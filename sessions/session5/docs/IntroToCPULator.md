@@ -26,7 +26,11 @@ On the left panel of GPUlator, you will see the ARMv7 registers.
 
 The ARM architecture provides sixteen 32-bit general purpose registers (R0-R15) for software use. 
 
-In addition the CSPR and SPSR registers store the results of previous operations in individual bits.
+R0-R14 can be used for any purpose.
+
+R13 (SP), R14 (LR) and R15 (PC) have special purposes as described below.
+
+In addition the results of previous operations are stored in individual bits in the CSPR and SPSR registers.
 
 | name               | function                        |
 |:-------------------|:--------------------------------|
