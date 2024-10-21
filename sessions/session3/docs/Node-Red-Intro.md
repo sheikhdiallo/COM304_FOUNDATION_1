@@ -41,12 +41,11 @@ Once the node red application starts in your browser, you an use the `pallet` to
 
 Now continue to the [Simple Traffic Light examples from Bob Potter](../docs/Simple-Pi-NodeRed.md) 
 
-and [getting your Gertboard to work with the PI and the Wiring Pi library](../docs/gertboard-wiringpi-intro.md)
+followed by [getting your Gertboard to work with the PI and the Wiring Pi library](../docs/gertboard-wiringpi-intro.md)
 
-You can also learn more by playing with the tutorials listed below 
+You can also learn more by playing with the tutorials listed below.
 
-
-## Tutorials on Node RED
+## Additional Tutorials on Node RED
 
 To try turning on and off GPIO pins which you configured on the Gertboard, try the following tutorial
 
