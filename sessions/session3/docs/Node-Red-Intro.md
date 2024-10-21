@@ -24,6 +24,8 @@ Once installed, you can  start Node-RED with the command
 
 ```
 node-red-start
+
+# (node-red-stop to stop )
 ```
 or using the icon under `Menu / Programming / Node-RED`
 
