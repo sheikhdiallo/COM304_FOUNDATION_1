@@ -4,7 +4,7 @@
 
 In this section we will introduce programming an ARM processor using a simulator before looking at applying this to the Raspberry PI in the next session.
 
-[CPULator](https://cpulator.01xz.net/) is a free CPU simulator for teaching use written in 2016 by [Henry Wong](https://www.stuffedcow.net/teaching) when he was doing his PhD at the University of Toronto. 
+[CPULator](https://cpulator.01xz.net/) is a free CPU simulator written in 2016 for teaching use by [Henry Wong](https://www.stuffedcow.net/teaching) when he was doing his PhD at the University of Toronto. 
 
 CPUlator is a simulator and debugger of a computer system (CPU, memory, and I/O devices) that runs inside a web browser. 
 Simulation allows running and debugging programs without needing to use a hardware board.
