@@ -18,7 +18,9 @@ VGA Example - illustrates displaying multiple images to the VGA [vga-example.s](
 
 This example illustrates writing pictures to the VGA adaptor. 
 Not that the 3 pictures are encoded as Hex words at the bottom of the assembler code.
+
 The original source for this example is https://github.com/Tapendra-195/Armv7/tree/main
+(which also has a python program to read additional pictures into an array)
 
 ## Further ARM Assembler Tutorials
 
