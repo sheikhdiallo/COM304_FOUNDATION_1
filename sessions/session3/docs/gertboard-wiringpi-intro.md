@@ -137,7 +137,7 @@ Wire links between GP pins and J2
 |GP0         |       |     |
 
 
-# check input output
+## test inputs outputs using WiringPi
 
 WiringPI has two numbering schemes for the GPIO pins. 
 
@@ -214,6 +214,13 @@ gpio -g write 22 1   # to set the output on +3.3v
 gpio -g write 22 0   # to set the output off 0v
 ```
 
+## WiringPi Test Scripts
+
+Linux systems use the Bourne Shell (sh or bash) for command line input.
+The shell can run scripts which can automate commands and operations on the linux system.
+
+Have a look and try the following scripts which use the gpio command to read switches and light leds on the gertboard.
+
 [testShellScript-inputs.sh](../../session3/code/testShellScript-inputs.sh) is a shell script which sets up the switch pins for input and prints out the state of the switches.
 
 To run use
@@ -236,5 +243,5 @@ sh ./testShellScript--outputs.sh
 (Control-c to exit)
 ```
 
-If you want to play with more shell programming like this script have a look at the [bourne shell tutorial](https://www.shellscript.sh/loops.html)
+If you want to play with more shell programming like this script have a look at the [Bourne Shell Tutorial](https://www.shellscript.sh/loops.html)
 
