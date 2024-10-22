@@ -17,7 +17,9 @@
   // display numbers
   ldr r0, =ADDR_7SEG1
   ldr r1, =#0b0000110       // bits 0b0000110 will activate segments 1 and 2 (note binary)
+                            // (you could use hex   ldr r1, =#0x00000006)
+                             
   str r1, [r0]              // Write to first 7-seg display register (lower 4 numbers)
   ldr r0, =ADDR_7SEG2
-  ldr r1, =#0b0000000
+  ldr r1, =#0b0000000       // Write 0 to upper registers - turns off all segments
   str r1, [r0]              // Write to second 7-seg display register (upper 2 numbers)

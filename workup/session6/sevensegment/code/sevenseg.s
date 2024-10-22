@@ -22,7 +22,7 @@
   ldr r2, =sevenseg
   loop:
     // load from 7seg list
-    //ldr r1, [r2, r3]
+    // ldr r1, [r2, r3] // note this doesn't work because each segment is 4 bits
     ldr r1, [r2, r3, LSL #2] // Read byte value from an address equal to sum of R2 and four times R3 (shift left R3 2 times)
     ldr r0, =ADDR_7SEG1
     str r1, [r0] // Write to first 7-seg display register
