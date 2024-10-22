@@ -78,7 +78,7 @@ Check your answers against the data in the [seven segment mapping](../sevensegme
 
 Now modify the [simple7seg1.s](../sevensegment/code/simple7seg1.s) program to display `12345678`
 
-DONT LOOK at theis Answer until you have tried this yourself: [simple7seg2.s](../sevensegment/code/simple7seg2.s)
+DONT LOOK at this Answer until you have tried this yourself: [simple7seg2.s](../sevensegment/code/simple7seg2.s)
 
 ### step 4
 
@@ -128,7 +128,7 @@ The `*` preceding the variable turns it into a `pointer`
 
 Running this program will put `1` in the first digit of the display.
 
-Try changing this to other values
+Try changing this to other values.
 
 ### step 2
 
@@ -165,9 +165,9 @@ Think, how would you extend the program so that you submit any integer number in
 Try to do this before you try the following example code.
 
 This examples works but the numbers are in the wrong order.
-Try and work out what is wrong and correct it.
-
 [sevenSegment3.c](../sevensegment/code/sevenSegment3.c)
+
+Try and work out what is wrong and correct it.
 
 The fully working answer is here 
 [sevenSegment4.c](../sevensegment/code/sevenSegment4.c)

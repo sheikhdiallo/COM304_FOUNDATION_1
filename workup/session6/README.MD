@@ -10,5 +10,5 @@ We will then look at using Assembler and C for real on the Raspberry PI.
 
 Start by Looking at [CPULator Seven Segment Displays](../session6/cpulator/sevensegment/sevenSegmentDisplayExamples.md) 
 
-Then look at the [Raspberry PI Assembler and C examples](../session6/raspberry\RaspberryPiCcode.md) 
+Then look at the [Raspberry PI Assembler and C examples](../session6/raspberry/RaspberryPiCcode.md) 
 
