@@ -28,37 +28,36 @@ This is similar functionality to [session 3 testShellScript-inputs1.sh](../../se
 To compile use
 ```
 cd code
-gcc -o readButtons1 readButtons1.c -l wiringPi
+gcc -o readbuttons1 readbuttons1.c -l wiringPi
 ```
 
 This command uses gcc to compile readButtons.c and link it with the pre installed  WiringPi library.
 
-Note the `#include <wiringPi.h>` directive in the C code which pulls in references to the library
+Note the `#include <wiringPi.h>` directive in the C code which pulls in references to the library.
 
-See also [wiringPi.h](https://github.com/WiringPi/WiringPi/blob/master/wiringPi/wiringPi.h) on github
-
-You can also see the intermediate Assembly code produced by he compiler if you use the command
-
-```
-gcc -S -fverbose-asm -O2 readButtons1.c 
-
-```
-
+See also [wiringPi.h](https://github.com/WiringPi/WiringPi/blob/master/wiringPi/wiringPi.h) on github.
 
 To run use
 ```
 ./readbuttons
 ```
+You can also see the intermediate Assembly code produced by the compiler if you use the command
+
+```
+gcc -S -fverbose-asm -O2 readButtons1.c 
+```
+This will generate an assembler file called `readButtons1.s` with document references to the original `C` code.
+
 
 ### C Example 2 Output
 
-[writeleds1.c](../../session4/code/writeleds1.c) cycles through LEDs on the  Gertbord.
+[writeleds1.c](../../session4/code/writeleds1.c) cycles through LEDs on the Gertbord.
 
 This is similar functionality to [session 3 testShellScript-outputs1.sh](../../session3/code/testShellScript-outputs1.sh)
 
 To compile use
 ```
 cd code
-gcc -o readButtons1 writeleds1.c -l wiringPi
+gcc -o writeleds1 writeleds1.c -l wiringPi
 ```
 
