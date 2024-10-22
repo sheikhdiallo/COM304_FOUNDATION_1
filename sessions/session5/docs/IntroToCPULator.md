@@ -93,7 +93,7 @@ We are only going to play with the JTAG UART, the VGA display, and the Seven-Seg
 Note - if you want to learn more about C see the [C Tutorial](https://www.w3schools.com/c/index.php).
 Many of these examples will also work in CPULator or on your Pi.
 
-Open the [CPULator ARM 7 simulator](https://cpulator.01xz.net/?sys=arm-de1soc) and paste the following C program in the Editor window.
+Open the [CPULator ARM 7 simulator](https://cpulator.01xz.net/?sys=arm-de1soc), set the Language to `C` and paste the following C program in the Editor window.
 
 ```
 #include <stdio.h>
