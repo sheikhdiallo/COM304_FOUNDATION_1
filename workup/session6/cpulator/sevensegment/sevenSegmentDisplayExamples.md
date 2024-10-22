@@ -24,7 +24,7 @@ Below are links for documentation on the displays
 
 [7 segment display manufacturers documentation CPUlator](https://fpgacademy.org/Downloads/DE1-SoC_Computer_ARM.pdf#subsubsection.2.9.2)
 
-## Exercise 1
+## Exercise 1  - Assembler
 
 In this first assembler program, we write to the two registers so that the lowest digit displays `1` and the upper digits are all turned off.
 
@@ -96,7 +96,7 @@ Note:  you should load this program and set a breakpoint (see red dot) at the `l
 
    ![alt text](../sevensegment/images/7segment-breakpoint.png "Figure 7segment-breakpoint.png")
    
-## Exercise 2
+## Exercise 2 C Language
 
 The following exercises modify the seven segment display using code written in `C`
 
