@@ -38,21 +38,37 @@ You now need to work out which bits in the register control which display segmen
 
 You then need to create a table which maps all of the hex symbols 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f onto their equivalent 8 bit byte which will drive the 7 segment display
 
-| hex number | display bits
 
-
-
-### One 1
 ```
+Hex One 1  0x01
+
 0b0000110 (0x06)
 
     |
     |
+    
+Hex Eight 0x08
+
+0b1111111 (0x7F)
+   _
+  |_|
+  |_|
 
 ```
 
+| hex number | display bits |
+|:-----------|:-------------|
+|     0x01   |   0x06       |
+|     0x02   |              |
+|     etc    |              |
+|     0x08   |   0x7F       |
 
-[simple7seg2.s](../sevensegment/code/simple7seg2.s)
+
+
+Now modify the [simple7seg1.s](../sevensegment/code/simple7seg1.s) program to display `12345678`
+
+
+DONT LOOK at the Answer until you have tried this yourself. [simple7seg2.s](../sevensegment/code/simple7seg2.s)
 
 
 [simple7seg2.s](../sevensegment/code/simple7seg2.s)
