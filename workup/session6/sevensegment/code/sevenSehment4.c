@@ -1,5 +1,5 @@
-// sevenSegment3.c
-// Example showing writing 7 segment numbers one display. Note NUMBERS WRONG ORDER !!!  -how do you fix this?
+// sevenSegment4.c
+// Example showing writing 7 segment numbers one display. Correct order
 //
 // Craig Gallen 2024
 
@@ -43,7 +43,7 @@ void hexIntegerToLeds(unsigned int n){
     unsigned int sevenseg1 = 0; // seven segment numbers to put in the register
     
     for (int i=0; i<4; i++){
-        unsigned int hex = n >> (i * 4);  // shift number 4 right for each digit
+        unsigned int hex = n >> (12 - i * 4);  // shift number 4 for each digit
 
         hex = hex & 0x000000f; // bitwise AND see https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/
         printf("   i:%X hex:%X ",i, hex);
