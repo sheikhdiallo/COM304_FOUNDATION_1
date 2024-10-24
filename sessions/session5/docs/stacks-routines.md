@@ -1,17 +1,24 @@
-[Main Menu](../../sessions/README.md) | [session6](../session6/) | [Subroutines and Stacks](../docs/stacks-routines.md)
+[Main Menu](../../sessions/README.md) | [session6](../session5/) | [Subroutines and Stacks](../docs/stacks-routines.md)
 
 # Subroutines and Stacks
 
-A key concept in programming is the use of subroutines or procedures, which are sections of code that perform a specific function and can be repeatedly called from many different parts of the main program
+A key concept in programming is the use of subroutines or procedures, which are sections of code that perform a specific function and can be repeatedly called from many other parts of the main program.
 
-In order to enter a subroutine, the processor must first save whatever it was doing i.e. the registers which contain the current data before starting to the new routine.
+In order to enter a subroutine, the processor must first save whatever it was doing i.e. the registers which contain the current data before branching to the new routine.
 
-When the subroutine finishes, the processor must restore the previous state and jump back to the next instruction after the instruction which caused the jump to the subroutine.
+When the subroutine finishes, the processor must restore the previous state and branch back to the next instruction after the instruction which caused the branch to the subroutine.
 
 A Stack is a common mechanism which enables this behaviour.
 
 `Stacks` are regions of memory which are reserved for storing subroutine states and passing variables between subroutines.
 The top of the stack is pointed to by a `Stack Pointer`.
+
+New data is added starting at the current location of the  `Stack Pointer`.
+The `Stack Pointer` is then incremented to point to the next free space.
+This is called a `push` operation
+
+Data can be removed from the stack by working back from the current location of the `stack pointer`.
+This is called a `pop` operation.
 
 In the ARM chip has three registers for handing program flow and the stack.
 
@@ -21,10 +28,12 @@ In the ARM chip has three registers for handing program flow and the stack.
 |R14 (LR)            | Link Register<BR>LR is link register used to hold the return address for a function call.                   |
 |R15 (PC)            | Program Counter<BR> The PC value is altered as the core executes instructions. An explicit write to R15 by software will alter the program flow. |
 
-The Program Counter always points to the next instruction to be executed. 
+The `Program Counter` always points to the next instruction to be executed. 
 It is incremented as each instruction completes.
 
-If a program wants to jump to a subroutine, an instruction causes the starting address of the subroutine to be loaded into the program counter.
+If a program wants to jump to a subroutine, a `branching` (or `conditional branching`) instruction causes the starting address of the subroutine to be loaded into the program counter.
+
+See if you can follow the steps in the program in the following table.
 
 |                     |Address | instruction       |  registers                                         | stack                                                   |(step) and explanation    |
 |:--------------------|:-------|:------------------|:---------------------------------------------------|---------------------------------------------------------|---------------|
@@ -39,4 +48,7 @@ If a program wants to jump to a subroutine, an instruction causes the starting a
 |                     | 0x8ab0+n | pop {r4,pc}       |PC=0x0002<BR>LR=0x0003<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                          |(5) Pop r4 off stack<BR>Pop LR off stack INTO PC which causes a branch back to the main program at 0x0003  |
 
 
+Armed with this knowledge, you should be able to understand better the examples in [Introduction to CPULator](../docs/IntroToCPULator.md).
+
+Go back to [Introduction to CPULator](../docs/IntroToCPULator.md) and look at the assembler examples at the end of the page.
 

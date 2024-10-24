@@ -166,6 +166,8 @@ So the program is passing the address of the "Hello, world" string as an argumen
 
 ![alt text](../docs/images/HelloWorldDissassembly2.png "Figure HelloWorldDissassembly2.png")
 
+Before you go much further please have a look at [Subroutines and Stacks](../docs/stacks-routines.md) and then try the assembler examples below.
+
 ## The same thing in assembler
 
 We can see that the compiler has compiled our program into assembler.
