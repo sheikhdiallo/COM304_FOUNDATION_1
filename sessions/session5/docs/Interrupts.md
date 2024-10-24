@@ -44,12 +44,3 @@ We have also seen that fundamentally, `software drivers` or `device drivers` for
 
 A modern operating system will do most of the `heavy lifting` when it comes to handling interrupts but it will also use interrupts from the internal `clock` to schedule multi-processing which simulates multiple processes running in parallel on the system.
 We will look more at scheduling when we cover operating systems later in the module.
-
-
-
-
-
-
-
-
-

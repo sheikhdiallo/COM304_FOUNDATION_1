@@ -4,9 +4,21 @@
 
 ## Introduction
 
-In this session we will look at computer programming languages. 
+In this session we will look at computer programming languages and how they interact with the computer's hardware. 
 
-### Machine code and Assembly Code
+The session will proceed in roughly the following order:
+
+Introduction to Machine Code, Assembly code and High level Languages.
+
+[Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPULator.md)
+
+[Subroutines and Stacks](../docs/stacks-routines.md) 
+
+[Interrupts](../docs/Interrupts.md) 
+
+[Assembler Examples](../../session5/assemblerExamples/AssemblerExamples.md)
+
+## Machine code and Assembly Code
 
 In [Session2](../session2/) we saw how combinational logic can be used to create a microprocessor and we modified a small program for a [4 bit processor simulated in simulator.io](https://simulator.io/board/AWZpw7Fy3I/2)
 
@@ -54,7 +66,7 @@ It is designed to make it easy for a programmer to specify instructions for movi
 
 Assembler is not designed to make it easy to understand what the purpose of a program is, but it does allow for programmer comments, which are not part of the program, to help explain what the assembler code is doing.
 
-# High Level Languages
+## High Level Languages
 
 A high level language such as C, Java, Python, BASIC or Java Script are designed to allow programmers to easily express high level concepts without being concerned about how this translates to the bits and bytes manipulated by the CPU.
 
@@ -91,7 +103,7 @@ A `Loader` which loads the program and its libraries into memory ready to be run
 
 Link/Loaders are often core components within an operating system and are not necessarily explicitly visible to a user.
 
-## Exercises
+## Practical Exercises
 
 We will examine assembly and compiled languages further in the next section.
 
