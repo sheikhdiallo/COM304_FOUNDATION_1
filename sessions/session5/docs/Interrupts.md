@@ -44,5 +44,5 @@ Events are usually mediated through hardware and software `interrupts`.
 We have seen that the `interrupt controller` is used to program how the processor responds to interrupts from peripherals. 
 We have also seen that fundamentally, `software drivers` or `device drivers` for peripherals are `sub routines` which handle the interrupts from the device.
 
-A modern operating system will do most of the `heavy lifting` when it comes to handling interrupts but it will also use interrupts from the internal `clock` to schedule multi-processing which simulates multiple processes running in parallel on the system.
+A modern operating system will do most of the 'heavy lifting' when it comes to handling interrupts but it will also use interrupts from the internal `clock` to schedule multi-processing which simulates multiple processes running in parallel on the system.
 We will look more at scheduling when we cover operating systems later in the module.
