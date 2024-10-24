@@ -27,13 +27,26 @@ fffec100–fffec113   20          ARM Generic Interrupt Controller
 fffec600–fffec60f   16      29  Cortex-A9 Private Timer 
 fffec620–fffec637   24      30  Cortex-A9 Watchdog Timer    
 ```
-Programming the [ARM Generic Interrupt Controller](https://developer.arm.com/documentation/198123/0302/What-is-a-Generic-Interrupt-Controller-) is a complex task beyond the scope of this module.
 
-However the WiringPI library can make it much simpler to respond to GPIO interrupts on the Raspberry PI using C.
+It is possible to write programs which set up the ARM Generic Interrupt Controller to respond to these simulated peripherals.
+However programming the [ARM Generic Interrupt Controller](https://developer.arm.com/documentation/198123/0302/What-is-a-Generic-Interrupt-Controller-) is a complex task beyond the scope of this module.
 
+The WiringPI library can make it much simpler to respond to GPIO interrupts on the Raspberry PI using C.
 If you are interested you can look at the[raspberry pi gpio interrupts tutorial](https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/) (Not for the faint hearted).
 
-## key take aways
+## Interrupts - Key Take Aways
+
+All modern computer systems are `event driven` with processes responding to internal and external events. 
+Events are usually mediated through hardware and software `interrupts`.
+
+We have seen that the interrupt controller is used to program how the processor responds to interrupts from peripherals. 
+We have also seen that fundamentally, `software drivers` or `device drivers` for peripherals are `sub routines` which handle the interrupts from the device.
+
+A modern operating system will do most of the `heavy lifting` when it comes to handling interrupts but it will also use interrupts from the internal `clock` to schedule multi-processing which simulates multiple processes running in parallel on the system.
+We will look more at scheduling when we cover operating systems later in the module.
+
+
+
 
 
 
