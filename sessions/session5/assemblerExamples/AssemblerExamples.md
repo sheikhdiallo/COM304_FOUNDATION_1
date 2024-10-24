@@ -4,7 +4,7 @@
 
 Copy each of these examples into CPULator set to ARM-7
 
-### Writing to UART
+### Writing to a screen terminal UART
 
 This example illustrates sending string to the UART (Universal Asynchronous Receiver/Transmitter) which is often used to send serial characters to a terminal.
 
