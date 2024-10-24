@@ -6,14 +6,17 @@ Copy each of these examples into CPULator set to ARM-7
 
 ### Writing to UART
 
-Write-jtag-uart - illustrates sending strings to the uart [write-jtag-uart.s](../assemblerExamples/code/write-jtag-uart.s)
-
 This example illustrates sending string to the UART (Universal Asynchronous Receiver/Transmitter) which is often used to drive modems.
 
 ![alt text](../assemblerExamples/images/UartWriteStrings.png "Figure UartWriteStrings.png")
 
+[write-jtag-uart.s](../assemblerExamples/code/write-jtag-uart.s)
 
-The original source for this example came from David Brown https://bohr.wlu.ca/cp216/labs/lab08InputOutput.php#Topicss
+Load the ARM7 assembly code into CPUlator and press `Compile and Load`.
+
+Press `Continue` and see the strings written to the UART display.
+
+(The original source for this example came from David Brown https://bohr.wlu.ca/cp216/labs/lab08InputOutput.php#Topicss)
 
 ## Sending pictures to the VGA
 
