@@ -10,9 +10,10 @@ This example illustrates sending string to the UART (Universal Asynchronous Rece
 
 ![alt text](../assemblerExamples/images/UartWriteStrings.png "Figure UartWriteStrings.png")
 
+An example Assembler program for writing to the UART Terminal is 
 [write-jtag-uart.s](../assemblerExamples/code/write-jtag-uart.s)
 
-Load the ARM7 assembly code into CPUlator and press `Compile and Load`.
+Load the example ARM7 assembly code into CPUlator and press `Compile and Load`.
 
 Press `Continue` and see the strings written to the UART display.
 
