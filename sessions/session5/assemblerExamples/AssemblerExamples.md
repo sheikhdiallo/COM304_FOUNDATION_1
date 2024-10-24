@@ -10,6 +10,9 @@ Write-jtag-uart - illustrates sending strings to the uart [write-jtag-uart.s](..
 
 This example illustrates sending string to the UART (Universal Asynchronous Receiver/Transmitter) which is often used to drive modems.
 
+![alt text](../assemblerExamples/images/UartWriteStrings.png "Figure UartWriteStrings.png")
+
+
 The original source for this example came from David Brown https://bohr.wlu.ca/cp216/labs/lab08InputOutput.php#Topicss
 
 ## Sending pictures to the VGA
