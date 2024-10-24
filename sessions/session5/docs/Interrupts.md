@@ -30,11 +30,11 @@ fffec600–fffec60f   16      29  Cortex-A9 Private Timer
 fffec620–fffec637   24      30  Cortex-A9 Watchdog Timer    
 ```
 
-It is possible to write programs which set up the ARM Generic Interrupt Controller to respond to these simulated peripherals.
+It is possible to write programs which set up the [ARM Generic Interrupt Controller](https://developer.arm.com/documentation/198123/0302/What-is-a-Generic-Interrupt-Controller-) to respond to these simulated peripherals.
 However programming the [ARM Generic Interrupt Controller](https://developer.arm.com/documentation/198123/0302/What-is-a-Generic-Interrupt-Controller-) is a complex task beyond the scope of this module.
 
 The WiringPI library can make it much simpler to respond to GPIO interrupts on the Raspberry PI using C.
-If you are interested you can look at the[raspberry pi gpio interrupts tutorial](https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/) (Not for the faint hearted).
+If you are interested you can look at the [raspberry pi gpio interrupts tutorial](https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/) (Not for the faint hearted).
 
 ## Interrupts - Key Take Aways
 
