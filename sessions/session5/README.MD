@@ -16,7 +16,7 @@ Introduction to Machine Code, Assembly code and High level Languages.
 
 [Interrupts](../session5/docs/Interrupts.md) 
 
-[Assembler Examples](../../session5/assemblerExamples/AssemblerExamples.md)
+[Assembler Examples](../session5/assemblerExamples/AssemblerExamples.md)
 
 ## Machine code and Assembly Code
 
