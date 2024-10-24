@@ -6,7 +6,7 @@ Copy each of these examples into CPULator set to ARM-7
 
 ### Writing to UART
 
-This example illustrates sending string to the UART (Universal Asynchronous Receiver/Transmitter) which is often used to drive modems.
+This example illustrates sending string to the UART (Universal Asynchronous Receiver/Transmitter) which is often used to send serial characters to a terminal.
 
 ![alt text](../assemblerExamples/images/UartWriteStrings.png "Figure UartWriteStrings.png")
 
