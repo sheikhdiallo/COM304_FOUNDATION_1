@@ -1,5 +1,7 @@
 [Main Menu](../../sessions/README.md) | [session5](../session6/) | [Interrupts](../docs/interrupts)
 
+# Interrupts
+
 We have looked at various ways to scan inputs from the GPIO, but it may occur to you that this is quite inefficient because it ties up our processor just looking at the pins.
 It is also quite slow, because if something happens to the pins, it will not be detected until our program comes around to poling their state.
 
