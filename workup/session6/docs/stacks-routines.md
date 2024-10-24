@@ -28,8 +28,8 @@ If a program wants to jump to a subroutine, an instruction causes the starting a
 
 |                     |Address | instruction       |  registers                                         | stack                                                   |explanation    |
 |:--------------------|:-------|:------------------|:---------------------------------------------------|---------------------------------------------------------|---------------|
-|main program         | 0x0001 | ldr r4, =1        |PC=0x0001<BR>LR=undefined<BR>SP=0x1000<BR>R4=undefined   |0x1000=undefined                                       |(1) put number 1 in R4 |
-|                     |        |                   |PC=0x0001<BR>LR=undefined<BR>SP=0x1000<BR>R4=0x000  |0x1000=undefined                                            |             |
+|                     |        |                   |PC=0x0001<BR>LR=undefined<BR>SP=0x1000<BR>R4=undefined   |0x1000=undefined                                       |Initial state |
+|main program         | 0x0001 | ldr r4, =1        |PC=0x0001<BR>LR=undefined<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                            |(1) put number 1 in R4             |
 |                     | 0x0002 | bl 0x8ab0         |PC=0x0001<BR>LR=0x0000<BR>SP=0x1000<BR>R4=0x0001    |0x1000=0x0000                                            |(2) Jump to subroutine at address 0x8ab0<BR>record next instruction address in LR |
 |                     |        |                   |PC=0x8ab0<BR>LR=0x0002<BR>SP=0x1000<BR>R4=0x0001    |0x1000=undefined                                          |(7) resume main program - now in continuous loop to end              |
 |                     |        |                   |                                                    |                                                         |               |
