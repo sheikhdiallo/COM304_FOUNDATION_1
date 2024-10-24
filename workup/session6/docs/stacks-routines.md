@@ -36,7 +36,7 @@ If a program wants to jump to a subroutine, an instruction causes the starting a
 |                     |        |                   |                                                    |<BR><BR><BR>                                                         |               |
 |subroutine           | 0x8ab0 | push {r4,lr}     |PC=0x8ab1<BR>LR=0x0003<BR>SP=0x1003<BR>R4=0x0001    |0x1000=0x0001(r4)<BR>0x1002=0x0003(lr)<BR>0x1003=undefined|(3) Push r4 and LR onto stack              |
 |                     |        |                   |                                                    |<BR><BR><BR>                                             |(4) Do n main instructions of subroutine before returning              |
-|                     | 0x8ab0+n | pop {r4,pc}       |PC=0x0002<BR>LR=0x0003<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                          |(5) Pop r4 off stack<BR)pop LR off stack INTO PC which causes a branch back to the main program at 0x0003  |
+|                     | 0x8ab0+n | pop {r4,pc}       |PC=0x0002<BR>LR=0x0003<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                          |(5) Pop r4 off stack<BR>Pop LR off stack INTO PC which causes a branch back to the main program at 0x0003  |
 
 
 
