@@ -21,7 +21,9 @@ Press `Continue` and see the strings written to the UART display.
 
 ## Sending pictures to the VGA
 
-VGA Example - illustrates displaying multiple images to the VGA [vga-example.s](../assemblerExamples/code/vga-example.s)
+VGA Example - illustrates displaying multiple images to the VGA.
+
+See [vga-example.s](../assemblerExamples/code/vga-example.s)
 
 This example illustrates writing pictures to the VGA adaptor. 
 Not that the 3 pictures are encoded as Hex words at the bottom of the assembler code.
