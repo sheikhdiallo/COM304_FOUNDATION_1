@@ -12,9 +12,9 @@ Introduction to Machine Code, Assembly code and High level Languages.
 
 [Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPULator.md)
 
-[Subroutines and Stacks](../docs/stacks-routines.md) 
+[Subroutines and Stacks](../session5/docs/stacks-routines.md) 
 
-[Interrupts](../docs/Interrupts.md) 
+[Interrupts](../session5/docs/Interrupts.md) 
 
 [Assembler Examples](../../session5/assemblerExamples/AssemblerExamples.md)
 
