@@ -8,7 +8,7 @@ In this session we will look at computer programming languages and how they inte
 
 The session will proceed in roughly the following order:
 
-Introduction to Machine Code, Assembly code and High level Languages.
+Introduction to Machine Code, Assembly code and High level Languages (This page).
 
 [Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPULator.md)
 
@@ -18,7 +18,7 @@ Introduction to Machine Code, Assembly code and High level Languages.
 
 [Assembler Examples](../session5/assemblerExamples/AssemblerExamples.md)
 
-## Machine code and Assembly Code
+## Introduction to Machine Code, Assembly code and High level Languages.
 
 In [Session2](../session2/) we saw how combinational logic can be used to create a microprocessor and we modified a small program for a [4 bit processor simulated in simulator.io](https://simulator.io/board/AWZpw7Fy3I/2)
 
