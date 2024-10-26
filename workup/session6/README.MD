@@ -2,7 +2,7 @@
 
 # Session 6 
 
-In this session, we will start by looking at the [structure of a modern operating system](../session6/operating-systems.md).
+In this session, we will start by looking at the [structure of a modern operating system](../session6/docs/operating-systems.md).
 
 We will then continue our investigation into Assembler and C code on the CPULator before looking at using Assembler and C for real on the Raspberry PI.
 
