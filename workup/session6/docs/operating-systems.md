@@ -12,6 +12,11 @@ interrupts
 stack calling routines
 Kernel
 
+![alt text](../docs/images/memoryAndProcesses.drawio.png "Figure memoryAndProcesses.drawio.png")
+
+for more info see [ARM Virtual and physical addresses](https://developer.arm.com/documentation/101811/0104/Virtual-and-physical-addresses)
+
+
 ![alt text](../docs/images/linuxLayers.png "Figure linuxLayers.png")
 
 [Source wikipedia](https://en.wikipedia.org/wiki/User_space_and_kernel_space)
