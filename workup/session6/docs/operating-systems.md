@@ -31,7 +31,7 @@ The scheduler is itself a process which holds a table of all the processes in th
 
 When a system clock interrupt occurs, the currently running process is stopped and its current PC, LR and SP are stored in the process table.
 
-The scheduler then decides which next process should run and moves the PC, LR and SP for that process into the CPU so that the process proceeds from where it last left off.
+The scheduler then decides which process should run next and copies the PC, LR and SP for that process into the CPU so that the process proceeds from where it last left off.
 
 Normally processes are run on a `round robin` basis, giving each process equal time to run on the CPU.
 However, the scheduler also responds to `software interrupts` from processes when they make a request from the operating system which will require them to wait (for instance a request to write file to disk).
