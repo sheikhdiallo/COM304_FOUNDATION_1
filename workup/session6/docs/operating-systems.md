@@ -34,7 +34,7 @@ When a system clock interrupt occurs, the currently running process is stopped a
 The scheduler then decides which process should run next and copies the PC, LR and SP for that process into the CPU so that the process proceeds from where it last left off.
 
 Normally processes are run on a `round robin` basis, giving each process equal time to run on the CPU.
-However, the scheduler also responds to `software interrupts` from processes when they make a request from the operating system which will require them to wait (for instance a request to write file to disk).
+However, the scheduler also responds to `software interrupts` from processes when they make a request from the operating system which will require them to wait (for instance an inhernetly slow request to write to a file on disk).
 Processes can also be ranked in priority so that high priority processes are run before low priority tasks.
 
 The flow of program execution for each process is called a  `thread` and a system may have many thousands of `theads`
