@@ -50,5 +50,6 @@ See if you can follow the steps in the program in the following table.
 
 Armed with this knowledge, you should be able to understand better the examples in [Introduction to CPULator](../docs/IntroToCPULator.md).
 
-Go back to [Introduction to CPULator](../docs/IntroToCPULator.md) and look at the assembler examples at the end of the page.
+However, before that, extend your knowlege of subroutines by looking at [Interrupts](../docs/Interrupts.md) 
+
 
