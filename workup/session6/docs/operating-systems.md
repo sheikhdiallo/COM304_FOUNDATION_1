@@ -8,7 +8,7 @@ In this session we will introduce the core concepts of `Operating Systems`.
 
 You will be familiar with Microsoft Windows and we have been introducing you to Linux both of which are very widely used of `Operating Systems`.
 
-An `operating system (OS)` is system software that manages computer hardware and software resources, and provides common services for computer programs [Source Wikipedia](https://en.wikipedia.org/wiki/Operating_system). In short an `operating system` provides a set of libraries and utilities which standardise and take a lot of the 'grunt work' out of writing programs to run on a computer.
+An `operating system (OS)` is system software that manages computer hardware and software resources, and provides common services for computer programs ([Source Wikipedia](https://en.wikipedia.org/wiki/Operating_system)). In short an `operating system` provides a set of libraries and utilities which standardise and take a lot of the 'grunt work' out of writing programs to run on a computer.
 
 In previous sessions, we have gradually built up our understanding of how computer hardware works and how it can be programmed with low and high level languages.
 
