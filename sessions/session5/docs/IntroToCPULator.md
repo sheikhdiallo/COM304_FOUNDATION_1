@@ -168,7 +168,7 @@ So the program is passing the address of the "Hello, world" string as an argumen
 
 ### Stacks, Subroutines, Interrupts
 
-To complete our introduction to progrmming concepts, at [Subroutines and Stacks](../docs/stacks-routines.md) 
+To complete our introduction to progrmming concepts, look at [Subroutines and Stacks](../docs/stacks-routines.md) 
 
 Then look at [Interrupts](../docs/Interrupts.md) 
 
