@@ -23,7 +23,7 @@ The diagram below illustrates how an operating system uses interrupts to perform
 ## Scheduling
 
 Modern computers appear to be doing many tasks at the same time. 
-The reality, however is that the `operating system` is managing the CPU so that it's time is shared across multiple processes giving the illusion of 'multi tasking'
+The reality, however is that the `operating system` is managing the CPU so that it's time is shared across multiple processes giving the illusion of `multi tasking`
 
 Processes are represented by areas of memory which hold the code, variables and copies of the CPU's PC, LR and SP from when the process was last running.
 
