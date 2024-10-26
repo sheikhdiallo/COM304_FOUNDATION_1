@@ -2,13 +2,16 @@
 
 # Session 6 
 
-In this session we will start by looking at how to use Assembler and C code to manipulate 7 segment displays simulated in the CPULator.
+In this session, we will start by looking at the [structure of a modern operating system](../session6/operating-systems.md).
 
-We will then look at using Assembler and C for real on the Raspberry PI.
+We will then continue our investigation into Assembler and C code on the CPULator before looking at using Assembler and C for real on the Raspberry PI.
+
 
 # Exercises
 
-Start by Looking at [CPULator Seven Segment Displays](../session6/cpulator/sevensegment/sevenSegmentDisplayExamples.md) 
+Start by looking at how to use Assembler and C code to manipulate 7 segment displays simulated in the CPULator.
+
+[CPULator Seven Segment Displays](../session6/cpulator/sevensegment/sevenSegmentDisplayExamples.md) 
 
 Then look at the [Raspberry PI Assembler and C examples](../session6/raspberry/RaspberryPiCcode.md) 
 
