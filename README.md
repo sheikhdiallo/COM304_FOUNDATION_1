@@ -2,9 +2,19 @@
 # Foundation Computing Course (COM403) 2024
 
 ## Introduction
+Welcome to the tutorial material for Solent University Foundation Computing module (COM403) 2024.
+This module will introduce you to some of the foundations of how computers work.
+It is intended to give you a good grounding in computer architecture at the commencement of a degree in Computing.
 
-Welcome to the module tutorial material for Solent University Foundation Computing Course (COM403) 2024.
+The material on this site should be sufficient for you to study on your own and in class. 
+Many of hte exercises can be done on a PC but to complete all of the material, you will need access to a Raspberry PI (Pi3 or above with a wifi dongle or inbuilt wifi).
 
+For Convenience, some of the exercises use a Raspberrry Pi I/O adaptor called a [Gertboard](https://www.amazon.co.uk/Gertboard-Expansion-Board-Raspberry-Assembled/dp/B009SNL3I8).
+(If this is unavailable, you can still do the exercises with a bit of enginuity using alternative I/O adaptors such as [GeeekPi terminal extension](https://www.amazon.co.uk/GeeekPi-Raspberry-Terminal-Breakout-Expansion/dp/B08GKQMC72/).
+
+You can see the content menu for the module under [sessions](../main/sessions) 
+
+## Getting Started
 Fundamentally, software development is a collaborative activity.
 Even when you are working on your own project, you will be drawing on examples or library code written by someone else. 
 
