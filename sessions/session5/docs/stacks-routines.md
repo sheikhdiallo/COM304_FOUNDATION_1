@@ -4,7 +4,7 @@
 
 A key concept in programming is the use of subroutines or procedures, which are sections of code that perform a specific function and can be repeatedly called from many other parts of the main program.
 
-In order to enter a subroutine, the processor must first save whatever it was doing i.e. the registers which contain the current data before branching to the new routine.
+In order to enter a subroutine, the processor must first save whatever it was doing (i.e. the registers which contain the current data) before branching to the new routine.
 
 When the subroutine finishes, the processor must restore the previous state and branch back to the next instruction after the instruction which caused the branch to the subroutine.
 
