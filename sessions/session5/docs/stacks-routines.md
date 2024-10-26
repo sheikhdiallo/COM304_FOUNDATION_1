@@ -8,7 +8,7 @@ In order to enter a subroutine, the processor must first save whatever it was do
 
 When the subroutine finishes, the processor must restore the previous state and branch back to the next instruction after the instruction which caused the branch to the subroutine.
 
-A Stack is a common mechanism which enables this behaviour.
+A `Stack` is a common mechanism which enables this behaviour.
 
 `Stacks` are regions of memory which are reserved for storing subroutine states and passing variables between subroutines.
 The top of the stack is pointed to by a `Stack Pointer`.
