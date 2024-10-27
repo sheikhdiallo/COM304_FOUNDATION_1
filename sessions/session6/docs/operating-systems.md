@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session6](../session6/) | [Operating Systems](../docs/operating-systems)
+[Main Menu](../../sessions/README.md) | [session6](../../session6/) | [Operating Systems](../docs/operating-systems)
 
 # Introduction to Operating Systems
 
