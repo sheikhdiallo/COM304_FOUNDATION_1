@@ -83,13 +83,3 @@ Other processes are `user processes` and the amount of time and what parts of th
 
 Note that the peripherals are also mapped into the virtual memory address space for processes but can only be accessed if the process has the privilege to access that peripheral.
 
-## Operating System Layers
-
-TBC 
-history
-
-BIOS / DOS / GRUB / Bootstrap
-
-![alt text](../docs/images/linuxLayers.png "Figure linuxLayers.png")
-
-[Source wikipedia](https://en.wikipedia.org/wiki/User_space_and_kernel_space)
