@@ -1,4 +1,4 @@
-[session3](../../session3/) | [Simple Node Red Example PI](../docs/Simple-Pi-NodeRed.md)
+[Main Menu](../../sessions/README.md) |[session3](../../session3/) | [Simple Node Red Example PI](../docs/Simple-Pi-NodeRed.md)
 
 # Simple Node Red Traffic Light Example PI
 

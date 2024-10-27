@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session8](../session8/) | [package management](../docs/package-management-apache.md)
+[Main Menu](../../sessions/README.md) | [session7](../session7/) | [package management](../docs/package-management-apache.md)
 
 ## operating system package management
 

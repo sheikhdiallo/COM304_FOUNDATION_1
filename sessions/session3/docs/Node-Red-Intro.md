@@ -1,4 +1,4 @@
-[session3](../../session3/) | [Intro to Node Red](../docs/Node-Red-Intro.md)
+[Main Menu](../../sessions/README.md) |[session3](../../session3/) | [Intro to Node Red](../docs/Node-Red-Intro.md)
 
 # Introduction to Node Red
 

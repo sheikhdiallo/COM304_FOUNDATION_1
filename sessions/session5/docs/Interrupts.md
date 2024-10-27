@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session5](../session6/) | [Interrupts](../docs/interrupts)
+[Main Menu](../../sessions/README.md) | [session5](../../session5/) | [Interrupts](../docs/interrupts)
 
 # Interrupts
 

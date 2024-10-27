@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session6](../session5/) | [Subroutines and Stacks](../docs/stacks-routines.md)
+[Main Menu](../../sessions/README.md) | [session5](../../session5/) | [Subroutines and Stacks](../docs/stacks-routines.md)
 
 # Subroutines and Stacks
 
