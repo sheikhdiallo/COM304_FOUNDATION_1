@@ -2,7 +2,7 @@
 
 # Assembler examples
 
-Copy each of these examples into CPUlator set to ARM-7
+Copy each of these examples into CPUlator editor with its Language set to `ARM-7`.
 
 ### Writing to a screen terminal UART
 
@@ -28,8 +28,8 @@ See [vga-example.s](../assemblerExamples/code/vga-example.s)
 This example illustrates writing pictures to the VGA adaptor. 
 Not that the 3 pictures are encoded as Hex words at the bottom of the assembler code.
 
-The original source for this example is https://github.com/Tapendra-195/Armv7/tree/main
-(which also has a python program to read additional pictures into an array)
+( The original source for this example is [https://github.com/Tapendra-195/Armv7/tree/main](https://github.com/Tapendra-195/Armv7/tree/main)
+ which also has a python program to read additional pictures into an array)
 
 ## Further ARM Assembler Tutorials
 
@@ -47,5 +47,5 @@ A full book on programming in assembler using the Raspberry PI is available here
 [Introduction to Computer Organization: ARM Assembly Language Using the Raspberry Pi Robert G. Plantz](
 https://bob.cs.sonoma.edu/IntroCompOrg-RPi/sec-gpio-mem.html)  Very comprehensive
 
-[ARM Assembler by Example](https://armasm.com/)
+[ARM Assembler by Example by Kyle Baldwin](https://armasm.com/)
 

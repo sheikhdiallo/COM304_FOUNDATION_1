@@ -176,17 +176,15 @@ Then look at [Interrupts](../docs/Interrupts.md)
 
 Now try the assembler examples below.
 
-## The same thing in assembler
+## The same example written directly in assembler
 
 We can see that the compiler has compiled our program into assembler.
 
 The high level C code is very easy to understand while the assembled code is much more difficult to follow.
-
 However, raw assembler is often still used because of its speed and small memory footprint (particularly important for small devices).
-
 You also obviously need to understand assembler if you are writing compilers or interpreters.
 
-I have provided some complete assembler examples including one which writes to the UART directly without using the printf function.
+To give you more experience with Assembler, I have provided some complete assembler examples including one which writes to the UART directly without using the printf function.
 
 Try the exercises in [Assembler Examples](../../session5/assemblerExamples/AssemblerExamples.md) before moving on.
 
