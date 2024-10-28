@@ -155,18 +155,19 @@ It is worth taking time to become familiar with some of the key terminal command
 
 | command | purpose                                                  |
 |:--------|----------------------------------------------------------|
+|  pwd    | present working directory - shows the location of the current directory|
 |  ls     | Lists all files in a directory<BR>ls -all shows permissions  |
-|  df -h  | Shows how much disk has been used                     |
-|  vi     | basic editor which is on most linux systems   |
-|  nano   | easier to use editor                                 |
-|  pwd    | present working directory - shows the current directory|
-|  top    | shows top processes and memory allocation on teh system |
+|  mkdir  | creates a directory |
+| rm      | removes a file<br>rm -R removes a directory and its contents |
+|  vi     | basic text editor which is on most linux systems   |
+|  nano   | easier to use text editor                                 |
+|  df -h  | Shows how much disk has been used |
+|  top    | shows top processes and memory allocation on the system |
 |  ps     | shows processes belonging to you<BR> ps -aux shows all processes on the system<br>ps -aux | grep 'process name' finds a particular process |
-|ifconfig| shows all ethernet interfaces adn IP addresses |
-|route -n | shows the routing table |
-| sudo | performs a command with root privileges if you are in the sudoers group  |
-|mkdir| creates a directory |
-| rm | removes a file<br>rm -R removes a directory and its contents |
+| sudo    | performs a command with root privileges if you are in the sudoers group  |
+| ping    | checks connectivity to a url or IP address |
+| ifconfig| shows all ethernet interfaces adn IP addresses |
+| route -n | shows the routing table |
 
 Here is a useful [command line for beginners tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
 
