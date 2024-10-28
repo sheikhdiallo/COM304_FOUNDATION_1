@@ -78,7 +78,7 @@ High level languages come in two fundamental flavours; `Interpreted Languages` a
 
 `Interpreted Languages` read the input high level language and translate it `on the fly` into machine code routines which are immediately run on the processor. 
 
-Python, Javascript, PHP and the Bourne Shell (sh or bash) are examples of `Interpreted Languages`.
+`Python`, `Javascript`, `PHP` and the `Bourne Shell` (`sh` or `bash`) are examples of `Interpreted Languages`.
 
 Node RED is referred to as a `no or low code language` which is visually programmed. 
 This is fundamentally also an interpreter but instead of interpreting a program, it is interpreting drawings of flows into routines in machine code.
@@ -102,6 +102,20 @@ A `Linker` which links a program with any other programs or libraries it needs t
 A `Loader` which loads the program and its libraries into memory ready to be run by the processor.
 
 Link/Loaders are often core components within an operating system and are not necessarily explicitly visible to a user.
+
+## Open and Closed Source Programs
+
+Often compiled programs are shipped by their authors as pre-compiled machine code which is ready to run on the target system. 
+
+Machine Code can be `disassembled` into assembler code but without any comments or the original high level language, this is very difficult for someone to understand.
+
+Many companies rely on not distributing the original source code with the machine code as a way to protect their intellectual property.
+This is called `Closed Source`.
+
+On the other hand, many programmers now choose to distribute the source code freely with the compiled machine code.
+
+This is called `Open Source`.
+You will see many examples of this practice on Github and of course Linux and the `gcc` C compiler are very important examples.
 
 ## Practical Exercises
 
