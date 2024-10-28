@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session7](../../session7/) | [Operating System Structure](../docs/operating-systems-structure.md)
+[Main Menu](../../README.md) | [session7](../../session7/) | [Operating System Structure](../docs/operating-systems-structure.md)
 
 # The origins of the Linux Operating System
 
