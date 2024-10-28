@@ -1,5 +1,7 @@
 [Main Menu](../../sessions/README.md) | [session8](../session8/) 
 
-# Session 8
+# Session 8 Consolidate
 
-TBC
+There is no new material for this session. 
+
+Use this session to consolidate your knowledge and write up what you have done so far.
