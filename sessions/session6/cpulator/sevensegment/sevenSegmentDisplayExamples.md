@@ -1,4 +1,4 @@
-[Main Menu](../../README.md) | [session6](../session6/) | [Seven Segment Display Examples](../sevensegment/sevenSegmentDisplayExamples.md)
+[Main Menu](../../../README.md) | [session6](../../../session6/) | [Seven Segment Display Examples](../sevensegment/sevenSegmentDisplayExamples.md)
 
 # Seven Segment Display Examples
 
