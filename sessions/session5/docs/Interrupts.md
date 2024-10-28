@@ -2,8 +2,8 @@
 
 # Interrupts
 
-We have looked at various ways to scan inputs from the GPIO, but it may occur to you that this is quite inefficient because it ties up our processor just looking at the pins.
-It is also quite slow, because if something happens to the pins, it will not be detected until our program comes around to poling their state.
+We have previously looked at various ways to scan inputs from the GPIO, but it may occur to you that this is quite inefficient because it ties up our processor continuously just looking at the pins.
+It is also quite slow, because if something happens to one of the pins, it will not be detected until our program comes around to poling its state.
 
 Interrupts are a mechanism by which a peripheral can send a signal which `interrupts` whatever the CPU is doing, causing it to jump to a subroutine before returning to its previous tasks.
 
@@ -11,6 +11,7 @@ We are not going to look in detail at interrupt programming, but here is a brief
 
 The figure below illustrates how peripherals use an `interrupt controller` to cause the CPU to jump to a subroutine designed to handle the peripheral.
 The IRQ instruction is very similar to the branch programming instructions except that a hardware signal is causing the branch to occur.
+The `interrupt controller` is programmed with a mapping between each interrupt and the address of the subroutine which can handle the interrupt.
 
 The `driver` code which responds to the interrupt is responsible for responding quickly and returning the CPU to its previous state so that normal operation can continue.
 
@@ -34,7 +35,7 @@ It is possible to write programs which set up the [ARM Generic Interrupt Control
 However programming the [ARM Generic Interrupt Controller](https://developer.arm.com/documentation/198123/0302/What-is-a-Generic-Interrupt-Controller-) is a complex task beyond the scope of this module.
 
 The WiringPI library can make it much simpler to respond to GPIO interrupts on the Raspberry PI using C.
-If you are interested you can look at the [raspberry pi gpio interrupts tutorial](https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/) (Not for the faint hearted).
+If you are interested you can look at the [Raspberry PI GPIO interrupts tutorial](https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/) (Not for the faint hearted).
 
 ## Interrupts - Key Take Aways
 
@@ -42,7 +43,7 @@ All modern computer systems are `event driven` with processes responding to inte
 Events are usually mediated through hardware and software `interrupts`.
 
 We have seen that the `interrupt controller` is used to program how the processor responds to interrupts from peripherals. 
-We have also seen that fundamentally, `software drivers` or `device drivers` for peripherals are `sub routines` which handle the interrupts from the device.
+We have also seen that fundamentally, `software drivers` or `device drivers` for peripheral devices are `sub routines` which handle the interrupts from the device.
 
 A modern operating system will do most of the 'heavy lifting' when it comes to handling interrupts but it will also use interrupts from the internal `clock` to schedule multi-processing which simulates multiple processes running in parallel on the system.
 We will look more at scheduling when we cover operating systems later in the module.
