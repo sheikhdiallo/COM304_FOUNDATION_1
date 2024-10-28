@@ -12,9 +12,7 @@ Gradually Unix and C became increasingly popular and computer manufacturers bega
 
 The CPU's underlying these systems were also significantly different with IBM hardware using PA-RISC processors and Sun using SPARC (Scalable Processor ARChitecture).
 
-In theory, a program written in C to run on a Unix OS could run on any of these variants but there were sufficient differences that this was not the case.
-
-This lead to the development of the [POSIX Compliant Unix standard](https://en.wikipedia.org/wiki/POSIX) which standardised the system calls across unix systems.
+In theory, a program written in C to run on a Unix OS could run on any of these variants but there were sufficient differences that this was not the case. This lead to the development of the [POSIX Compliant Unix standard](https://en.wikipedia.org/wiki/POSIX) which standardised the system calls across unix systems.
 
 In parallel with this, [Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman) who was a researcher at MIT, became increasingly annoyed with the way companies were hiding the details of their operating systems by keeping their programs 'closed source'. 
 Stallman resigned from MIT in 1983 and started developing a Unix like operating system which would be free for anyone to use and would be published as open source program. 
@@ -27,7 +25,8 @@ He discovered the GNU project in 1991 and realised that the kernel he was develo
 
 The first Linux prototypes were publicly released in late 1991 and Version 1.0 was released on 14 March 1994.
 
-Linux gradually became increasingly popular with researchers and hobbyists and as it increasingly appeared to become a viable alternative to paid for operating systems, companies and not-for-profit groups emerged which began to support `distributions` of Linux.
+Linux gradually became increasingly popular with researchers and hobbyists and it increasingly appeared to become a viable `POSIX-compliant` alternative to paid-for operating systems
+An eco system of linux contributors emerged and companies and not-for-profit groups began to form which created adn supported `distributions` of Linux.
 Linux has since grown to be the major operating system powering the cloud and the internet.
 
 Today there are [many Linux distributions](https://en.wikipedia.org/wiki/List_of_Linux_distributions) which can primarily be categorised based upon the packaging mechanism they use.
