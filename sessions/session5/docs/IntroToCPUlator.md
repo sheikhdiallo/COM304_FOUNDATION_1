@@ -14,7 +14,7 @@ Although running much slower than a real CPU, the simulation is completely accur
 
 Open a browser and browse to [https://cpulator.01xz.net/?sys=arm-de1soc](https://cpulator.01xz.net/?sys=arm-de1soc)
 
-You will see a screen similar to the image below.
+You will see a screen similar to the image below (but without the C program).
 
 ![alt text](../docs/images/CPUlator1.png "Figure CPUlator1.png")
 
@@ -30,26 +30,26 @@ R0-R14 can be used for any purpose.
 
 R13 (SP), R14 (LR) and R15 (PC) have special purposes as described below.
 
-In addition the results of previous operations are stored in individual bits in the CSPR and SPSR registers.
+In addition, the results of previous operations are stored as individual bits in the CSPR and SPSR registers.
 
 | name               | function                        |
 |:-------------------|:--------------------------------|
-|R13 (SP)            | Stack Pointer                   |
+|R13 (SP)            | Stack Pointer<BR>SP always points to the next available free space on the memory stack. |
 |R14 (LR)            | Link Register<BR>LR is link register used to hold the return address for a function call.                   |
 |R15 (PC)            | Program Counter<BR> The PC value is altered as the core executes instructions. An explicit write to R15 by software will alter the program flow. |
-|CPSR                | Current Program Status Register. (The following flags are the most important).<BR>N, bit [31] Negative condition flag. Set to 1 if the result of the last flag-setting instruction was negative.<BR>Z, bit [30] Zero condition flag. Set to 1 if the result of the last flag-setting instruction was zero, and to 0 otherwise. A result of zero often indicates an equal result from a comparison.<BR>C, bit [29] Carry condition flag. Set to 1 if the last flag-setting instruction resulted in a carry condition, for example an unsigned overflow on an addition.<BR>V, bit [28] Overflow condition flag. Set to 1 if the last flag-setting instruction resulted in an overflow condition, for example a signed overflow on an addition. |
-|SPSR                | Saved Program Status Register. SPSR contains a saved copy of the CPSR from the previously executed mode   |
+|CPSR                | Current Program Status Register.<BR> (The following flags of the CPSR are the most important).<BR>N, bit [31] Negative condition flag. Set to 1 if the result of the last flag-setting instruction was negative.<BR>Z, bit [30] Zero condition flag. Set to 1 if the result of the last flag-setting instruction was zero, and to 0 otherwise. A result of zero often indicates an equal result from a comparison.<BR>C, bit [29] Carry condition flag. Set to 1 if the last flag-setting instruction resulted in a carry condition, for example an unsigned overflow on an addition.<BR>V, bit [28] Overflow condition flag. Set to 1 if the last flag-setting instruction resulted in an overflow condition, for example a signed overflow on an addition. |
+|SPSR                | Saved Program Status Register. SPSR contains a saved copy of the CPSR from the previously executed mode. |
 |                    |                                 |
 
 ## Memory Mapped peripherals
 
 On the right hand panel you will see a representation of each of the peripherals. 
 
-As in most computers, the control registers provided by each peripheral are mapped into memory which can be accessed by the CPU.
+As in most computers, the control registers provided by each peripheral are mapped onto memory addresses which can be accessed by the CPU.
 
-In this simulator, each peripheral has a different address range and the peripheral is controlled by saving bytes into a register within the address range of the device.
+In this simulator, each peripheral has a different address range and the peripheral is controlled by saving bytes into the registers within the address range of the device.
 
-At the bottom of the peripheral panel, you will see a range of addresses along side the name of the device and a link (?) to the devices documentation.
+At the bottom of the CPUlator peripheral panel, you will see a range of addresses along side the name of the device and a link `(?)` to the devices documentation.
 Each device has a different set of registers with different functions which are described in the referenced documentation.
 
 ```
@@ -86,12 +86,12 @@ ffff0000–ffffffff   64  K       On-chip SRAM
 
 We are only going to play with the JTAG UART, the VGA display, and the Seven-Segment numbers.
 
-## Exercise: Running our first C program
+## Exercise: Running our first C program on the CPUlator
 
 ### A simple C program 
 
-Note - if you want to learn more about C see the [C Tutorial](https://www.w3schools.com/c/index.php).
-Many of these examples will also work in CPUlator or on your Pi.
+Note - if you want to learn more about C see the [W3 Schools C Tutorial](https://www.w3schools.com/c/index.php).
+Many of these W3 Schools examples will also work in CPUlator or on your Pi.
 
 Open the [CPUlator ARM 7 simulator](https://cpulator.01xz.net/?sys=arm-de1soc), set the Language to `C` and paste the following C program in the Editor window.
 
@@ -103,14 +103,16 @@ int main() {
    return 0;
 }
 ```
-This very simple program prints "Hello, World!" to the UART which acts as a simple terminal.
+This very simple program prints "Hello, World!" to a simple text terminal.
+
+(The program is actually writing characters to a simulated device called a UART (universal asynchronous receiver / transmitter) which uses a simple, two-wire protocol for exchanging serial data such as characters to and from a terminal).
 
 The `#include <stdio.h>` directive describes the libraries which may be called by the program. 
 In this case we are using the [Standard IO library for C](https://www.w3schools.com/c/c_ref_stdio.php)
 
-`main()` is always the entry point for a program
+`main()` is always the entry point for a program.
 
-`printf()` is the function imported from stdio.h which we are using to print our output.
+`printf()` is the function imported from `stdio.h` which we are using to print our output to the UART.
 
 The program should `return 0` to the calling process if it completes correctly.
 (Other numbers may indicate an error condition).
@@ -119,43 +121,43 @@ The program should `return 0` to the calling process if it completes correctly.
 
 Set the language button to `C` and press `Compile and Load`
 
-After a few seconds, you will see `Compile Succeeded` in the Messages window
+After a few seconds, you will see `Compile Succeeded` in the Messages window.
 
 You will also see a `Disassembly` of the compiled C code in the Disassembly widow. 
-This represents the compiled object code as it is located in the simulator's memory.
+This represents the compiled object code as it is actually located in the simulator's memory by the `link/loader`.
 
 You will note that this simple program has created a lot of Assembler code.
 Most of this is library code added by the linker to allow the `printf` command to run.
 
 At the top of the CPUlator, you will see commands to run the program.
 
-`Step Into` - runs one machine code instruction and pauses. 
-You can look at the changes in registers and memory at each step.
+`Step Into` - runs a single machine code instruction and pauses. 
+This allows you to look at the changes in registers and memory at each step.
 
-`Continue` - runs the entire program until its end or until a `breakpoint` is encountered.
+`Continue` - runs the entire program until its completion or until a `breakpoint` is encountered.
 
 You can set `breakpoints` in the assembly code by clicking on the panel beside the Address of the instruction where you want to pause.
-Try using breakpoints to pause your program and see what is in the registers and memory at each point.
+Try using breakpoints to pause your program and see what is in the registers and memory at that point.
 
-Click `continue` and look at the output in the JTAG Uart window - which is actually simulating a terminal.
+Click `Continue` and look at the output in the JTAG Uart window - which is actually simulating a terminal.
 
 You should see "Hello, World!"
 
-The GPULator disassembly window shows us all of the corresponding machine code which has been put in memory by the linker which also includes all of the assembly code to implement the `printf` function.
+The GPULator disassembly window shows us all of the corresponding machine code which has been put in memory by the linker and which also includes all of the assembly code to implement the `printf` function.
 
 We can see the specific translation of our program if we search in the disassembly window  for the `main:` lable.
 This corresponds to the `main()` function call in the C code.
 
 ![alt text](../docs/images/HelloWorldDissassembly1.png "Figure HelloWorldDissassembly1.png")
 
-I have added comments below so help you understand the assembly program.
+I have added comments to the disassembled code below so help you understand the assembly program.
 
 ```
 main:
 push {r4, lr}               // At the start of the function call push r4 and lr Link Register onto the stack
                             // This preserves the r4 data and the LR location for when we return from our program.
-movw r0, #30316 ; 0x766c    // Fill bottom 16 bits of 32 bit register r0 with 0x766c
-movt r0, #1 ; x0x1          // Fill top 16 bits of 32 bit register r0 with 0x1 (so r0 points to address 0x1766c )
+movw r0, #30316 ; 0x766c    // Fill the bottom 16 bits of 32 bit register r0 with 0x766c
+movt r0, #1 ; x0x1          // Fill the top 16 bits of 32 bit register r0 with 0x1 (so r0 points to address 0x1766c )
 bl 0x8ab0 (0x8ab0: printf)  // Call printf function by branching to its address
 mov r0 #0 ; 0x0             // Clear r0 to 0 (this is the return value 0 )
 pop {r4,pc}                 // Restore r4 and jump to next instruction which was in link register
@@ -168,7 +170,7 @@ So the program is passing the address of the "Hello, world" string as an argumen
 
 ### Stacks, Subroutines, Interrupts
 
-To complete our introduction to progrmming concepts, look at [Subroutines and Stacks](../docs/stacks-routines.md) 
+To complete our introduction to programming concepts, look at [Subroutines and Stacks](../docs/stacks-routines.md) 
 
 Then look at [Interrupts](../docs/Interrupts.md) 
 

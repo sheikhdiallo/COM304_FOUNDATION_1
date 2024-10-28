@@ -2,18 +2,18 @@
 
 # Subroutines and Stacks
 
-A key concept in programming is the use of subroutines or procedures, which are sections of code that perform a specific function and can be repeatedly called from many other parts of the main program.
+A key concept in programming is the use of `subroutines` (also sometimes referred to as `functions`, `methods` or `procedures`), which are sections of code that perform a specific task and can be repeatedly called from many other parts of the main program.
 
-In order to enter a subroutine, the processor must first save whatever it was doing (i.e. the registers which contain the current data) before branching to the new routine.
+In order to enter a subroutine, the processor must first save whatever it was doing (i.e. the registers which contain the current data) before `branching` to the start address of the new subroutine.
 
-When the subroutine finishes, the processor must restore the previous state and branch back to the next instruction after the instruction which caused the branch to the subroutine.
+When the subroutine finishes, the processor must restore the previous state and branch back to the next instruction after the instruction which first caused the branch to the subroutine.
 
 A `Stack` is a common mechanism which enables this behaviour.
 
 `Stacks` are regions of memory which are reserved for storing subroutine states and passing variables between subroutines.
 The top of the stack is pointed to by a `Stack Pointer`.
 
-New data is added starting at the current location of the  `Stack Pointer`.
+New data is added starting at the current location of the `Stack Pointer`.
 The `Stack Pointer` is then incremented to point to the next free space.
 This is called a `push` operation
 
@@ -35,7 +35,7 @@ If a program wants to jump to a subroutine, a `branching` (or `conditional branc
 
 See if you can follow the steps in the program in the following table.
 
-|                     |Address | instruction       |  registers                                         | stack                                                   |(step) and explanation    |
+|                     |Address | instruction       |  registers (after operation)                       | stack                                                   |(step) and explanation    |
 |:--------------------|:-------|:------------------|:---------------------------------------------------|---------------------------------------------------------|---------------|
 |                     |        |                   |PC=0x0000<BR>LR=undefined<BR>SP=0x1000<BR>R4=undefined   |0x1000=undefined                                       |(0) Initial state |
 |main program         | 0x0001 | ldr r4, =1        |PC=0x0001<BR>LR=undefined<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                            |(1)  LDR (LoaD Register) r4 with number 1             |
