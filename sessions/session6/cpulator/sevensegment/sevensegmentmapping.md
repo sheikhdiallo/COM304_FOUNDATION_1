@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session6](../../session6/) | [Seven Segment Mapping](../sevensegment/sevensegmentmapping.md)
+[Main Menu](../../README.md) | [session6](../../session6/) | [Seven Segment Mapping](../sevensegment/sevensegmentmapping.md)
 
 ## Mapping of registers to 7 segment displays in CPUlator
 
