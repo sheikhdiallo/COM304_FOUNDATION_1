@@ -35,21 +35,22 @@ If a program wants to jump to a subroutine, a `branching` (or `conditional branc
 
 See if you can follow the steps in the program in the following table.
 
-|                     |Address | instruction       |  registers (after operation)                       | stack                                                   |(step) and explanation    |
+|                     |Address | instruction       |  registers<BR>(after operation)                       | stack                                                   |(step) and explanation    |
 |:--------------------|:-------|:------------------|:---------------------------------------------------|---------------------------------------------------------|---------------|
-|                     |        |                   |PC=0x0000<BR>LR=undefined<BR>SP=0x1000<BR>R4=undefined   |0x1000=undefined                                       |(0) Initial state |
-|main program         | 0x0001 | ldr r4, =1        |PC=0x0001<BR>LR=undefined<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                            |(1)  LDR (LoaD Register) r4 with number 1             |
+|                     |        |                   |PC=0x0001<BR>LR=undefined<BR>SP=0x1000<BR>R4=undefined   |0x1000=undefined                                       |(0) Initial state |
+|main program         | 0x0001 | ldr r4, =1        |PC=0x0002<BR>LR=undefined<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                            |(1)  LDR (LoaD Register) r4 with number 1             |
 |                     | 0x0002 | bl 0x8ab0         |PC=0x8ab0<BR>LR=0x0003<BR>SP=0x1000<BR>R4=0x0001    |0x1000=undefined                                            |(2) BL (Branch to Label) to subroutine at address 0x8ab0<BR>Record next instruction address (0x0003) in LR |
 |                     |        |                   |                                                    |<BR><BR><BR>                                             | (At this point the program jumps to the subroutine at 0x8ab0)              |
 |                     | 0x0003 | bl 0x0003         |PC=0x0002<BR>LR=undefined<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                          |(6) Resume main program<BR>(now in continuous loop indicating end of program) |      
 |                     |        |                   |                                                    |<BR><BR><BR>                                                         |               |
 |subroutine           | 0x8ab0 | push {r4,lr}     |PC=0x8ab1<BR>LR=0x0003<BR>SP=0x1003<BR>R4=0x0001    |0x1000=0x0001(r4)<BR>0x1002=0x0003(lr)<BR>0x1003=undefined|(3) Push r4 and LR onto stack              |
 |                     |        |                   |                                                    |<BR><BR><BR>                                             |(4) Do n main instructions of subroutine before returning              |
-|                     | 0x8ab0+n | pop {r4,pc}       |PC=0x0002<BR>LR=0x0003<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                          |(5) Pop r4 off stack<BR>Pop LR off stack INTO PC which causes a branch back to the main program at 0x0003  |
+|                     | 0x8ab0+n | pop {r4,pc}       |PC=0x0002<BR>LR=0x0003<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                          |(5) Pop r4 off stack (0x0001)<BR>Pop LR off stack INTO PC which causes a branch back to the main program at 0x0003  |
 
+
+Now extend your knowledge of subroutines by looking at [Interrupts](../docs/Interrupts.md) 
 
 Armed with this knowledge, you should be able to understand better the examples in [Introduction to CPUlator](../docs/IntroToCPUlator.md).
 
-However, before that, extend your knowlege of subroutines by looking at [Interrupts](../docs/Interrupts.md) 
 
 
