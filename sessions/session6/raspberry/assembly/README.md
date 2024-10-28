@@ -1,4 +1,4 @@
-[Main Menu](../../README.md) | [session6](../../session6/) | [Code on Raspberry Pi](../assembly/README.md)
+[Main Menu](../../../README.md) | [session6](../../../session6/) | [Code on Raspberry Pi](../assembly/README.md)
 
 # Example Assembler access to GPIO
 
