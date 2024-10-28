@@ -48,7 +48,7 @@ See if you can follow the steps in the program in the following table.
 |                     | 0x8ab0+n | pop {r4,pc}       |PC=0x0002<BR>LR=0x0003<BR>SP=0x1000<BR>R4=0x0001 |0x1000=undefined                                          |(5) Pop r4 off stack<BR>Pop LR off stack INTO PC which causes a branch back to the main program at 0x0003  |
 
 
-Armed with this knowledge, you should be able to understand better the examples in [Introduction to CPULator](../docs/IntroToCPULator.md).
+Armed with this knowledge, you should be able to understand better the examples in [Introduction to CPUlator](../docs/IntroToCPUlator.md).
 
 However, before that, extend your knowlege of subroutines by looking at [Interrupts](../docs/Interrupts.md) 
 

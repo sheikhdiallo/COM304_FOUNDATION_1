@@ -1,15 +1,15 @@
-[Main Menu](../../sessions/README.md) | [session5](../../session5/) | [Introduction to CPULator](../docs/IntroToCPULator.md)
+[Main Menu](../../sessions/README.md) | [session5](../../session5/) | [Introduction to CPUlator](../docs/IntroToCPUlator.md)
 
 # Introduction to ARM Assembler and C programming using CPUlator
 
 In this section we will introduce programming an ARM processor using a simulator before looking at applying this to the Raspberry PI in the next session.
 
-[CPULator](https://cpulator.01xz.net/) is a free CPU simulator written in 2016 for teaching use by [Henry Wong](https://www.stuffedcow.net/teaching) when he was doing his PhD at the University of Toronto. 
+[CPUlator](https://cpulator.01xz.net/) is a free CPU simulator written in 2016 for teaching use by [Henry Wong](https://www.stuffedcow.net/teaching) when he was doing his PhD at the University of Toronto. 
 
 CPUlator is a simulator and debugger of a computer system (CPU, memory, and I/O devices) that runs inside a web browser. 
 Simulation allows running and debugging programs without needing to use a hardware board.
 
-CPULator can be used to simulate an ARM 7 processor which is similar to the processor used in the Raspberry Pi.
+CPUlator can be used to simulate an ARM 7 processor which is similar to the processor used in the Raspberry Pi.
 Although running much slower than a real CPU, the simulation is completely accurate and allows small programs to be written and run as if they were running on real hardware.
 
 Open a browser and browse to [https://cpulator.01xz.net/?sys=arm-de1soc](https://cpulator.01xz.net/?sys=arm-de1soc)
@@ -91,9 +91,9 @@ We are only going to play with the JTAG UART, the VGA display, and the Seven-Seg
 ### A simple C program 
 
 Note - if you want to learn more about C see the [C Tutorial](https://www.w3schools.com/c/index.php).
-Many of these examples will also work in CPULator or on your Pi.
+Many of these examples will also work in CPUlator or on your Pi.
 
-Open the [CPULator ARM 7 simulator](https://cpulator.01xz.net/?sys=arm-de1soc), set the Language to `C` and paste the following C program in the Editor window.
+Open the [CPUlator ARM 7 simulator](https://cpulator.01xz.net/?sys=arm-de1soc), set the Language to `C` and paste the following C program in the Editor window.
 
 ```
 #include <stdio.h>

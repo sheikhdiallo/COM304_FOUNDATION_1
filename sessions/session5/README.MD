@@ -10,7 +10,7 @@ The session will proceed in roughly the following order:
 
 Introduction to Machine Code, Assembly code and High level Languages (This page).
 
-[Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPULator.md)
+[Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPUlator.md)
 
 [Subroutines and Stacks](../session5/docs/stacks-routines.md) 
 
@@ -121,6 +121,6 @@ You will see many examples of this practice on Github and of course Linux and th
 
 We will examine assembly and compiled languages further in the next section.
 
-[Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPULator.md)
+[Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPUlator.md)
 
 

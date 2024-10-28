@@ -2,7 +2,7 @@
 
 # Raspberry PI Examples
 
-Having worked with C and Assembler on the CPULator, we are now going to try doing creating some simple programs working with the Gertboard on the Raspberry Pi.
+Having worked with C and Assembler on the CPUlator, we are now going to try doing creating some simple programs working with the Gertboard on the Raspberry Pi.
 
 First make sure you have completed the Gertboard experiments with WiringPi covered in [session 3](../../session3).
 

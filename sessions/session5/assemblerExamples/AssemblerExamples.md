@@ -2,7 +2,7 @@
 
 # Assembler examples
 
-Copy each of these examples into CPULator set to ARM-7
+Copy each of these examples into CPUlator set to ARM-7
 
 ### Writing to a screen terminal UART
 
@@ -38,7 +38,7 @@ If you want to explore ARM Assembler further here are a set of tutorials.
 
 [An ARM assembler cheat sheet can be found here](https://azeria-labs.com/assembly-basics-cheatsheet/)
 
-[David Brown ARM Tutorials with CPULator](https://bohr.wlu.ca/cp216/labs/)
+[David Brown ARM Tutorials with CPUlator](https://bohr.wlu.ca/cp216/labs/)
 
 [Kevin bone ARM assembly-language programming for the Raspberry Pi](https://kevinboone.me/pi-asm-toc.html)
 
