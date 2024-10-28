@@ -2,4 +2,4 @@
 
 # CPUlator Examples
 
-See [seven segment display examples](../cpulator/sevensegment)
+See [seven segment display examples](../cpulator/sevensegment/sevenSegmentDisplayExamples.md)
