@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session5](../../session5/) | [Introduction to CPUlator](../docs/IntroToCPUlator.md)
+[Main Menu](../../README.md) | [session5](../../session5/) | [Introduction to CPUlator](../docs/IntroToCPUlator.md)
 
 # Introduction to ARM Assembler and C programming using CPUlator
 
