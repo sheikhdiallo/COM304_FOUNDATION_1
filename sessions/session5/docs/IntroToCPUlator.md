@@ -99,7 +99,7 @@ Open the [CPUlator ARM 7 simulator](https://cpulator.01xz.net/?sys=arm-de1soc), 
 #include <stdio.h>
 int main() {
    // printf() displays the string inside quotation
-   printf("Hello, World!\n");
+   printf("Hello, World!");
    return 0;
 }
 ```
