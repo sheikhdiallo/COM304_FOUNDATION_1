@@ -1,4 +1,15 @@
-notes
+[Main Menu](../../README.md) | [session9](../../session9/) | [Introduction to Networking](../docs/introduction-to-networking.md)
+
+# Introduction to Networking
+
+In this section we will give a basic introduction to `networking`.
+That is, how computers and devices communicate with each other over the Internet.
+
+![alt text](../docs/images/simplifiedNetworkLayers.drawio.png "simplifiedNetworkLayers.drawio.png")
+
+
+
+# notes
 
 on windows terminal try arp -a
 
