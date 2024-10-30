@@ -8,6 +8,18 @@ That is, how computers and devices communicate with each other over the Internet
 ![alt text](../docs/images/simplifiedNetworkLayers.drawio.png "simplifiedNetworkLayers.drawio.png")
 
 
+physical layer - Mac addresses
+IP layer - Ip addresses
+
+TCP/UDP  ports
+NAT
+
+finding other devices on the netowrk -ARP
+
+routing tables
+routing protocols
+
+DNS - translating IP addresses to
 
 # notes
 
