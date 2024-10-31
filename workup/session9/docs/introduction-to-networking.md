@@ -75,6 +75,8 @@ An IPv6 address has 128-bits and is usually written in hex e.g. `2001:db8:3333:4
 
 `Routers` are devices in the network which collaborate to `route` packets from from router to router across the network to their final destination.
 
+![alt text](../docs/images/routers.drawio.png "routers.drawio.png")
+
 physical layer - Mac addresses
 IP layer - Ip addresses
 
