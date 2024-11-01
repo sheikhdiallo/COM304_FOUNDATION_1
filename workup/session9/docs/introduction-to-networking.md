@@ -335,6 +335,8 @@ routing protocols
 
 DNS - translating IP addresses to
 
+https://www.calculator.net/ip-subnet-calculator.html?cclass=any&csubnet=19&cip=10.79.128.1&ctype=ipv4&x=Calculate
+
 on windows terminal try 
 
 https://superuser.com/questions/29640/inverse-arp-lookup
