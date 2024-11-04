@@ -6,7 +6,7 @@ The Internet Packet frame format is shown below
 
 ![alt text](../docs/images/IPv4_Packet-en.svg.png "Ethernet_Type_II_Frame_format.svg.png")
 
-#### Internet Addresses
+## Internet Addresses
 
 The Internet V4 protocol defines a 32 bit IP address for each device in the network. 
 Each network layer frame has a `source IP address` and a `destination IP address` which is used by the network layer to deliver the frame to the correct device. 
@@ -26,7 +26,7 @@ This means that there is enough space for trillions of Internet devices for the 
 
 (We will just look at IPv4 for now).
 
-# subnetworks
+## subnetworks
 
 IPv4 addresses consist of 4 bytes (32 bits) which are typically written as 4 decimal numbers separated by full stops. 
 
@@ -36,15 +36,15 @@ The 32 bits define an address range of 4.3 billion possible addresses.
 
 The address range is divided into `sub networks` (or `subnets`) which define a range of IP addresses allocated to that subnetwork.
 
-Subnets are specified using a 32 bit `network address` and an associated 32 bit `network mask` which determines how many sequential addresses are within the network.
+Subnets are specified using a 32 bit `network address` and an associated 32 bit `network mask` which determines how many sequential addresses are within the subnetwork.
 
-Network masks are a sequential series of binary '1's (starting with the most significant bit) and which can be written like a network address. 
+`Network masks (netmasks)` are a sequential series of binary '1's (starting with the most significant bit) and which can be written like a network address. 
 
 e.g. netmask `255.255.255.0` represents binary `11111111 11111111 11111111 00000000` or hex `0xFFFFFF00`
 
 A network can also be defined in [CIDR Notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) by suffixing the count of '1' bits in a netmask to an IP address.
 
-e.g  `192.168.0.0/24` represents a network address `192.168.0.0` and the 24 '1' bits in the netmask `255.255.255.0`
+e.g  `192.168.0.0/24` represents a network address `192.168.0.0` along with the 24 '1' bits in the netmask `255.255.255.0`
 
 The network which an IP address occupies is determined by ANDing the netmask with the IP address.
 
@@ -62,7 +62,7 @@ allowing us 256 possible addresses in this network definition.
 
 Note however that the bottom address of this range is reserved the `network address` 192.168.0.0 and the top address of this range is reserved as the `broadcast address` 192.168.0.255 which leaves us 254 usable host addresses in this network.
 
-THe `broadcast address` is used by a host in the subnet to send a message which will be received by all hosts in the subnet regardless of their ip address.
+The `broadcast address` is used by a host in the subnet to send a message which will be received by all hosts in the subnet regardless of their ip address.
 
 Lets take another example `192.168.10.1/30`
 
@@ -132,3 +132,5 @@ Networks can be fully described using manually assigned static routes but this i
 Instead, in large networks, [routing protocols](https://en.wikipedia.org/wiki/Routing_protocol) are used by routers to discover optimal routes and set up the routing tables automatically using `dynamic routes`.
 
 In this unit we will only look at simple static routing.
+
+Look at [Routing Algorithms](../docs/routing-algorithms.md) to understand how the routing table works.

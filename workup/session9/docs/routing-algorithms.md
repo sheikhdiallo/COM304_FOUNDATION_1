@@ -44,21 +44,21 @@ Similarly incoming packet 131.17.78.30 forwards to eth1.
 
 ### 2. Check Indirect routing
 
-If the direct routing crosscheck is negative for all the interfaces, indirect forwarding is performed using the routing table.
+If the direct routing check is negative for all the interfaces, indirect forwarding is performed using the routing table.
 
-The very same crosscheck is performed for all the rows of the routing table using the corresponding netmask.
+The very same check is performed for all the rows of the routing table using the corresponding netmask.
 
-If the crosscheck is positive for multiple rows, the one with the highest number of 1s in its netmask is chosen (longest match). 
+If the check is positive for multiple rows, the row with the highest number of 1s in its netmask is chosen (longest match). 
 This means that we can specify an overlapping wide address range and a narrow address range.
 The more specific narrow address range will be chosen in preference to the larger range.
 
 This rule allows us to define a `default route` which will always be chosen if none of the other routes match.
 
-`0.0.0.0` corresponds to the `default route` because the crosscheck is always positive but netmask length = 0
+`0.0.0.0` corresponds to the `default route` because the check is always positive but with a netmask length = 0
 
 ## Example Routes
 
-Try working through the following examples.
+Try working through the following routing table examples.
 In each case find where to route an IP address coming from the Test Router.
 
 ![alt text](../docs/images/routing2.drawio.png "routing2.drawio.png")
@@ -127,3 +127,31 @@ Where to route 131.180.21.78
 |interface 2:   |131.175.12.253| 255.255.255.0|   |
 
 examples taken from (https://www.lri.fr/~fmartignon/documenti/reseaux/3-RoutingForwarding-Martignon.pdf)
+
+
+# Example real routing table
+
+Real routing tables combine interface data with other metrics. 
+
+`route -n` is a common command to show routes in a linux system.
+
+```
+route -n
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.10.1    0.0.0.0         UG    100    0        0 eth0
+0.0.0.0         10.79.128.1     0.0.0.0         UG    600    0        0 wlan0
+10.79.128.0     0.0.0.0         255.255.224.0   U     600    0        0 wlan0
+192.168.10.0    0.0.0.0         255.255.255.0   U     100    0        0 eth0
+```
+
+In this case we can see each entry has a destination, gateway and mask as described above.
+
+Interfaces also have a `metric`. 
+A lower metric number makes the system prefer a route over an equivalent route.
+So in this case we can see that if the wired `eth0` is connected, it will be preferred as the default route over the wireless `wlan0`.
+
+The Flag `U` means that the interface is UP. 
+The flag `G` means that this is a Gateway
+
+
