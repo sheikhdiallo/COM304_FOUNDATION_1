@@ -1,3 +1,5 @@
+[Main Menu](../../README.md) | [session9](../../session9/) | [Routing Algorithms](../docs/routing-algorithms.md)
+
 ## Algorithm Used with Routing Table
 
 The following steps are used by the router to forward packets.

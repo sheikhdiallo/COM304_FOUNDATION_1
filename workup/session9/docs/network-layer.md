@@ -1,7 +1,26 @@
+[Main Menu](../../README.md) | [session9](../../session9/) | [Network Layer](../docs/network-layer.md)
 
+# Network Layer (OSI layer 3)
 
+#### Internet Addresses
 
+The Internet V4 protocol defines a 32 bit IP address for each device in the network. 
+Each network layer frame has a `source IP address` and a `destination IP address` which is used by the network layer to deliver the frame to the correct device. 
 
+IPv4 addresses consist of 4 bytes which are typically written as 4 decimal numbers separated by full stops. 
+
+Each number has a range from 0 to 255. e.g. `192.168.0.1` represents binary`11000000 10101000 00000000 00000001` or hex `0xC0A80001`
+
+The original Internet design (IPv4) assumed 32 bits were enough to cover the projected number of computers in the world (4.3 billion addresses available).
+Internet addresses are allocated globally by the Internet Assigned Numbers Authority (IANA) which announced that the available address allocations began to be exhausted on 31 January 2011 (see [IPv4_address_exhaustion](https://en.wikipedia.org/wiki/IPv4_address_exhaustion))
+
+Fortunately, IPv6 is being introduced which has a much larger address range.
+An IPv6 address has 128-bits and is usually written in hex e.g. `2001:db8:3333:4444:5555:6666:7777:8888`
+
+There are 340 undecillion (2128 or 3.4×1038) possible IPv6 addresses, which is more than 100 times the number of atoms on Earth. 
+This means that there is enough space for trillions of Internet devices for the foreseeable future.
+
+(We will just look at IPv4 for now).
 
 # subnetworks
 
@@ -109,63 +128,3 @@ Networks can be fully described using manually assigned static routes but this i
 Instead, in large networks, [routing protocols](https://en.wikipedia.org/wiki/Routing_protocol) are used by routers to discover optimal routes and set up the routing tables automatically using `dynamic routes`.
 
 In this unit we will only look at simple static routing.
-
-
-
-Interfaces:
-
-| interface | IP address  | Netmask       |Network     |
-|:----------|:------------|:--------------|:-----------|
-| eth0      |131.17.123.1 | 255.255.255.0 |131.17.123.0 |
-| eth1      |131.17.78.1  | 255.255.255.0 |131.17.78.0 |
-| eth2      |131.17.15.12 | 255.255.255.0 |131.17.15.0 |
-
-Routing table:
-
-| Network     | Netmask      | first hop |
-|:------------|:-------------|:----------|
-|131.175.21.0 |255.255.255.0 |131.17.123.254|
-|131.175.16.0 |255.255.255.0 |131.17.78.254|
-|131.56.0.0   |255.255.0.0   |131.17.15.254|
-|131.155.0.0  |255.255.0.0   |131.17.15.254|
-|0.0.0.0      |0.0.0.0       |131.17.123.254|
-
-the following diagram shows how several routers form a network by routing between defined subnets.  
-
-![alt text](../docs/images/routing.drawio.png "routing.drawio.png")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-https://worldpopulationreview.com/country-rankings/ip-address-by-country
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-notes - googe example https://www.lri.fr/~fmartignon/documenti/reseaux/3-RoutingForwarding-Martignon.pdf
