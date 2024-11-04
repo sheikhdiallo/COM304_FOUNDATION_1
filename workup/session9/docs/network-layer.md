@@ -2,6 +2,10 @@
 
 # Network Layer (OSI layer 3)
 
+The Internet Packet frame format is shown below
+
+![alt text](../docs/images/IPv4_Packet-en.svg.png "Ethernet_Type_II_Frame_format.svg.png")
+
 #### Internet Addresses
 
 The Internet V4 protocol defines a 32 bit IP address for each device in the network. 

@@ -70,11 +70,11 @@ The Transport Layer is responsible for defining the quality of the data connecti
 
 Two protocols are widely chosen in this layer;
 
-User Datagram Protocol (UDP) is a communications protocol for time-sensitive applications like gaming, playing videos, or Domain Name System (DNS) lookups. 
+`User Datagram Protocol (UDP)` is a communications protocol for time-sensitive applications like gaming, playing videos, or Domain Name System (DNS) lookups. 
 Each UDP packet is stand alone and is sent `fire and forget`.
 In other words, there is no guarantee that UDP packets will arrive or that they will arrive in the same order as they were sent.
 
-Transmission Control Protocol (TCP) provides a more reliable transport by numbering packets so that it can resend packets which have been lost and guarantee that packets will arrive in their sent order.
+`Transmission Control Protocol (TCP)` provides a more reliable transport by numbering packets so that it can resend packets which have been lost and guarantee that packets will arrive in their sent order.
 The overhead of establishing a TCP session and keeping track of lost packets makes TCP much slower then UDP and less suitable for real-time applications.
 
 ### Network Layer (OSI layer 3)

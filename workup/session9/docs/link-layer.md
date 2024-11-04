@@ -26,6 +26,10 @@ Normally RS232 can only connect two devices but later link layer protocols can c
 
 [Ethernet](https://en.wikipedia.org/wiki/Ethernet) is a widely used standard where all of the devices in the same segment listen to all of the messages transmitted to the segment and select the messages messages which are addressed to themselves.
 
+The Ethernet frame format is shown below
+
+![alt text](../docs/images/Ethernet_Type_II_Frame_format.svg.png "Ethernet_Type_II_Frame_format.svg.png")
+
 Early Ethernet networks used a single co-axial cable ([10bse5](https://www.mattmillman.com/projects/10base5/)) to connect all of the devices in the same segment.
 Devices could send messages at at any time so it was possible that two devices would send at the same time and the messages would collide. 
 (Hence another name for the Ethernet protocol was `CSMA-CD - Carrier Sense Multiple Access - Collision Detect)
