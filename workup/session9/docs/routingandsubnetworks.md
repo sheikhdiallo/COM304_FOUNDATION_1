@@ -110,55 +110,7 @@ Instead, in large networks, [routing protocols](https://en.wikipedia.org/wiki/Ro
 
 In this unit we will only look at simple static routing.
 
-## algorithm used with routing table
 
-The following steps are used by the router to forward packets.
-
-1. determine if this packet is destined for a directly connected network.
-
-  To perform this check, the router performs a cross check and computes the 
-
-  Bitwise AND between the interface address and the interface netmask,
-
-  Bitwise AND between the destination address and the interface netmask.
-
-  If the two outcomes coincide, direct forwarding is performed on that interface.
-
-  For example, given the following interfaces
-
-| interface | IP address  | Netmask       |Network (bitwise AND) |
-|:----------|:------------|:--------------|:---------------------|
-| eth0      |131.17.123.1 | 255.255.255.0 |131.17.123.0 |
-| eth1      |131.17.78.1  | 255.255.255.0 |131.17.78.0 |
-| eth2      |131.17.15.12 | 255.255.255.0 |131.17.15.0 |
-
-  Incoming packet 131.17.123.10 forwards to eth0.
-
-|                        | IPv4 format  | Binary                             |
-|:-----------------------|--------------|:-----------------------------------|
-|Incoming packet Address |131.17.123.10 |10000011 00010001 01111011 00001010 |
-|Netmask  (/24)          |255.255.255.0 |11111111 11111111 11111111 00000000 |
-|                        |AND           |                                    |                    
-|Network Address         |131.17.123.0  |10000011 00010001 01111011 00000000 |
-
-|                        | IPv4 format  | Binary                             |
-|:-----------------------|--------------|:-----------------------------------|
-|eth0 interface address  |131.17.123.1  |10000011 00010001 01111011 00000001 |
-|Netmask  (/24)          |255.255.255.0 |11111111 11111111 11111111 00000000 |
-|                        |AND           |                                    |                    
-|Network Address         |131.17.123.0  |10000011 00010001 01111011 00000000 |
-
-
-  Similarly incoming packet 131.17.78.30 forwards to eth1.
-
-
-2. If the direct routing crosscheck is negative for all the interfaces, indirect forwarding is performed using the routing table
-
-  The very same crosscheck is performed for all the rows of the routing table using the corresponding netmask.
-
-  If the crosscheck is positive for multiple rows, the one with the highest number of 1s in its netmask is chosen (longest match)
-
-  0.0.0.0 corresponds to the `default route` the crosscheck is always positive but netmask lenght = 0
 
 Interfaces:
 
