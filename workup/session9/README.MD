@@ -8,4 +8,6 @@ Start with [Introduction to Networking](../session9/docs/introduction-to-network
 
 Then try the exercises in [Networking Exercises](../session9/docs/networking-exercises.md)
 
-Finally try the  exercises in [VNC, SSH and remote connect](../session9/docs/remoteAccessSSHVNCPiConnect.md)
+To connect with your pi remotely, try the  exercises in [VNC, SSH and remote connect](../session9/docs/remoteAccessSSHVNCPiConnect.md)
+
+Finally try using a netowrk protocol analyser in [Wireshark Experiments](../session9/docs/wireshark.md)
