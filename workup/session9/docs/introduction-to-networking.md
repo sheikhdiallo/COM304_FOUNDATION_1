@@ -4,14 +4,8 @@
 
 In this section we will give a basic introduction to `networking`, that is, how computers and devices communicate with each other over the Internet.
 
-`Routers` are devices in a network which collaborate to `route` packets from from router to router across the network to their final destination.
-
-The diagram below illustrates how domestic gateway routers connect to a core `provider network` which carries communications to a far destination.
-
-![alt text](../docs/images/routers.drawio.png "routers.drawio.png")
-
-Our simple introduction to IP networking will concentrate on what happens in a small office or home network at the edge of the Internet.
-This will introduce the basic principles but will leave a full discussion of enterprise networking to a later networking course.
+Modern computer networks use the `Internet Protocol (IP)` to divide the data to be communicated into separate `datagrams` or `packets` which contain multiple bytes.
+These packets are separately routed through the network and reassembled at their destination into their original format.
 
 IP networks contain devices which can be characterised as computers or routers.
 
@@ -21,14 +15,22 @@ For example most PCs have a wifi interface and a wired interface.
 These are usually `end points` of a network since they only originate or consume network traffic but don't route traffic between `ports`.
 (Computers can be set up to act as routers if they have multiple ports but this is usually the role of dedicated router hardware).
 
+`Routers` are devices in a network which collaborate to `route` packets from  across the network to their final destination.
+
+The diagram below illustrates how domestic `gateway routers` connect to a core `provider network` which carries communications to a far destination.
+
+![alt text](../docs/images/routers.drawio.png "routers.drawio.png")
+
+Our simple introduction to IP networking will concentrate on what happens in a small office or home network at the edge of the Internet.
+This will introduce the basic principles but will leave a full discussion of enterprise networking to a later networking course.
+
 ## Network protocol layers
 
 Over the years there have been many networking technologies which have been standardised, widely adopted and later superseded by something better (e.g. Fibre, Frame Relay, ISDN, ATM, ADSL, Wifi, Dial up modems etc).
-Engineers have found it useful to describe each of these technologies in terms of ascending `network layers` starting with the  physical medium (Wireless, Electrical cables, Light) and rising to the application using the network (Web Browser, file transfer, video audio etc). 
+Engineers have found it useful to describe each of these technologies in terms of ascending `network layers` starting with the  physical medium (Wireless, Electrical cables, Light) and rising to the application using the network (Web Browser, file transfer, video, audio etc). 
 
 A `network protocol` is a set of conventions governing the treatment and especially the formatting of data in an electronic communications system.
 Each network layer has its own `protocol` and in a well designed system, it should be possible to substitute one protocol in a given layer for another protocol in the same layer without the layers above or below noticing the change or needing to be changed.
-
 As an example, your computer could connect to a wired `ethernet` network or to a wireless `wifi` network and apart from a change of IP address, the applications using the network connection will all continue to work the same way.
 
 The most comprehensive model used for describing networks is the [OSI 7 Layer Model](https://en.wikipedia.org/wiki/OSI_model) which is simplified in the following diagram.
@@ -37,7 +39,7 @@ The most comprehensive model used for describing networks is the [OSI 7 Layer Mo
 
 The higher layers of the `protocol stack` are responsible for the end to end communication between applications running on different computers.
 
-The lower layers are responsible for moving information around the network.
+The lower layers are responsible for moving information around the network across multiple `subnetworks` connected by routers.
 
 We will simplify the model to just 4 layers in the following diagram which also shows the data formats used in each layer.
 
@@ -53,6 +55,7 @@ References :
 The Application layer defines the data formats which are transferred between computers to make a specific application work.
 Examples are
 
+|           |                                                 |
 |:----------|-------------------------------------------------|
 |HTTP       | [Hyper Text Transport Protocol](https://en.wikipedia.org/wiki/HTTP).<br>Is the protocol used to transfer web pages across the internet.|
 |SSH        | [Secure Shell (SSH)](https://en.wikipedia.org/wiki/Secure_Shell).<BR>Is used for secure communications between computers  |
