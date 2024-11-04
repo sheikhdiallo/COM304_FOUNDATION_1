@@ -62,16 +62,126 @@ Fortunately a [subnet calculator](https://www.calculator.net/ip-subnet-calculato
 
 ## class A, B, C networks
 
-in the past IANA alocated class netowrks now use CIDER as much more granualt
+In the past (prior to 1993) IANA allocated ranges of ip addresses to networks in large chunks or [network classes](https://en.wikipedia.org/wiki/Classful_network).
+There were 128 Class A networks with 16,777,216 addresses per class A,  
+16,384 Class B networks with 1,073,741,824  addresses per class B and
+2,097,152 Class C networks with 536,870,912  addresses per class C.
 
-## netowrking using subnets
+Class A networks were assigned to [large organisations and regional Internet registers](https://en.wikipedia.org/wiki/List_of_assigned_/8_IPv4_address_blocks) and some of these allocations still remain in place.
 
-the following diagram shows how several routers form a network by routing between defined subnets.  
+This classification of sub networks proved to be inefficient and resulted in a mismatch between the allocated address ranges and the actual needs of organisations. 
+Classful networks gave way to [Classless Inter-Domain Routing (CIDER)](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) in 1993.
 
 ## public and private networks
 A `public` IP address is an address which can be reached globally from anywhere on the Internet.
 
 In order to avoid duplicate public addresses on the Internet, the [Internet Assigned Numbers Authority (IANA)](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority) coordinates with a hierarchy of `regional Internet registries (RIRs)` to allocate IP address ranges to Internet Service Providers, and end-user organisations in each country.
+
+Several ranges of addresses have been reserved as [private IP addresses](https://en.wikipedia.org/wiki/Private_network).
+These addresses are for internal use only and not for routing across the Internet.
+
+Most Internet service providers (ISPs) allocate only a single publicly routable IPv4 address to each residential customer, but many homes have more than one computer, smartphone, or other Internet-connected device. In this situation, a network address translator (NAT) gateway is usually used to provide Internet connectivity to multiple hosts.
+
+## network routing using subnets
+
+`Routers` are network devices which relay IP packets from router to router across a network towards their destination. 
+A router can have many interfaces, each connected to different subnetworks.
+
+A router (or computer) will also have an internal `loopback` interface which it uses to originate or consume traffic destined for itself.
+The `loopback` interface is given the IP address of the device itself and is the address other devices use to communicate with the device itself.
+The `loopback` interface usually also has a local IP address of `127.0.0.1` with a DNS name of `localhost`.
+
+IP networks operate using `next hop routing` which means that routers are basically very simple.
+When they receive an IP packet, they can only forward it to one of the attached subnetworks or to the `loopback` interface (to be consumed as a message sent to the device itself).
+So a packet hops between routers from subnetwork to subnetwork until it reaches its final destination.
+
+When a router receives a packet, it must decide which interface to forward it to.
+
+A `routing table` is used by each router to determine the most optimal next hop (or subnetwork) a packet must be forwarded to to reach its final destination.
+
+`Direct Forwarding` happens when the destination is within a directly attached subnetwork.
+
+`Indirect Forwarding` happens when the destination is elsewhere and the router must decide which is the best port to forward the packet to move it closer to its destination.
+
+A `static route` is a route which has been manually entered in the routing table. 
+
+Networks can be fully described using manually assigned static routes but this is complex and error prone.
+Instead, in large networks, [routing protocols](https://en.wikipedia.org/wiki/Routing_protocol) are used by routers to discover optimal routes and set up the routing tables automatically using `dynamic routes`.
+
+In this unit we will only look at simple static routing.
+
+## algorithm used with routing table
+
+The following steps are used by the router to forward packets.
+
+1. determine if this packet is destined for a directly connected network.
+
+  To perform this check, the router performs a cross check and computes the 
+
+  Bitwise AND between the interface address and the interface netmask,
+
+  Bitwise AND between the destination address and the interface netmask.
+
+  If the two outcomes coincide, direct forwarding is performed on that interface.
+
+  For example, given the following interfaces
+
+| interface | IP address  | Netmask       |Network (bitwise AND) |
+|:----------|:------------|:--------------|:---------------------|
+| eth0      |131.17.123.1 | 255.255.255.0 |131.17.123.0 |
+| eth1      |131.17.78.1  | 255.255.255.0 |131.17.78.0 |
+| eth2      |131.17.15.12 | 255.255.255.0 |131.17.15.0 |
+
+  Incoming packet 131.17.123.10 forwards to eth0.
+
+|                        | IPv4 format  | Binary                             |
+|:-----------------------|--------------|:-----------------------------------|
+|Incoming packet Address |131.17.123.10 |10000011 00010001 01111011 00001010 |
+|Netmask  (/24)          |255.255.255.0 |11111111 11111111 11111111 00000000 |
+|                        |AND           |                                    |                    
+|Network Address         |131.17.123.0  |10000011 00010001 01111011 00000000 |
+
+|                        | IPv4 format  | Binary                             |
+|:-----------------------|--------------|:-----------------------------------|
+|eth0 interface address  |131.17.123.1  |10000011 00010001 01111011 00000001 |
+|Netmask  (/24)          |255.255.255.0 |11111111 11111111 11111111 00000000 |
+|                        |AND           |                                    |                    
+|Network Address         |131.17.123.0  |10000011 00010001 01111011 00000000 |
+
+
+  Similarly incoming packet 131.17.78.30 forwards to eth1.
+
+
+2. If the direct routing crosscheck is negative for all the interfaces, indirect forwarding is performed using the routing table
+
+  The very same crosscheck is performed for all the rows of the routing table using the corresponding netmask.
+
+  If the crosscheck is positive for multiple rows, the one with the highest number of 1s in its netmask is chosen (longest match)
+
+  0.0.0.0 corresponds to the `default route` the crosscheck is always positive but netmask lenght = 0
+
+Interfaces:
+
+| interface | IP address  | Netmask       |Network     |
+|:----------|:------------|:--------------|:-----------|
+| eth0      |131.17.123.1 | 255.255.255.0 |131.17.123.0 |
+| eth1      |131.17.78.1  | 255.255.255.0 |131.17.78.0 |
+| eth2      |131.17.15.12 | 255.255.255.0 |131.17.15.0 |
+
+Routing table:
+
+| Network     | Netmask      | first hop |
+|:------------|:-------------|:----------|
+|131.175.21.0 |255.255.255.0 |131.17.123.254|
+|131.175.16.0 |255.255.255.0 |131.17.78.254|
+|131.56.0.0   |255.255.0.0   |131.17.15.254|
+|131.155.0.0  |255.255.0.0   |131.17.15.254|
+|0.0.0.0      |0.0.0.0       |131.17.123.254|
+
+the following diagram shows how several routers form a network by routing between defined subnets.  
+
+![alt text](../docs/images/routing.drawio.png "routing.drawio.png")
+
 
 
 

@@ -6,12 +6,20 @@ In this section we will give a basic introduction to `networking`, that is, how 
 
 `Routers` are devices in a network which collaborate to `route` packets from from router to router across the network to their final destination.
 
-The diagram below illustrates how domestic gateway routers connect to a core `provider network` which carries communications to another part of the network.
+The diagram below illustrates how domestic gateway routers connect to a core `provider network` which carries communications to a far destination.
 
 ![alt text](../docs/images/routers.drawio.png "routers.drawio.png")
 
 In this section we will give a simple introduction to IP networking by concentrating on what happens in a small office or home network at the edge of the Internet.
 This will introduce the basic principles but will leave a full discussion of enterprise networking to a later networking course.
+
+IP networks contain devices which can be characterised as computers or routers.
+
+Computers in a network may variously also be referred to as `hosts` or `servers` or `workstations`. 
+Computers can have several `ports` (also called `interfaces`) e.g. a wifi interface and a wired interface.
+These are usually `end points` of a network since they only originate or consume network traffic but don't route traffic between `ports`.
+(Computers can be set up to act as routers if they have multiple ports but this is usually the role of dedicated router hardware).
+
 
 ## Network protocol layers
 
