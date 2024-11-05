@@ -6,4 +6,4 @@ In this session we will begin looking at the wider structure and utilities of op
 
 Start by looking at [Operating System Structure](../session7/docs/operating-systems-structure.md) 
 
-Then see if you can install the [Apache 2 web server on your Rraspbery Pi](../session7/docs/package-management-apache.md)
+Then see if you can install the [Apache 2 web server on your Raspberry Pi](../session7/docs/package-management-apache.md)
