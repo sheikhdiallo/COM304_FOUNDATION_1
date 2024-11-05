@@ -10,4 +10,4 @@ Then try the exercises in [Networking Exercises](../session9/docs/networking-exe
 
 To connect with your pi remotely, try the  exercises in [VNC, SSH and remote connect](../session9/docs/remoteAccessSSHVNCPiConnect.md)
 
-Finally try using a netowrk protocol analyser in [Wireshark Experiments](../session9/docs/wireshark.md)
+Finally try using a network protocol analyser in [Wireshark Experiments](../session9/docs/wireshark.md) to examine network traffic in and out of your Pi.
