@@ -200,7 +200,7 @@ It would be good for you to gain some familiarity with HTML.
 
 Work you way through the [w3c html tutorial](https://www.w3schools.com/html/default.asp)
 
-Try copying the examples into pages on your raspberry Pi Apache Web Server.
+Try copying the w3c examples into pages on your raspberry Pi Apache Web Server.
 
 
 
