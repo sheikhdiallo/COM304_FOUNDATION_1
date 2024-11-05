@@ -171,6 +171,8 @@ It is worth taking time to become familiar with some of the key terminal command
 
 Here is a useful [command line for beginners tutorial](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
 
+Also have a look at the [Bourne Shell Tutorial](https://www.shellscript.sh)
+
 ## Package Management
 
 Package manamgent is a key function on operating systems. 
