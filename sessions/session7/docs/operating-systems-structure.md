@@ -161,6 +161,7 @@ It is worth taking time to become familiar with some of the key terminal command
 | rm      | removes a file<br>rm -R removes a directory and its contents |
 |  vi     | basic text editor which is on most linux systems   |
 |  nano   | easier to use text editor                                 |
+| cat     | views a file cat file-name |
 |  df -h  | Shows how much disk has been used |
 |  top    | shows top processes and memory allocation on the system |
 |  ps     | shows processes belonging to you<BR> ps -aux shows all processes on the system<br>ps -aux &#124; grep process-name  # finds a particular process by name |
