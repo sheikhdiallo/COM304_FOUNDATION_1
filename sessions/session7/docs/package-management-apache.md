@@ -166,13 +166,13 @@ The page is being served from pages in the location
 
 The web page is at `/var/www/html/index.html` 
 
-Note that any page named index.html will be served without needing the name in the url.
+Note that any page named index.html will be served without needing the file name in the url `http://localhost` automatically serves `http://localhost/index.html`.
 
 Create a second page in the directory using the nano editor.
 (note that the pages are created with root ownership so you must use sudo).
 
 ```
-cd 
+cd /var/www/html/
 sudo nano mywebpage.html
 ```
 Paste the following example html page and exit using ctrl-X
