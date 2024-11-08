@@ -77,6 +77,18 @@ In other words, there is no guarantee that UDP packets will arrive or that they 
 `Transmission Control Protocol (TCP)` provides a more reliable transport by numbering packets so that it can resend packets which have been lost and guarantee that packets will arrive in their sent order.
 The overhead of establishing a TCP session and keeping track of lost packets makes TCP much slower then UDP and less suitable for real-time applications.
 
+In addition to the IP Affress, UDP and TCP packets in the transport layer define source and destination port numbers. 
+Port numbers consist of 16-bit numbers with a number of ports reserved for well known applications.
+
+| | |
+|:---|:---|
+|Ports 20 and 21| FTP is used to transfer files between a client and a server.|
+|Port 22| Secure Shell (SSH) is one of several tunneling protocols used to build secure network connections.|
+|Port 25| Simple Mail Transfer Protocol (SMTP) is commonly used for email.|
+|Port 53| Domain name system (DNS) is a critical process that matches human-readable domain names to machine-readable IP addresses on the modern internet. |
+|Port 80| HTTP is the protocol that enables the World Wide Web.|
+| Port 443| HTTP Secure (HTTPS) is like HTTP but more secure. All HTTPS web traffic goes straight to port 443. |
+
 ### Network Layer (OSI layer 3)
 
 The `network layer` is used to communicate across a network consisting of multiple `link layer` segments.
