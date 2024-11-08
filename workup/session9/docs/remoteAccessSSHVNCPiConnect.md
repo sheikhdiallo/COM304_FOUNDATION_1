@@ -1,12 +1,12 @@
 ## Using SSH or VNC (more advanced)
 
-As well as using eduroam it is also possible to use a wired connection to connect to your PI. 
+As well as using eduroam it is also possible to use a wired connection to connect to your Raspberry PI. 
 
 In this setup a simple router is used to provide connectivity between the PI and the PC.
 
    ![alt text](../docs/images/pcVNC2.png "Figure pcVNC2.png")
 
-If the PI's Ethernet port is connected to a router, the Pi will use DHCP to obtain an IP address which will allow other devices to communicate with it. 
+If the PI's Ethernet port is connected to a router, the Pi will use DHCP to obtain an IP address from the router which will allow other devices to communicate with it. 
 
 The only problem with this configuration is that the Pi will prefer the Ethernet eth0 port to the Wlan0 (wifi) port as the default route.
 
@@ -73,4 +73,25 @@ VNC makes capturing images much easier from your PC.
 
    ![alt text](../docs/images/pcVNC1.png "Figure pcVNC1.png")
 
+## PI Connect
+
+The Raspberry PI foundation have developed a service called pi connect which allows you t remotely access your pi usng a web browser running HTML5.
+
+They provide documentation for this service in the following links:
+
+[raspberry pi connect](https://connect.raspberrypi.com/devices)
+
+[raspberry pi connect documentation](https://www.raspberrypi.com/documentation/services/connect.html)
+
+Unfortunately they do not officially provide screen sharing support but only SSH access for older devices (i.e. PI v3). 
+
+See [raspberry pi connect remote shell access and support for older devices/](https://www.raspberrypi.com/news/raspberry-pi-connect-remote-shell-access-and-support-for-older-devices/)
+
+BUT I have found hat this will work with a PIv3 if you turn on weighland instead of X11 as the screen server
+
+See [Raspberry Pi OSCan't get wayland running on Pi3B+](https://forums.raspberrypi.com/viewtopic.php?t=359880)
+  
+To summarise, you can get it working by adding `wayland=on` to the end of the `/boot/firmware/cmdline.txt` file.
+
+This works to enable Wayland on my Raspberry Pi 2 up.
 

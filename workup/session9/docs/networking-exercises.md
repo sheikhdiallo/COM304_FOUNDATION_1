@@ -8,14 +8,15 @@ We saw that IP packets traverse the network layer from end to end.
 Routers typically have multiple ports each with a different IP address.
 When a packet enters a router through one port, it uses a `routing table` to determine which port to use to forward the packet to its next destination.
 
-These routing tables can be `statically` (manually) set up  for small networks but in larger networks, network routers use [routing protocols]https://en.wikipedia.org/wiki/Routing_protocol) such as OSPF (Open Shortest Path First) to exchange information to put in the routing tables about how to get to a remote destination. 
+These routing tables can be `statically` (manually) set up for small networks.
+In larger networks, network routers use [routing protocols]https://en.wikipedia.org/wiki/Routing_protocol) such as OSPF (Open Shortest Path First) to exchange information so that each router's routing table will forward packets in the most optimum direction to get to towards their destination.
 
 Routing Protocols are for a more advanced modules but we are going to look at the static routing tables used in a small Local Area Network such as is usually found in a home office.
 
 The figure below shows a typical home network.
 ![alt text](../docs/images/simpleNetwork.drawio.png "simpleNetwork.drawio.png")
 
-We can look at the current state of the interfaces on the raspberry Pi using `ifconfig`.
+We can look at the current state of the interfaces on the raspberry Pi using the Linux command `ifconfig`.
 
 ```
 dmin@raspberrypi01:~ $ ifconfig
@@ -47,13 +48,16 @@ wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 ```
-eth0 is the wired Ethernet interface which has a MAC address (ether b8:27:eb:5b:24:76) and an IP v4 address (inet 192.168.10.102)
 
-wlan0 is the wireless interface (currently connected to eduroam) which has a MAC address (ether c8:d5:fe:00:ae:60) and an IP v4 address (inet 10.79.130.227)
+Note that the Pi has two physical interfaces;  wired ethernet (eth0)  and wireless (wlan0).
 
-the lo interface is an internal `loopback` interface which always talks only to the local kernel. It has the address of `localhost` 127.0.0.1.
+`eth0` is the wired Ethernet interface which has a MAC address (ether `b8:27:eb:5b:24:76`) and an IP v4 address (inet `192.168.10.102`)
 
-The pi has connections to two external networks : the local LAN which has an address range from 192.168.10.1 to 92.168.10.255
+`wlan0` is the wireless interface (currently connected to eduroam) which has a MAC address (ether `c8:d5:fe:00:ae:60`) and an IP v4 address (inet `10.79.130.227`)
+
+the lo interface is an internal `loopback` interface which always talks only to the local kernel. It has the address of `localhost` corresponding to `127.0.0.1`.
+
+The pi has connections to two external networks : the local LAN which has an address range from `192.168.10.1` to `92.168.10.255`
 and the wireless LAN which has a local address `10.79.130.227` and a gateway address `10.79.128.1`
 
 We can look at the routing table on the raspberry pi using `ip route` or `route -n` which give us slightly different information.
@@ -80,9 +84,14 @@ In a simple network like this, the PC and the PI only need to know the address o
 
 If the device does not have the destination in it's routing table, it will send it to the `default gateway` with the highest metric. 
 In the table above, we can see that the Pi will prefer to use the eth0 wired connection before using the wlan0 connection as its gateway.
+In or experiments this might not be correct because we know that only the wired network has connectivity to the internet using eduroam.
 
+On the pi we could correct this by deleting the etho default route using
 
-Note that the Pi has two interfaces wired ethernet (eth0) with IP address  and wireless (wlan0)
+```
+sudo ip route del default dev eth0
+```
+
 
 ### PC Ethernet Config and Routing Table
 
@@ -137,14 +146,16 @@ Network Destination        Netmask          Gateway       Interface  Metric
 
 ```
 
-
-
 ##### Exercise
-The image below shows this network realised using a small home router, a PC and a Raspberry Pi
+The image below shows this network realised using a small home router, a PC and a Raspberry Pi.
+See if you can make sense of the router's configuration.
+This will be very similar to the configuration of your broadband router at home.
+
 ![alt text](../docs/images/pcVNC2.png "pcVNC2.png")
 
 
 ![alt text](../docs/images/trendRouter1.png "trendRouter1.png")
+
 
 ![alt text](../docs/images/trendRouter2.png "trendRouter2.png")
 

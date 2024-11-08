@@ -2,17 +2,21 @@
 
 ## Algorithm Used with Routing Table
 
-The following steps are used by the router to forward packets.
+Routers use internal `routing tables` to determine the next hop for incoming packets.
+
+The following steps are used by the router to decide where to forward packets.
 
 ### 1. Check Direct Routing
 
-Determine if this packet is destined for a directly connected network.
+First the router determines if this packet is destined for a directly connected network.
 
-To perform this check, the router performs a cross check and computes the 
+To perform this check, the router computes the 
 
-Bitwise AND between the interface address and the interface netmask,
+Bitwise AND between each interfaces address and the interfaces netmask.
 
-Bitwise AND between the destination address and the interface netmask.
+Then it performs a
+
+Bitwise AND between the packet's destination address and the interface netmask.
 
 If the two outcomes coincide, direct forwarding is performed on that interface.
 
@@ -61,6 +65,7 @@ This rule allows us to define a `default route` which will always be chosen if n
 Try working through the following routing table examples.
 In each case find where to route an IP address coming from the Test Router.
 
+A network diagram corresponding to the routing table is shown below.
 ![alt text](../docs/images/routing2.drawio.png "routing2.drawio.png")
 
 ### Example 1
@@ -84,6 +89,8 @@ Where to route 131.175.21.86
 |interface 1:   |131.175.21.254| 255.255.255.0|YES  |
 |interface 2:   |131.175.12.253| 255.255.255.0|X |
 
+The packet is forwarded to interface 2.
+
 ### Example 2
 
 Where to route 131.175.16.65
@@ -104,6 +111,8 @@ Where to route 131.175.16.65
 |:--------------|:-------------|:-------------|---|
 |interface 1:   |131.175.21.254| 255.255.255.0|   |
 |interface 2:   |131.175.12.253| 255.255.255.0|   |
+
+The packet is forwarded to the first matching router 131.175.21.2 which can be reached on interface 1.
 
 ### Example 3
 
@@ -126,14 +135,16 @@ Where to route 131.180.21.78
 |interface 1:   |131.175.21.254| 255.255.255.0|   |
 |interface 2:   |131.175.12.253| 255.255.255.0|   |
 
+In this case, there are three possibl matches but because the subnet mask is longest for 131.175.21.4, it is preferred.
+
 examples taken from (https://www.lri.fr/~fmartignon/documenti/reseaux/3-RoutingForwarding-Martignon.pdf)
 
 
 # Example real routing table
 
-Real routing tables combine interface data with other metrics. 
+Real routing tables combine interface data with other metrics to ontrol the choice of route. 
 
-`route -n` is a common command to show routes in a linux system.
+`route -n` is a common command to show routes in a Linux system.
 
 ```
 route -n
@@ -148,10 +159,12 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 In this case we can see each entry has a destination, gateway and mask as described above.
 
 Interfaces also have a `metric`. 
-A lower metric number makes the system prefer a route over an equivalent route.
+A lower metric number makes the system prefer a route over an equivalent route with a hugher metric.
 So in this case we can see that if the wired `eth0` is connected, it will be preferred as the default route over the wireless `wlan0`.
 
 The Flag `U` means that the interface is UP. 
 The flag `G` means that this is a Gateway
+
+
 
 
