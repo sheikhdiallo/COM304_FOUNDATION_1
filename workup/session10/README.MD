@@ -2,4 +2,4 @@
 
 # Session 10
 
-TBC
+Finally try using a network protocol analyser in [Wireshark Experiments](../session10/docs/wireshark.md) to examine network traffic in and out of your Pi.
