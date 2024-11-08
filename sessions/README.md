@@ -19,8 +19,8 @@ Please see [Assessment Guidance](../sessions/AssessmentGuidance.md).
 | [Session 6](../sessions/session6)|Operating systems|Introduction to operating systems<br>Virtual Memory<br>Interrupts and Schedulling|
 | [Session 7](../sessions/session7)|More linux|History of Linux<br>Kernel and user code<br>Package management<br>Basic commands<br>Installing Apache2 web server|
 | [Session 8](../sessions/session8)|Consolidate|Catch up (Craig Gallen Away 12 November)<br>Sign up and do the Cisco Introduction to Ciber Security coursse. Link is on the [Front Foundation Computing (COM304) page of SOL](https://learn.solent.ac.uk/course/view.php?id=58796&section=0)|
-| [Session 9](../sessions/session9)|Internet|Internet history<br>Key Internet Utilities|
-| [Session 10](../sessions/session10)|Networking|Introduction to networking<br>Using networking utilities on Linux|
+| [Session 9](../sessions/session9)|Networking|Introduction to networking<br>Using networking utilities on Linux|
+| [Session 10](../sessions/session10)|Internet|Internet history<br>Key Internet Utilities - DNS|
 | [Session 11](../sessions/session11)|Virtualisation / cloud|Introduction to virtualisation / containers and cloud|
 | [Session 12](../sessions/session12)|Consolidate|Catch up – finish assessment docs|
 

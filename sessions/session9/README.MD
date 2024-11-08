@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session10](../session10/) 
+[Main Menu](../../sessions/README.md) | [session 9](../session9/) 
 
 # Session 9 The Internet and Networking
 
