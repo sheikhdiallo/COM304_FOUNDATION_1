@@ -56,7 +56,7 @@ If we are told that a device has an IP address of 192.168.0.8/24, we find it's s
 The bottom address of this network is 192.168.0.0, and because we have 255 possible addresses in the 8 unmasked bits, the top address of this network will be `192.168.0.255`,
 allowing us 256 possible addresses in this network definition.
 
-Note however that the bottom address of this range is reserved the `network address` 192.168.0.0 and the top address of this range is reserved as the `broadcast address` 192.168.0.255 which leaves us 254 usable host addresses in this network.
+Note however that the bottom address of this range is reserved as the `network address` 192.168.0.0 and the top address of this range is reserved as the `broadcast address` 192.168.0.255 which leaves us 254 usable host addresses in this network.
 
 The `broadcast address` is used by a host in the subnet to send a message which will be received by all hosts in the subnet regardless of their ip address.
 
