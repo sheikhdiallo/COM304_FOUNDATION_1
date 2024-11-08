@@ -77,7 +77,7 @@ In other words, there is no guarantee that UDP packets will arrive or that they 
 `Transmission Control Protocol (TCP)` provides a more reliable transport by numbering packets so that it can resend packets which have been lost and guarantee that packets will arrive in their sent order.
 The overhead of establishing a TCP session and keeping track of lost packets makes TCP much slower then UDP and less suitable for real-time applications.
 
-In addition to the IP Affress, UDP and TCP packets in the transport layer define source and destination port numbers. 
+In addition to the IP Address, UDP and TCP packets in the transport layer define source and destination port numbers. 
 Port numbers consist of 16-bit numbers with a number of ports reserved for well known applications.
 
 | | |
