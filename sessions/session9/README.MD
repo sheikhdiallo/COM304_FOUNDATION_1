@@ -1,5 +1,13 @@
-[Main Menu](../../sessions/README.md) | [session9](../session9/) 
+[Main Menu](../../sessions/README.md) | [session10](../session10/) 
 
-# Session 9
+# Session 9 The Internet and Networking
 
-TBC
+In this session we will begin looking at how computer networking works.
+
+Start with [Introduction to Networking](../session9/docs/introduction-to-networking.md)
+
+Then try the exercises in [Networking Exercises](../session9/docs/networking-exercises.md)
+
+To connect with your pi remotely, try the  exercises in [VNC, SSH and remote connect](../session9/docs/remoteAccessSSHVNCPiConnect.md)
+
+Finally try using a network protocol analyser in [Wireshark Experiments](../session9/docs/wireshark.md) to examine network traffic in and out of your Pi.
