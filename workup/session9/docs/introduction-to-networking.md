@@ -74,10 +74,14 @@ Two protocols are widely chosen in this layer;
 Each UDP packet is stand alone and is sent `fire and forget`.
 In other words, there is no guarantee that UDP packets will arrive or that they will arrive in the same order as they were sent.
 
+![alt text](../docs/images/udpFORMAT.png "udpFORMAT.png")
+
 `Transmission Control Protocol (TCP)` provides a more reliable transport by numbering packets so that it can resend packets which have been lost and guarantee that packets will arrive in their sent order.
 The overhead of establishing a TCP session and keeping track of lost packets makes TCP much slower then UDP and less suitable for real-time applications.
 
-In addition to the IP Address, UDP and TCP packets in the transport layer define source and destination port numbers. 
+![alt text](../docs/images/tcpfORMAT.png "tcpfORMAT.png")
+
+In addition to the IP Address, you will note that UDP and TCP packets in the transport layer define source and destination port numbers. 
 Port numbers consist of 16-bit numbers with a number of ports reserved for well known applications.
 
 | | |
