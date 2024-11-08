@@ -26,13 +26,9 @@ This means that there is enough space for trillions of Internet devices for the 
 
 (We will just look at IPv4 for now).
 
-## subnetworks
+## Subnetworks
 
-IPv4 addresses consist of 4 bytes (32 bits) which are typically written as 4 decimal numbers separated by full stops. 
-
-Each decimal number has a range from 0 to 255. e.g. `192.168.0.1` represents binary`11000000 10101000 00000000 00000001` or hex `0xC0A80001`
-
-The 32 bits define an address range of 4.3 billion possible addresses.
+The 32 bit IPv4 addresses define an address range of 4.3 billion possible addresses.
 
 The address range is divided into `sub networks` (or `subnets`) which define a range of IP addresses allocated to that subnetwork.
 
