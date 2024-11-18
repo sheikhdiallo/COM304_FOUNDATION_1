@@ -82,9 +82,18 @@ Fortunately a [subnet calculator](https://www.calculator.net/ip-subnet-calculato
 ## Class A, B, C networks
 
 In the past (prior to 1993) IANA allocated ranges of ip addresses to networks in large chunks or [network classes](https://en.wikipedia.org/wiki/Classful_network).
-There were 128 Class A networks with 16,777,216 addresses per class A,  
-16,384 Class B networks with 1,073,741,824  addresses per class B and
-2,097,152 Class C networks with 536,870,912  addresses per class C.
+
+Class A  - subnet mask `255.0.0.0` or `\8`
+
+There are 128 Class A networks with 16,777,216 addresses per class A,  
+
+Class B - subnet mask `255.255.0.0` or `\16`
+
+There are 16,384 Class B networks with 1,073,741,824  addresses per class B
+
+Class C - subnet mask `255.255.255.0` or `\24`
+
+There are 2,097,152 Class C networks with 536,870,912  addresses per class C.
 
 Class A networks were assigned to [large organisations and regional Internet registers](https://en.wikipedia.org/wiki/List_of_assigned_/8_IPv4_address_blocks) and some of these allocations still remain in place.
 
