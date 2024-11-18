@@ -115,8 +115,8 @@ By using NAT, an organisation can send and receive traffic to the Internet for m
 This is achieved by having the NAT router map any packets from or destined to each of the private internal IP addresses to a particular port on the public IP packets sent using the companies public ip address .
 
 This way a public IP address can represent thousands of internal devices.
-The own side of this is that the NAT router must maintain a mapping between any internal IP addresses and the port mapped on the public IP address.
-This mapping can slow down traffic due to hte load it puts on the router.
+The down side of this is that the NAT router must maintain a mapping between any internal IP addresses and the port mapped on the public IP address.
+This mapping can slow down traffic due to the load it puts on the router.
 
 NAT also has the effect that only internal devices can initiate communication to the internet because an external device will not know the port mapping to a particular intenal IP address. 
 This is the basis of a simple layer of `firewall security` since only certain port ranges are allowed and external devices find it difficult to initiate communication unless in response to an packet originating inside the organisations network.
