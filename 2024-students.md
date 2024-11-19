@@ -9,7 +9,7 @@ List of students and forked repositories.
 |Anuska27-ui| Anuska Ghimire |Q102637993   |https://github.com/Anuska27-ui/COM304_FOUNDATION_1 |none 8/10<br>nothing 19/11/2024    |
 |fadighattas76| adi ghattas |	Q012547289   | https://github.com/fadighattas76/COM304_FOUNDATION_1  | none 8/10<br>nothing 19/11/2024   |
 |sheikhdiallo   | Sheikh-Omar Diallo |	Q10254872   |  https://github.com/sheikhdiallo/COM304_FOUNDATION_1 | no prior experience, some notes 8/10<br>some notes sessions 1-4 19/11/2024   |
-| Tonusk1  | Chong Ree| Q102632806   | https://github.com/Tonusk1/COM304_FOUNDATION_1  | prior experience but no further notes 8/10    |
+| Tonusk1  | Chong Ree| Q102632806   | https://github.com/Tonusk1/COM304_FOUNDATION_1  | prior experience but no further notes 8/10<br>nothing 19/11/2024    |
 | tomdorr  | Tom Dorr | 	Q102635139    | https://github.com/tomdorr/COM304_FOUNDATION_1 | none 8/10   |
 | EchoNebula  | Exa Fernandes |	Q102567863    | https://github.com/EchoNebula/COM304_FOUNDATION_1  |none 8/10    |
 | Wandal77  |  Marek Frackowiak | 	Q102637731    |https://github.com/Wandal77/COM304_FOUNDATION_1 | none 8/10   |
