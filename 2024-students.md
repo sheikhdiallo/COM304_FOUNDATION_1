@@ -15,7 +15,7 @@ List of students and forked repositories.
 | Wandal77  |  Marek Frackowiak | 	Q102637731    |https://github.com/Wandal77/COM304_FOUNDATION_1 | none 8/10<br>nothing 19/11/2024   |
 | brooe   |Erin Brookmier    | Q102572649   | https://github.com/brooe/COM304  | some notes 8/10<br>good notes session 1 but nothing after 19/11/2024   |
 | Adoniweeb    | TBC   | TBC   | https://github.com/Adoniweeb/COM304_FOUNDATION_1/tree/main  |  none 8/10<br>nothing 19/11/2024  |
-| Alexreilly98    | NAME??   | Student ID   |https://github.com/Alexreilly98/COM304_FOUNDATION_1   | nothing 19/11/2024   |
+| Alexreilly98    | Alex Reilly  | Student ID   |https://github.com/Alexreilly98/COM304_FOUNDATION_1   | nothing 19/11/2024   |
 | Gwese    | NAME   | STUDENT ID   |https://github.com/Gwese/COM304_FOUNDATION_1   | nothing 19/11/2024   |
 | Laxch18    | NAME   |STUDENT ID    | https://github.com/Laxch18/COM304_FOUNDATION_1  | nothing 19/11/2024   |
 |   |    |    |   |    |
