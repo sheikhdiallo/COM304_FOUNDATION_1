@@ -4,6 +4,8 @@
 
 Dr quantum visits flatland
 
+https://www.youtube.com/watch?v=lXtyxRd1glM  Two Ronnies - Phantom Raspberry Blower - TERROR STRIKES as raspberries fly 
+
 log2ram https://pimylifeup.com/raspberry-pi-log2ram/
 
 

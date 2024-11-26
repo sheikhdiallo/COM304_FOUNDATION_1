@@ -42,7 +42,7 @@ Uses:
   r1 - address of UART
 -------------------------------------------------------
 */
-stmfd sp!, {r0, r1, r4}  // preserve temporary registers
+stmfd sp!, {r0, r1, r4}  // preserve temporary registers on stack
                          // NOTE this is an alternative instruction to PUSH. See https://stackoverflow.com/questions/8236959/what-are-sp-stack-and-lr-in-arm
 ldr   r1, =UART_BASE     // get address of UART
 
@@ -51,13 +51,13 @@ ldrb  r0, [r4], #1       // load a single byte from the string
                          // ldrb r0,[r4],#1 means take the value in r0, use it as an address to read a byte from, put the byte in r1 and then add 1 to r0. It is the same as
                          // ldrb r0,[r4]
                          // add r4,r4,#1
-                         // just in one instruction instead of two
+                         // just in one instruction instead of two :)
 cmp   r0, #0
-beq   _WriteString       // stop when the null character is found
-str   r0, [r1]           // copy the character to the UART DATA field
+beq   _WriteString       // stop when the null character 0x0 is found which is the end of the string.
+str   r0, [r1]           // copy the character to the UART DATA field.
 b     wsLOOP
 _WriteString:
-ldmfd sp!, {r0, r1, r4}  // recover temporary registers
+ldmfd sp!, {r0, r1, r4}  // recover temporary registers from the stack.
 bx    lr                 // return from subroutine
 
 .data

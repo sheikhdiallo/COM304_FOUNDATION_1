@@ -1,4 +1,4 @@
-[session3](../../session3/) | [Intro to Gertboard and Wiring Pi](../docs/gertboard-wiringpi-intro.md)
+[Main Menu](../../sessions/README.md) |[session3](../../session3/) | [Intro to Gertboard and Wiring Pi](../docs/gertboard-wiringpi-intro.md)
 
 # Intro to Gertboard and WiringPi
 

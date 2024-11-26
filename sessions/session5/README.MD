@@ -4,9 +4,21 @@
 
 ## Introduction
 
-In this session we will look at computer programming languages. 
+In this session we will look at computer programming languages and how they interact with the computer's hardware. 
 
-### Machine code and Assembly Code
+The session will proceed in roughly the following order:
+
+Introduction to Machine Code, Assembly code and High level Languages (This page).
+
+[Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPUlator.md)
+
+[Subroutines and Stacks](../session5/docs/stacks-routines.md) 
+
+[Interrupts](../session5/docs/Interrupts.md) 
+
+[Assembler Examples](../session5/assemblerExamples/AssemblerExamples.md)
+
+## Introduction to Machine Code, Assembly code and High level Languages.
 
 In [Session2](../session2/) we saw how combinational logic can be used to create a microprocessor and we modified a small program for a [4 bit processor simulated in simulator.io](https://simulator.io/board/AWZpw7Fy3I/2)
 
@@ -54,7 +66,7 @@ It is designed to make it easy for a programmer to specify instructions for movi
 
 Assembler is not designed to make it easy to understand what the purpose of a program is, but it does allow for programmer comments, which are not part of the program, to help explain what the assembler code is doing.
 
-# High Level Languages
+## High Level Languages
 
 A high level language such as C, Java, Python, BASIC or Java Script are designed to allow programmers to easily express high level concepts without being concerned about how this translates to the bits and bytes manipulated by the CPU.
 
@@ -66,7 +78,7 @@ High level languages come in two fundamental flavours; `Interpreted Languages` a
 
 `Interpreted Languages` read the input high level language and translate it `on the fly` into machine code routines which are immediately run on the processor. 
 
-Python, Javascript, PHP and the Bourne Shell (sh or bash) are examples of `Interpreted Languages`.
+`Python`, `Javascript`, `PHP` and the `Bourne Shell` (`sh` or `bash`) are examples of `Interpreted Languages`.
 
 Node RED is referred to as a `no or low code language` which is visually programmed. 
 This is fundamentally also an interpreter but instead of interpreting a program, it is interpreting drawings of flows into routines in machine code.
@@ -91,10 +103,24 @@ A `Loader` which loads the program and its libraries into memory ready to be run
 
 Link/Loaders are often core components within an operating system and are not necessarily explicitly visible to a user.
 
-## Exercises
+## Open and Closed Source Programs
+
+Often compiled programs are shipped by their authors as pre-compiled machine code which is ready to run on the target system. 
+
+Machine Code can be `disassembled` into assembler code but without any comments or the original high level language, this is very difficult for someone to understand.
+
+Many companies rely on not distributing the original source code with the machine code as a way to protect their intellectual property.
+This is called `Closed Source`.
+
+On the other hand, many programmers now choose to distribute the source code freely with the compiled machine code.
+
+This is called `Open Source`.
+You will see many examples of this practice on Github and of course Linux and the `gcc` C compiler are very important examples.
+
+## Practical Exercises
 
 We will examine assembly and compiled languages further in the next section.
 
-[Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPULator.md)
+[Introduction to ARM Assembler and C programming using CPUlator](../session5/docs/IntroToCPUlator.md)
 
 
