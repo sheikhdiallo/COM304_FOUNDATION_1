@@ -4,15 +4,15 @@
 
 Read the assignment and understand the marking criteria
 
-## project plan
+## Project plan
 You need to demonstrate a github project plan which has tracked all of the exercises covered in class. 
 This is for you to track what exercises you have done and your note taking on the key topics.
 
 List of all of the exercises - not started, in progress and finished
 
-## weekly personal notes
+## Weekly personal notes
 You need to demonstrate that you have engaged with the lecture material and done your own supporting research.
-For each topic covered, you should at least attempt ot answer hte following questions
+For each topic covered, you should at least attempt ot answer the following questions
 
 1. Why is this topic considered important for a foundations of computing module?
 2. What were the key learning points from the lecture material?
