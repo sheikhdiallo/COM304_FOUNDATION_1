@@ -2,7 +2,7 @@
 
 # Assignment advice
 
-*Read the assignment* and *understand the marking criteria*
+*Read the assignment and understand the marking criteria*
 
 Your submission should use github markdown created within your forked repository.
 A starting template is provided within your [Personal Learning Record](../../../myPracticeCourseWork/personal_learning_record) but this is for guidance only. 
@@ -22,7 +22,7 @@ List of all of the exercises in project columns:
 
 ## Weekly personal notes
 You need to demonstrate that you have engaged with the lecture material and done your own supporting research.
-For each topic covered, you should at least attempt ot answer the following questions
+For each topic covered, you should at least attempt to answer the following questions:
 
 1. Why is this topic considered important for a foundations of computing module?
 2. What were the key learning points from the lecture material?
