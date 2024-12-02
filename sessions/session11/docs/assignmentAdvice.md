@@ -2,13 +2,23 @@
 
 # Assignment advice
 
-Read the assignment and understand the marking criteria
+*Read the assignment* and *understand the marking criteria*
+
+Your submission should use github markdown created within your forked repository.
+A starting template is provided within your [Personal Learning Record](../../../myPracticeCourseWork/personal_learning_record) but this is for guidance only. 
+You can format and order your learning record in the most useful way you see fit but remember that part of the assignment is to demonstrate that you know how to effectively write documentation using markdown.
+
+You will submit a zipped snapshot of your repository on SOL but I will be marking the material linked to on github.
+Make sure I have a link to your repository on [2024 Students](../../../2024-students.md)
 
 ## Project plan
 You need to demonstrate a github project plan which has tracked all of the exercises covered in class. 
-This is for you to track what exercises you have done and your note taking on the key topics.
+This is for you to track whhich exercises you have completed and your note taking on the key topics.
 
-List of all of the exercises - not started, in progress and finished
+List of all of the exercises in project columns:
+* not started
+* in progress
+* completed
 
 ## Weekly personal notes
 You need to demonstrate that you have engaged with the lecture material and done your own supporting research.
