@@ -23,7 +23,7 @@ For each topic covered, you should at least attempt ot answer the following ques
     * Key points in this material?
     * Why is it a good reference?
    
-4. what next steps could I take to consolidate my knowledge of this topic?
+4. What next steps could I take to consolidate my knowledge of this topic?
     * tutorials, practices, books, courses or other material you have identified 
 
 
