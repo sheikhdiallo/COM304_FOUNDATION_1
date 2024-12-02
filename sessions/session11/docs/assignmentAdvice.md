@@ -48,6 +48,9 @@ If you have followed the process of writing notes on what you have learned after
 * What steps did I take to get the maximum value out of this module?
 * How did I take advantage of all the learning opportunities?
 * How could I have done better?
+
+### Future Progress
 * How has this module equipped me to progress in learning computer science?
 * What obstacles do I need to overcome to allow me to progress in computer science?
+* What do I need to learn next to help me to acquire a more useful knowledge of computing?
 
