@@ -44,10 +44,10 @@ If you have followed the process of writing notes on what you have learned after
 * How has this foundation module equipped me to progress further in computer science?
 
 ### Responsibility for my own learning
-* What was my role and what was the lecturers role in advancing my learning
-* What steps did I take to get the maximum value out of this module
-* How did I take advantage of all the learning opportunities
-* How could I have done better
-* How has this module equipped me to progress in learning computer science
-* What obstacles do I need to overcome to allow me to progress in computer science
+* What was my role and what was the lecturers role in advancing my learning?
+* What steps did I take to get the maximum value out of this module?
+* How did I take advantage of all the learning opportunities?
+* How could I have done better?
+* How has this module equipped me to progress in learning computer science?
+* What obstacles do I need to overcome to allow me to progress in computer science?
 
