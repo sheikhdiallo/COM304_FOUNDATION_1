@@ -33,21 +33,21 @@ If you have followed the process of writing notes on what you have learned after
 
 ### Summary of Personal Learning
 
-    * What did I expect to learn from this module?
-    * Was there any material which I did not expect to be in this module?
-    * What new things did I learn which I had not considered before?
-    * What surprised me? 
-    * What really interested me?
-    * What material just recapped which I already knew?
-    * What left me confused and why?
-    * What was missing from the module or could have been covered in more depth?
-    * How has this foundation module equipped me to progress further in computer science?
+* What did I expect to learn from this module?
+* Was there any material which I did not expect to be in this module?
+* What new things did I learn which I had not considered before?
+* What surprised me? 
+* What really interested me?
+* What material just recapped which I already knew?
+* What left me confused and why?
+* What was missing from the module or could have been covered in more depth?
+* How has this foundation module equipped me to progress further in computer science?
 
 ### Responsibility for my own learning
-    * What was my role and what was the lecturers role in advancing my learning
-    * What steps did I take to get the maximum value out of this module
-    * How did I take advantage of all the learning opportunities
-    * How could I have done better
-    * How has this module equipped me to progress in learning computer science
-    * What obstacles do I need to overcome to allow me to progress in computer science
+* What was my role and what was the lecturers role in advancing my learning
+* What steps did I take to get the maximum value out of this module
+* How did I take advantage of all the learning opportunities
+* How could I have done better
+* How has this module equipped me to progress in learning computer science
+* What obstacles do I need to overcome to allow me to progress in computer science
 
