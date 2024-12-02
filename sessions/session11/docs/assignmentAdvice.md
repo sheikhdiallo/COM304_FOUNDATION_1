@@ -1,4 +1,4 @@
-[Main Menu](../../sessions/README.md) | [session11](../../session11/) | [Assignment advice](../docs/assignmentAdvice.md)
+[Main Menu](../../../sessions/README.md) | [session11](../../session11/) | [Assignment advice](../docs/assignmentAdvice.md)
 
 # Assignment advice
 
