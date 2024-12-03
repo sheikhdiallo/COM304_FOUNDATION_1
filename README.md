@@ -91,5 +91,17 @@ Don't make your own changes here.
 
 See [Session 1](../main/sessions/session1) for more instructions on getting started with git and forking this repository.
 
+## Submitting your assessment
+Your assessment will be your personal learning record as written in markdown on github.
+
+Make sure your repository is linked to on the teacher's student_2024.md page
+
+Your github repo will be the material that is marked but for record keeping, you MUST submit a snapshot of your repository on time on SOL.
+
+You should download a snapshot of your repository as a zip file and rename it to include your name  
+e.g something like `COM304_FOUNDATION_1-mainGraigGallen.zip`
+
+![alt text](../main/docs/images/downloadGithub.png "Figure downloadGithub.png" )
+
  
 
