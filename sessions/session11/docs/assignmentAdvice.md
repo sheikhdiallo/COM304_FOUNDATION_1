@@ -32,7 +32,7 @@ For each topic covered, you should at least attempt to answer the following ques
 3. Evidence of my additional personal research?
 
     * Link / reference?
-    * Key points in this material?
+    * Key points in this reference?
     * Why is it a good reference?
    
 4. What next steps could I take to consolidate my knowledge of this topic?
