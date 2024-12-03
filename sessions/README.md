@@ -22,6 +22,6 @@ And also [Assessment Guidance](../sessions/AssessmentGuidance.md).
 | [Session 8](../sessions/session8)|Consolidate|Catch up (Craig Gallen Away 12 November)<br>Sign up and do the Cisco Introduction to Ciber Security coursse. Link is on the [Front Foundation Computing (COM304) page of SOL](https://learn.solent.ac.uk/course/view.php?id=58796&section=0)|
 | [Session 9](../sessions/session9)|Networking|Introduction to networking<br>Using networking utilities on Linux|
 | [Session 10](../sessions/session10)|Internet|Internet history<br>Introduction to the cloud|
-| [Session 11](../sessions/session11)|Consolidate|Catch up – finish assessment docs|
+| [Session 11](../sessions/session11)|Consolidate|Assessment Guidance<br>Catch up – finish assessment docs|
 | [Session 12](../sessions/session12)|Consolidate|Catch up – finish assessment docs|
 
