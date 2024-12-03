@@ -71,8 +71,9 @@ To make merging easier, this repository is organised in three separate sections.
 [Sessions](../main/sessions) Contains the tutorial material for each session.
 
 This is where the tutorials and examples for each week will be created and updated each week.
-PLEASE do not change material here as it will be updated each week and you will have difficulty merging any changes with yours.
-Instead COPY each session's the material into your own [myPracticeCourseWork](../main/myPracticeCourseWork) folder and use and modify it from there.
+PLEASE do not change material here as it will be updated each week and you will have difficulty merging any upstream changes with your own work.
+
+Instead COPY each session's material into your own [myPracticeCourseWork](../main/myPracticeCourseWork) folder and use and modify it from there.
 
 [myPracticeCourseWork](../main/myPracticeCourseWork) Is your private working folder.
 
@@ -96,10 +97,16 @@ Your assessment will be your personal learning record as written in markdown on 
 
 Make sure your repository is linked to on the teacher's [2024 Students](../main/2024-students.md)  page
 
-Your github repo will be the material that is marked but for record keeping, you MUST submit a snapshot of your repository on time on SOL.
+Your online github repo will be the material that is marked but for record keeping, you MUST submit a snapshot of your repository on time on SOL.
+
+**NO ON TIME SUBMISSION = NO MARKS**
 
 You should download a snapshot of your repository as a zip file and rename it to include your name  
-e.g something like `COM304_FOUNDATION_1-mainGraigGallen.zip`
+e.g something like 
+
+`COM304_FOUNDATION_1-mainGraigGallen.zip`
+
+Submit this file on SOL.
 
 ![alt text](../main/docs/images/downloadGithub.png "Figure downloadGithub.png" )
 
