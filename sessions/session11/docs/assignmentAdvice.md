@@ -13,12 +13,14 @@ Make sure I have a link to your repository on [2024 Students](../../../2024-stud
 
 ## Project plan
 You need to demonstrate a github project plan which has tracked all of the exercises covered in class. 
-This is for you to track whhich exercises you have completed and your note taking on the key topics.
+This is for you to track which exercises you have completed and your note taking on the key topics.
 
 List of all of the exercises in project columns:
-* not started
+* to do
 * in progress
-* completed
+* done
+
+See the [example Project](https://github.com/users/gallenc/projects/5) which I used to plan this module.
 
 ## Weekly personal notes
 You need to demonstrate that you have engaged with the lecture material and done your own supporting research.
