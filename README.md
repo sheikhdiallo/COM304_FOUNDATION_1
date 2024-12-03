@@ -94,7 +94,7 @@ See [Session 1](../main/sessions/session1) for more instructions on getting star
 ## Submitting your assessment
 Your assessment will be your personal learning record as written in markdown on github.
 
-Make sure your repository is linked to on the teacher's student_2024.md page
+Make sure your repository is linked to on the teacher's [2024 Students](../main/2024-students.md)  page
 
 Your github repo will be the material that is marked but for record keeping, you MUST submit a snapshot of your repository on time on SOL.
 
