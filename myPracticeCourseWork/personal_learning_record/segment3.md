@@ -11,7 +11,7 @@ use  screen shots and / or code samples as appropriate.
 
 ---
 
-## session 9
+## session 9 
 
 ## Session 10 # The History of the Internet
 
@@ -131,9 +131,9 @@ A way to securely distribute
 
 In this section I used Microsoft Azure to create a cloud-based system. We then created an account and used the IP Address to login to it via PuTTY. Ones this was completed we did the same with just with a web page we created which we created and then uploaded and accessed this via PuTTY. I also accessed the self-turn off section as if I don’t turn off Microsoft Azure when I’m not on it my account is still charged for credits. When we finished, we deleted the Project.
 
-## session 11
+## session 11 (Consolidation Lesson)
 
-## session 12 (consolidate)
+## session 12 (Consolidation Lesson)
 
 TBD
 
