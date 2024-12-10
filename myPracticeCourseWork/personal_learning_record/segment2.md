@@ -15,7 +15,7 @@ use  screen shots and / or code samples as appropriate.
 
 ## session 6
 
-## session 7 # Session 7
+## Session 7
 
 ## The Origins of Linux Operating System
 
