@@ -11,13 +11,13 @@ List of students and forked repositories.
 | sheikhdiallo   | Sheikh-Omar Diallo |	Q10254872   |  https://github.com/sheikhdiallo/COM304_FOUNDATION_1<br>https://github.com/sheikhdiallo/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record | no prior experience, some notes 8/10<br>some notes sessions 1-4 - (look at formatting) 19/11/2024<br>nothing more 02/12/2024<br>nothing more 10/12/2024   |
 | Tonusk1  | Chong Ree| Q102632806   | https://github.com/Tonusk1/COM304_FOUNDATION_1<br>https://github.com/Tonusk1/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record  | prior experience but no further notes 8/10<br>nothing 19/11/2024<br>nothing 02/12/2024<br>nothing 10/12/2024    |
 | tomdorr  | Tom Dorr | 	Q102635139    | https://github.com/tomdorr/COM304_FOUNDATION_1<br>https://github.com/tomdorr/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record | none 8/10<br>nothing 19/11/2024<br>nothing 02/12/2024<br>nothing 10/12/2024  |
-| EchoNebula  | Exa Fernandes |	Q102567863    | https://github.com/EchoNebula/COM304_FOUNDATION_1  |none 8/10<br>nothing 19/11/2024<br>nothing 02/12/2024    |
-| Wandal77  |  Marek Frackowiak | 	Q102637731    |https://github.com/Wandal77/COM304_FOUNDATION_1 | none 8/10<br>nothing 19/11/2024<br>nothing 02/12/2024   |
-| brooe   |Erin Brookmier    | Q102572649   | https://github.com/brooe/COM304  | some notes 8/10<br>good notes session 1 but nothing after 19/11/2024<br>nothing more 02/12/2024   |
-| Adoniweeb    | TBC   | TBC   | https://github.com/Adoniweeb/COM304_FOUNDATION_1/tree/main  |  none 8/10<br>nothing 19/11/2024<br>nothing 02/12/2024  |
-| Alexreilly98    | Alex Reilly  | Student ID   |https://github.com/Alexreilly98/COM304_FOUNDATION_1   | project plan but no notes 19/11/2024<br>nothing more 02/12/2024  |
-| Gwese    | NAME   | STUDENT ID   |https://github.com/Gwese/COM304_FOUNDATION_1   | nothing 19/11/2024<br>nothing 02/12/2024   |
-| Laxch18    | NAME   |STUDENT ID    | https://github.com/Laxch18/COM304_FOUNDATION_1  | nothing 19/11/2024<br>nothing 02/12/2024   |
+| EchoNebula  | Exa Fernandes |	Q102567863    | https://github.com/EchoNebula/COM304_FOUNDATION_1<br>https://github.com/EchoNebula/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record  |none 8/10<br>nothing 19/11/2024<br>nothing 02/12/2024<br>nothing 10/12/2024    |
+| Wandal77  |  Marek Frackowiak | 	Q102637731    |https://github.com/Wandal77/COM304_FOUNDATION_1<br>https://github.com/Wandal77/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record | none 8/10<br>nothing 19/11/2024<br>nothing 02/12/2024<br>nothing 10/12/2024   |
+| brooe   |Erin Brookmier    | Q102572649   | https://github.com/brooe/COM304<br>https://github.com/brooe/COM304/tree/main/myPracticeCourseWork/personal_learning_record  | some notes 8/10<br>good notes session 1 but nothing after 19/11/2024<br>nothing more 02/12/2024<br>nothing more 10/12/2024   |
+| Adoniweeb    | TBC   | TBC   | https://github.com/Adoniweeb/COM304_FOUNDATION_1/tree/main<br>https://github.com/Adoniweeb/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record  |  none 8/10<br>nothing 19/11/2024<br>nothing 02/12/2024<br>nothing 10/12/2024 |
+| Alexreilly98    | Alex Reilly  | Student ID   |https://github.com/Alexreilly98/COM304_FOUNDATION_1<br>https://github.com/Alexreilly98/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record   | project plan but no notes 19/11/2024<br>nothing more 02/12/2024<br>nothing 10/12/2024  |
+| Gwese    | NAME   | STUDENT ID   |https://github.com/Gwese/COM304_FOUNDATION_1<br>https://github.com/Gwese/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record   | nothing 19/11/2024<br>nothing 02/12/2024<br>nothing 10/12/2024   |
+| Laxch18    | NAME   |STUDENT ID    | https://github.com/Laxch18/COM304_FOUNDATION_1<br>https://github.com/Laxch18/COM304_FOUNDATION_1/tree/main/myPracticeCourseWork/personal_learning_record  | nothing 19/11/2024<br>nothing 02/12/2024<br>nothing 10/12/2024   |
 |   |    |    |   |    |
 |   |    |    |   |    |
 
