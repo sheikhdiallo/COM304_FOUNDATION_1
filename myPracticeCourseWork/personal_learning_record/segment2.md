@@ -11,7 +11,41 @@ use  screen shots and / or code samples as appropriate.
 
 ---
 
-## session 5
+## Session 5 - Computer Languages
+
+Introduction
+
+\-in this session we had a look at computer programming languages and how they interact with the computers hardware.
+
+\-this session will proceed in roughly the following order:
+
+\-Introduction & machine code, assembly code and high-level languages, in session two we saw how combinational logic can be used to create a microprocessor.
+
+\-we saw that the processor supported 12 institutions which could be arranged in the simulators Rom as a very low-level programme.
+
+instructions seen as session 5 binary CPU instructions all referred as machine code
+
+You could enter the binary machine code directly, but this would be time consuming and error prone. Instead, programmers write low level programmes in an equivalent human readable version of the programme called assembly code.
+
+An Assembler is a programme which translates the human readable assembler source code turning into machine code to run on the processor.
+
+Assembly code is very specific to the processor which it targets. It is designed to be easy for a programmer to specify instructions for moving and manipulating data within processor registers and between the processor and external memory.
+
+assembler is not designed to make it easy to understand what the purpose of a programme is but it does allow for the programmers contents which are not part of the programme to help explain what the assembler code is doing.
+
+High level languages
+
+a high-level language such as C, Java, Python Basic or Java script or designed to allow programmers to easily express high level concepts without being concerned about how this translates to the bits and bytes manipulated by the CPU.
+
+A high-level language is translated into low level machine code to run on a processor.
+
+High level languages come into two fundamental flavours; Interpreted languages and compiled languages as illustrated below.
+
+Open and closed source programmes often compiled programmes are shipped by their authors are all pre-compiled machine code which is ready to run the target system.
+
+Machine code can be disassembled into assembler code but without any comments or the original high-level language this is very difficult for someone to understand.
+
+Many companies rely on not distributing the original source code with the machine code.
 
 ## session 6
 
