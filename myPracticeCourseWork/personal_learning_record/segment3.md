@@ -11,7 +11,17 @@ use  screen shots and / or code samples as appropriate.
 
 ---
 
-## session 9 
+## # Session 9 – Computing Networking
+
+Networking is how computers and devices communicate with each other over the internet.
+
+Modern computer networks use the Internet Protocol (IP) to divide data to be communicated into separate datagrams or packets which contain multiple bytes. These packets are separately routed through the network and reassembled at their destination into their original format.
+
+Ip networks contain devices which can be characterized as computers or routers.
+
+Computers in a network may variously also be referred to as hosts or servers or workstations. Computers can have several parts. For example most Pc’s have a wifi and wired interface. Those are usually end points of a network since they only organise or consume network traffic but don’t route traffic between ports.
+
+A Router is a device in a network which collaborates with route packets from across the network to reach their destination.
 
 ## Session 10 # The History of the Internet
 
