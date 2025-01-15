@@ -23,7 +23,7 @@ Computers in a network may variously also be referred to as hosts or servers or 
 
 A Router is a device in a network which collaborates with route packets from across the network to reach their destination.
 
-## Session 10 # The History of the Internet
+## Session 10 # The History of the Internet 
 
 Images of the map of the internet-
 
